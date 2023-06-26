@@ -80,10 +80,10 @@
     .collapse {
         position: absolute;
         right: 1em;
-        top: 1em;
+        top: 5px;
         z-index: 10;
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         display: flex;
         justify-content: center;
         align-items: center;
