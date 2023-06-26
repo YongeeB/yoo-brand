@@ -1,0 +1,87 @@
+<script>
+// @ts-nocheck
+    import Lazy from "svelte-lazy"
+
+    export let product;
+
+    const [, png] = product.imgSrc.split(".");
+
+</script>
+
+<div class="product-card">
+    <Lazy class="lazy-container">
+    <div class="image-container">
+            <img src={product.imgSrc} alt={product.name} id={png == "png" && png}>
+    </div>
+     </Lazy>
+    <p id="product-name">
+        {product.name}
+    </p>
+    <p id="product-info">
+        {product.info.substr(0, 300) + "..."}
+        <a href="/">see more</a>
+    </p>
+</div>
+
+<style>
+    .product-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    :global(.lazy-container) {
+        width: 100%;
+    }
+
+    #png {
+        background-color: white;
+
+    }
+
+    .product-card .image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .product-card img {
+        margin: 0 auto;
+        width: 80%;
+        max-width: 350px;
+        height: 300px;
+        border-radius: 2em;
+        transition: transform .5s ease-in-out;
+    }
+
+    .product-card img:hover {
+        transform: scale(1.05);
+    }
+
+    .product-card #product-name {
+        color: orange;
+        font-size: 1.5em;
+        font-weight: 900;
+    }
+
+    .product-card #product-info {
+        transform: translateY(-40px);
+        text-align: center;
+        padding: 1em;
+        line-height: 1.8em;
+        font-family: "Fira Code";
+        font-size: 1em;
+    }
+
+    .product-card #product-info a {
+        color: var(--tertiary-color);
+        text-decoration: none;
+        transition: color .5s ease;
+    }
+
+    .product-card #product-info a:hover {
+        color: green;
+    }
+</style>
