@@ -81,13 +81,24 @@
         position: absolute;
         right: 1em;
         top: 1em;
+        z-index: 10;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--tertiary-background);
+        padding: 5px;
+        border-radius: 50%;
+        transition: all .7s linear;
+    }
+
+    .collapse:hover{
+        background: green;
+        color: white;
     }
 
     .collapse div {
-        width: 20px;
-        height: 20px; 
-        display: flex;
-        justify-content: center;
         align-items: center;
         font-weight: bolder;
         font-size: 1.15srem;
@@ -108,7 +119,7 @@
     .navbar-container .links-container div {
         width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
         height: 50px;
         overflow: hidden;

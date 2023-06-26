@@ -4,7 +4,7 @@ export const manifest = {
 	assets: new Set(["app-icons/instagram.svg","app-icons/snapchat.svg","app-icons/tiktok.svg","app-icons/whatsapp.svg","favicon.png","yoo-products/Aesthetics.jpg","yoo-products/batiks.jpg","yoo-products/beads.jpg","yoo-products/camera.jpg","yoo-products/drawings.jpg","yoo-products/embroidery.jpg","yoo-products/graphic.jpg","yoo-products/painting.jpg","yoo-products/paws.png","yoo-products/pottery.png","yoo-products/resin.jpg","yoo-products/scribblings.png","yoo-products/sculpture.jpg","yoo-products/stitches.jpg","yoo-products/tie-dye.jpg"]),
 	mimeTypes: {".svg":"image/svg+xml",".png":"image/png",".jpg":"image/jpeg"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.4d3bdff0.js","app":"_app/immutable/entry/app.279a5c80.js","imports":["_app/immutable/entry/start.4d3bdff0.js","_app/immutable/chunks/scheduler.74c35085.js","_app/immutable/chunks/singletons.440583d3.js","_app/immutable/entry/app.279a5c80.js","_app/immutable/chunks/scheduler.74c35085.js","_app/immutable/chunks/index.c5889ac7.js"],"stylesheets":[],"fonts":[]},
+		client: {"start":"_app/immutable/entry/start.dea9de3f.js","app":"_app/immutable/entry/app.6674da78.js","imports":["_app/immutable/entry/start.dea9de3f.js","_app/immutable/chunks/scheduler.74c35085.js","_app/immutable/chunks/singletons.0e90dfd9.js","_app/immutable/entry/app.6674da78.js","_app/immutable/chunks/scheduler.74c35085.js","_app/immutable/chunks/index.c5889ac7.js"],"stylesheets":[],"fonts":[]},
 		nodes: [
 			() => import('../output/server/nodes/0.js'),
 			() => import('../output/server/nodes/1.js'),
