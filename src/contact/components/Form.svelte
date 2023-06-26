@@ -66,7 +66,7 @@
         box-sizing: border-box;
     }
 
-    .form-container form input:placeholder {
+    .form-container form input::placeholder {
         color: var(--tertiary-color);
     }
 
