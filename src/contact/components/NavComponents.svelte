@@ -120,7 +120,7 @@
         position: relative;
         text-decoration: none;
         color: inherit;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         letter-spacing: 2px;
         align-self: center;
         transition: color .5s ease;

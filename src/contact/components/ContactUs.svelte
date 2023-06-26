@@ -10,6 +10,6 @@
         color: var(--tertiary-color);
         font-weight: 900;
         font-size: crimson;
-        font-family: "Fira Code";
+        font-family: "Muktha";
     }
 </style>

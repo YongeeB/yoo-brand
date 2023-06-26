@@ -23,13 +23,12 @@
 <style>
     .links-container {
         flex-grow: 2;
-        margin: 10px;
     }
 
     .links-container nav {
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
 
@@ -38,7 +37,7 @@
         text-decoration: none;
         color: inherit;
         transition: color .5s ease-in-out;
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .links-container nav a:hover {
@@ -47,7 +46,7 @@
 
     .links-container nav #active {
         padding: 5px;
-        background-color: orange;
+        background-color: var(--tertiary-color);
         color: black;
         font-weight: 500;
         border-radius: 5px;

@@ -56,14 +56,15 @@
         caret-color: var(--tertiary-color);
         width: 80%;
         max-width: 250px;
-        height: 40px;
+        height: 50px;
         margin-bottom: 2em;
-        border-radius: 5px;
-        padding: 1em;
+        border-radius: 1em;
+        padding: 10px;
         box-sizing: border-box;
         font-size: 16px;
-        font-weight: bolder;
+        font-weight: bold;
         box-sizing: border-box;
+        font-family: "Fira Code";
     }
 
     .form-container form input:nth-child(1){
@@ -78,10 +79,22 @@
     .form-container form button {
         border: none;
         padding: 8px 1em;
-        border-radius: 1em;
+        border-radius: 10px;
         color: black;
         background-color: var(--tertiary-color);
         font-weight: bolder;
         font-size: 0.9em;
+        font-family: "Fira Code";
+        transition: all .5s linear;
+    }
+
+    .form-container form button:hover{
+        background-color: green;
+    }
+
+    @media(orientation: landscape){
+        .center-box {
+            transform: translateY(2em);
+        }
     }
 </style>

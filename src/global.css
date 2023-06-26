@@ -5,8 +5,8 @@
   --secondary-color: #fff;
   --primary-background: #fff;
   --secondary-background: #000;
-  --tertiary-color: orange;
-  --tertiary-background: orange;
+  --tertiary-color: crimson;
+  --tertiary-background: crimson;
 }
 
 :global(:root[data-theme="dark"]) {

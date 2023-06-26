@@ -15,8 +15,12 @@
 			"dest": "/fn-0"
 		},
 		{
-			"src": "^/contact/?(?:/__data.json)?$",
+			"src": "^/contact copy/?(?:/__data.json)?$",
 			"dest": "/fn-1"
+		},
+		{
+			"src": "^/contact/?(?:/__data.json)?$",
+			"dest": "/fn-0"
 		},
 		{
 			"src": "/.*",
