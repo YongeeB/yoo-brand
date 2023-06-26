@@ -731,7 +731,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.e9fcade8.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/index.c5889ac7.js", "_app/immutable/chunks/singletons.324bb77d.js"];
+    imports2 = ["_app/immutable/nodes/1.41721ee3.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/index.c5889ac7.js", "_app/immutable/chunks/singletons.6bda79b4.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1090,7 +1090,7 @@ var init_page_svelte = __esm({
       return `  <div class="theme">${validate_component(Icon, "Icon").$$render($$result, { data: moonO, scale, flip: "horizontal" }, {}, {})} </div>`;
     });
     css$3 = {
-      code: 'header.svelte-18jtr96 h2.svelte-18jtr96{text-align:center;color:transparent;font-weight:900;font-family:"Allura"}#dark.svelte-18jtr96.svelte-18jtr96{background:linear-gradient(var(--primary-background), orange, var(--primary-background));-webkit-background-clip:text;background-clip:text}#light.svelte-18jtr96.svelte-18jtr96{background:linear-gradient(var(--secondary-background), orange, var(--secondary-background));-webkit-background-clip:text;background-clip:text}@media(max-width: 650px){h2.svelte-18jtr96.svelte-18jtr96{display:none}.links-container{transform:translateX(-32px)}}',
+      code: 'header.svelte-1w3cm5m h2.svelte-1w3cm5m{text-align:center;color:transparent;font-weight:900;font-family:"Allura"}#dark.svelte-1w3cm5m.svelte-1w3cm5m{background:linear-gradient(var(--primary-background), orange, var(--primary-background));-webkit-background-clip:text;background-clip:text}#light.svelte-1w3cm5m.svelte-1w3cm5m{background:linear-gradient(var(--secondary-background), orange, var(--secondary-background));-webkit-background-clip:text;background-clip:text}@media(max-width: 650px){h2.svelte-1w3cm5m.svelte-1w3cm5m{display:none}.links-container{transform:translateX(-1em)}}',
       map: null
     };
     Name = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1098,7 +1098,7 @@ var init_page_svelte = __esm({
       if ($$props.currentTheme === void 0 && $$bindings.currentTheme && currentTheme !== void 0)
         $$bindings.currentTheme(currentTheme);
       $$result.css.add(css$3);
-      return `<header class="svelte-18jtr96"><h2${add_attribute("id", currentTheme && currentTheme, 0)} class="svelte-18jtr96">Yoo
+      return `<header class="svelte-1w3cm5m"><h2${add_attribute("id", currentTheme && currentTheme, 0)} class="svelte-1w3cm5m">Yoo
         <br>
         Brands</h2> </header>`;
     });
@@ -1287,8 +1287,8 @@ var init__4 = __esm({
     index4 = 3;
     component4 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id3 = "src/routes/+page.js";
-    imports4 = ["_app/immutable/nodes/3.e7f68112.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/index.c5889ac7.js", "_app/immutable/chunks/Theme.9aa46bd8.js"];
-    stylesheets4 = ["_app/immutable/assets/3.f7865ccb.css", "_app/immutable/assets/Theme.5f36dade.css"];
+    imports4 = ["_app/immutable/nodes/3.aec9ec1a.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/index.c5889ac7.js", "_app/immutable/chunks/Theme.9aa46bd8.js"];
+    stylesheets4 = ["_app/immutable/assets/3.c70463e8.css", "_app/immutable/assets/Theme.5f36dade.css"];
     fonts4 = [];
   }
 });
@@ -1595,7 +1595,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "18xn3iv"
+  version_hash: "1c9q6nv"
 };
 function get_hooks() {
   return {};
@@ -4898,7 +4898,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.png", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg"]),
   mimeTypes: { ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" },
   _: {
-    client: { "start": "_app/immutable/entry/start.6135d533.js", "app": "_app/immutable/entry/app.6445b79c.js", "imports": ["_app/immutable/entry/start.6135d533.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/singletons.324bb77d.js", "_app/immutable/entry/app.6445b79c.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/index.c5889ac7.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.8c3a898b.js", "app": "_app/immutable/entry/app.173c8544.js", "imports": ["_app/immutable/entry/start.8c3a898b.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/singletons.6bda79b4.js", "_app/immutable/entry/app.173c8544.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/index.c5889ac7.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

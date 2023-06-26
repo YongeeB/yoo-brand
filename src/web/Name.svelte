@@ -37,7 +37,7 @@
             display: none;
         }
         :global(.links-container){
-            transform: translateX(-32px);
+            transform: translateX(-1em);
         }
 
     }
