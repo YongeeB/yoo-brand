@@ -78,7 +78,7 @@
     .form-container form button {
         border: none;
         padding: 8px 1em;
-        border-radius: 5px;
+        border-radius: 1em;
         color: black;
         background-color: var(--tertiary-color);
         font-weight: bolder;

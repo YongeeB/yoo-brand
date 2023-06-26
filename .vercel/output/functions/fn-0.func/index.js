@@ -731,7 +731,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.c3b6e420.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js", "_app/immutable/chunks/singletons.d1adcfb0.js"];
+    imports2 = ["_app/immutable/nodes/1.2517a305.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js", "_app/immutable/chunks/singletons.9dfb9b53.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1105,7 +1105,7 @@ var init_page_svelte = __esm({
       return `<div${add_attribute("class", rootClass, 0)} style="${"height: " + escape(rootInitialHeight, true)}">${`${placeholder ? `${validate_component(Placeholder, "Placeholder").$$render($$result, { placeholder, placeholderProps }, {}, {})}` : ``}`} </div>`;
     });
     css$2 = {
-      code: '.product-card.svelte-1duwpaj.svelte-1duwpaj{display:flex;flex-direction:column;align-items:center}.lazy-container{width:100%}#png.svelte-1duwpaj.svelte-1duwpaj{background-color:white}.product-card.svelte-1duwpaj .image-container.svelte-1duwpaj{width:100%;display:flex;justify-content:center}.product-card.svelte-1duwpaj img.svelte-1duwpaj{margin:0 auto;width:80%;max-width:350px;height:300px;border-radius:2em;transition:transform .5s ease-in-out}.product-card.svelte-1duwpaj img.svelte-1duwpaj:hover{transform:scale(1.05)}.product-card.svelte-1duwpaj #product-name.svelte-1duwpaj{color:orange;font-size:1.5em;font-weight:900}.product-card.svelte-1duwpaj #product-info.svelte-1duwpaj{transform:translateY(-40px);text-align:center;padding:1em;line-height:1.8em;font-family:"Fira Code";font-size:1em}.product-card.svelte-1duwpaj #product-info a.svelte-1duwpaj{color:var(--tertiary-color);text-decoration:none;transition:color .5s ease}.product-card.svelte-1duwpaj #product-info a.svelte-1duwpaj:hover{color:green}',
+      code: '.product-card.svelte-1di6cng.svelte-1di6cng{display:flex;flex-direction:column;align-items:center}.lazy-container{width:100%}#png.svelte-1di6cng.svelte-1di6cng{background-color:white}.product-card.svelte-1di6cng .image-container.svelte-1di6cng{width:100%;display:flex;justify-content:center}.product-card.svelte-1di6cng img.svelte-1di6cng{margin:0 auto;width:80%;max-width:350px;height:300px;border-radius:2em;transition:transform .5s ease-in-out}.product-card.svelte-1di6cng img.svelte-1di6cng:hover{transform:scale(1.05)}.product-card.svelte-1di6cng #product-name.svelte-1di6cng{color:orange;font-size:1.5em;font-weight:900}.product-card.svelte-1di6cng #product-info.svelte-1di6cng{transform:translateY(-40px);text-align:center;padding:1em;line-height:1.8em;font-family:"Fira Code";font-size:1em;padding:0 10px}.product-card.svelte-1di6cng #product-info a.svelte-1di6cng{color:var(--tertiary-color);text-decoration:none;transition:color .5s ease}.product-card.svelte-1di6cng #product-info a.svelte-1di6cng:hover{color:green}',
       map: null
     };
     Product = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1114,11 +1114,11 @@ var init_page_svelte = __esm({
       if ($$props.product === void 0 && $$bindings.product && product !== void 0)
         $$bindings.product(product);
       $$result.css.add(css$2);
-      return `<div class="product-card svelte-1duwpaj">${validate_component(Src, "Lazy").$$render($$result, { class: "lazy-container" }, {}, {
+      return `<div class="product-card svelte-1di6cng">${validate_component(Src, "Lazy").$$render($$result, { class: "lazy-container" }, {}, {
         default: () => {
-          return `<div class="image-container svelte-1duwpaj"><img${add_attribute("src", product.imgSrc, 0)}${add_attribute("alt", product.name, 0)}${add_attribute("id", png == "png" && png, 0)} class="svelte-1duwpaj"></div>`;
+          return `<div class="image-container svelte-1di6cng"><img${add_attribute("src", product.imgSrc, 0)}${add_attribute("alt", product.name, 0)}${add_attribute("id", png == "png" && png, 0)} class="svelte-1di6cng"></div>`;
         }
-      })} <p id="product-name" class="svelte-1duwpaj">${escape(product.name)}</p> <p id="product-info" class="svelte-1duwpaj">${escape(product.info.substr(0, 300) + "...")} <a href="/" class="svelte-1duwpaj" data-svelte-h="svelte-19zshen">see more</a></p> </div>`;
+      })} <p id="product-name" class="svelte-1di6cng">${escape(product.name)}</p> <p id="product-info" class="svelte-1di6cng">${escape(product.info.substr(0, 300) + "...")} <a href="/" class="svelte-1di6cng" data-svelte-h="svelte-19zshen">see more</a></p> </div>`;
     });
     PRODUCTS = [
       {
@@ -1247,8 +1247,8 @@ var init__3 = __esm({
     index3 = 2;
     component3 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id2 = "src/routes/+page.js";
-    imports3 = ["_app/immutable/nodes/2.a98886ff.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js", "_app/immutable/chunks/Theme.7b73d2f6.js"];
-    stylesheets3 = ["_app/immutable/assets/2.31fbdd63.css", "_app/immutable/assets/Theme.4e7c58da.css"];
+    imports3 = ["_app/immutable/nodes/2.bb55f8e2.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js", "_app/immutable/chunks/Theme.7b73d2f6.js"];
+    stylesheets3 = ["_app/immutable/assets/2.40e29a46.css", "_app/immutable/assets/Theme.4e7c58da.css"];
     fonts3 = [];
   }
 });
@@ -1414,7 +1414,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "ka0bkt"
+  version_hash: "edpjkv"
 };
 function get_hooks() {
   return {};
@@ -4717,7 +4717,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.png", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg"]),
   mimeTypes: { ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" },
   _: {
-    client: { "start": "_app/immutable/entry/start.60e0d8d2.js", "app": "_app/immutable/entry/app.4345ccd1.js", "imports": ["_app/immutable/entry/start.60e0d8d2.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/singletons.d1adcfb0.js", "_app/immutable/entry/app.4345ccd1.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.45b4e211.js", "app": "_app/immutable/entry/app.295ee7e7.js", "imports": ["_app/immutable/entry/start.45b4e211.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/singletons.9dfb9b53.js", "_app/immutable/entry/app.295ee7e7.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

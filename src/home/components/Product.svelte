@@ -73,6 +73,7 @@
         line-height: 1.8em;
         font-family: "Fira Code";
         font-size: 1em;
+        padding: 0 10px;
     }
 
     .product-card #product-info a {
