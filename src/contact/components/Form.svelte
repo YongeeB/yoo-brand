@@ -66,10 +66,6 @@
         box-sizing: border-box;
     }
 
-    .form-container form input::placeholder {
-        color: var(--tertiary-color);
-    }
-
     .form-container form input:nth-child(1){
         text-transform: capitalize;
     }
@@ -86,5 +82,6 @@
         color: black;
         background-color: var(--tertiary-color);
         font-weight: bolder;
+        font-size: 0.9em;
     }
 </style>

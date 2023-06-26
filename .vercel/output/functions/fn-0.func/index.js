@@ -731,7 +731,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.4072ba43.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js", "_app/immutable/chunks/singletons.4f54dce5.js"];
+    imports2 = ["_app/immutable/nodes/1.c3b6e420.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js", "_app/immutable/chunks/singletons.d1adcfb0.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1414,7 +1414,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "vdhhrs"
+  version_hash: "ka0bkt"
 };
 function get_hooks() {
   return {};
@@ -4717,7 +4717,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.png", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg"]),
   mimeTypes: { ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" },
   _: {
-    client: { "start": "_app/immutable/entry/start.a8774e10.js", "app": "_app/immutable/entry/app.040ab211.js", "imports": ["_app/immutable/entry/start.a8774e10.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/singletons.4f54dce5.js", "_app/immutable/entry/app.040ab211.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.60e0d8d2.js", "app": "_app/immutable/entry/app.4345ccd1.js", "imports": ["_app/immutable/entry/start.60e0d8d2.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/singletons.d1adcfb0.js", "_app/immutable/entry/app.4345ccd1.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
