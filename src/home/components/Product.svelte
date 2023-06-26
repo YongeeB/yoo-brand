@@ -61,7 +61,7 @@
     }
 
     .product-card #product-name {
-        color: orange;
+        color: var(--tertiary-color);
         font-size: 1.5em;
         font-weight: 900;
     }
@@ -69,11 +69,10 @@
     .product-card #product-info {
         transform: translateY(-40px);
         text-align: center;
-        padding: 1em;
         line-height: 1.8em;
         font-family: "Fira Code";
         font-size: 1em;
-        padding: 0 10px;
+        padding: 0 2em;
     }
 
     .product-card #product-info a {
