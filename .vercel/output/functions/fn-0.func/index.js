@@ -731,7 +731,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.8a0840be.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/index.c5889ac7.js", "_app/immutable/chunks/singletons.3cccd18b.js"];
+    imports2 = ["_app/immutable/nodes/1.e9fcade8.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/index.c5889ac7.js", "_app/immutable/chunks/singletons.324bb77d.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1069,16 +1069,16 @@ var init_page_svelte = __esm({
     init_ssr();
     init_Theme_svelte_svelte_type_style_lang();
     css$5 = {
-      code: ".links-container.svelte-acsp8o.svelte-acsp8o{flex-grow:2}.links-container.svelte-acsp8o nav.svelte-acsp8o{width:100%;display:flex;justify-content:space-around;align-items:center}.links-container.svelte-acsp8o nav a.svelte-acsp8o{font-weight:bold;text-decoration:none;color:inherit;transition:color .5s ease-in-out;font-size:12px}.links-container.svelte-acsp8o nav a.svelte-acsp8o:hover{color:var(--tertiary-color)}.links-container.svelte-acsp8o nav #active.svelte-acsp8o{padding:5px;background-color:var(--tertiary-color);color:black;font-weight:500;border-radius:5px}",
+      code: ".links-container.svelte-1nyljye.svelte-1nyljye{flex-grow:2}.links-container.svelte-1nyljye nav.svelte-1nyljye{width:100%;display:flex;justify-content:space-around;align-items:center}.links-container.svelte-1nyljye nav a.svelte-1nyljye{font-weight:900;text-decoration:none;color:inherit;transition:color .5s ease-in-out;font-size:12px}.links-container.svelte-1nyljye nav a.svelte-1nyljye:hover{color:var(--tertiary-color)}.links-container.svelte-1nyljye nav #active.svelte-1nyljye{padding:5px;background-color:var(--tertiary-color);color:black;font-weight:500;border-radius:5px}",
       map: null
     };
     Links = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let pathName;
       $$result.css.add(css$5);
-      return `<div class="links-container svelte-acsp8o"><nav class="svelte-acsp8o"><a href="/"${add_attribute("id", pathName == "/", 0)} class="svelte-acsp8o">Home</a> <a href="/products"${add_attribute("id", pathName == "/products", 0)} class="svelte-acsp8o">Products</a> <a href="/store"${add_attribute("id", pathName == "/store", 0)} class="svelte-acsp8o">Store</a> <a href="/contact"${add_attribute("id", pathName == "/contact", 0)} class="svelte-acsp8o">Contact</a></nav> </div>`;
+      return `<div class="links-container svelte-1nyljye"><nav class="svelte-1nyljye"><a href="/"${add_attribute("id", pathName == "/", 0)} class="svelte-1nyljye">Home</a> <a href="/products"${add_attribute("id", pathName == "/products", 0)} class="svelte-1nyljye">Products</a> <a href="/store"${add_attribute("id", pathName == "/store", 0)} class="svelte-1nyljye">Store</a> <a href="/contact"${add_attribute("id", pathName == "/contact", 0)} class="svelte-1nyljye">Contact</a></nav> </div>`;
     });
     css$4 = {
-      code: '.theme.svelte-phbixg{margin-left:auto}:root[data-theme="dark"]{background-color:var(--secondary-background);color:var(--secondary-color)}:root[data-theme="light"]{background-color:var(--primary-background);color:var(--primary-color)}',
+      code: ':root[data-theme="dark"]{background-color:var(--secondary-background);color:var(--secondary-color)}:root[data-theme="light"]{background-color:var(--primary-background);color:var(--primary-color)}',
       map: null
     };
     Theme = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1087,10 +1087,10 @@ var init_page_svelte = __esm({
       if ($$props.scale === void 0 && $$bindings.scale && scale !== void 0)
         $$bindings.scale(scale);
       $$result.css.add(css$4);
-      return `  <div class="theme svelte-phbixg">${validate_component(Icon, "Icon").$$render($$result, { data: moonO, scale, flip: "horizontal" }, {}, {})} </div>`;
+      return `  <div class="theme">${validate_component(Icon, "Icon").$$render($$result, { data: moonO, scale, flip: "horizontal" }, {}, {})} </div>`;
     });
     css$3 = {
-      code: 'header.svelte-1oy9lf5 h2.svelte-1oy9lf5{text-align:center;color:transparent;font-weight:900;font-family:"Allura"}#dark.svelte-1oy9lf5.svelte-1oy9lf5{background:linear-gradient(var(--primary-background), orange, var(--primary-background));-webkit-background-clip:text;background-clip:text}#light.svelte-1oy9lf5.svelte-1oy9lf5{background:linear-gradient(var(--secondary-background), orange, var(--secondary-background));-webkit-background-clip:text;background-clip:text}@media(max-width: 650px){h2.svelte-1oy9lf5.svelte-1oy9lf5{display:none}}',
+      code: 'header.svelte-18jtr96 h2.svelte-18jtr96{text-align:center;color:transparent;font-weight:900;font-family:"Allura"}#dark.svelte-18jtr96.svelte-18jtr96{background:linear-gradient(var(--primary-background), orange, var(--primary-background));-webkit-background-clip:text;background-clip:text}#light.svelte-18jtr96.svelte-18jtr96{background:linear-gradient(var(--secondary-background), orange, var(--secondary-background));-webkit-background-clip:text;background-clip:text}@media(max-width: 650px){h2.svelte-18jtr96.svelte-18jtr96{display:none}.links-container{transform:translateX(-32px)}}',
       map: null
     };
     Name = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1098,7 +1098,7 @@ var init_page_svelte = __esm({
       if ($$props.currentTheme === void 0 && $$bindings.currentTheme && currentTheme !== void 0)
         $$bindings.currentTheme(currentTheme);
       $$result.css.add(css$3);
-      return `<header class="svelte-1oy9lf5"><h2${add_attribute("id", currentTheme && currentTheme, 0)} class="svelte-1oy9lf5">Yoo
+      return `<header class="svelte-18jtr96"><h2${add_attribute("id", currentTheme && currentTheme, 0)} class="svelte-18jtr96">Yoo
         <br>
         Brands</h2> </header>`;
     });
@@ -1287,8 +1287,8 @@ var init__4 = __esm({
     index4 = 3;
     component4 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id3 = "src/routes/+page.js";
-    imports4 = ["_app/immutable/nodes/3.d66398aa.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/index.c5889ac7.js", "_app/immutable/chunks/Theme.8fd90d30.js"];
-    stylesheets4 = ["_app/immutable/assets/3.203b750b.css", "_app/immutable/assets/Theme.971c833a.css"];
+    imports4 = ["_app/immutable/nodes/3.e7f68112.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/index.c5889ac7.js", "_app/immutable/chunks/Theme.9aa46bd8.js"];
+    stylesheets4 = ["_app/immutable/assets/3.f7865ccb.css", "_app/immutable/assets/Theme.5f36dade.css"];
     fonts4 = [];
   }
 });
@@ -1330,7 +1330,7 @@ var init_Layout = __esm({
       return `<div class="visit-container svelte-1ysfpew" data-svelte-h="svelte-1ij9geq"><h3>visit us on</h3> <div class="icons-box svelte-1ysfpew"><a href="https://instagram.com/yooaesthetics?igshid=MzNINGNkZWQ4Mg=="><img src="/app-icons/instagram.svg" alt="instagram" class="svelte-1ysfpew"></a> <a href="/"><img src="/app-icons/snapchat.svg" alt="snapchat" class="svelte-1ysfpew"></a> <a href="https://www.tiktok.com/@yoo_gallery?_t=8dD4UoGxDQT&_r=1"><img src="/app-icons/tiktok.svg" alt="tiktok" class="svelte-1ysfpew"></a> <a href="/"><img src="/app-icons/whatsapp.svg" alt="whatsapp" class="svelte-1ysfpew"></a></div> </div>`;
     });
     css$13 = {
-      code: '#opaque.svelte-1c4l5rj.svelte-1c4l5rj{position:relative;opacity:40%;z-index:-2}.center-box.svelte-1c4l5rj.svelte-1c4l5rj{position:absolute;inset:0;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center}.form-container.svelte-1c4l5rj.svelte-1c4l5rj{width:100%}.form-container.svelte-1c4l5rj form.svelte-1c4l5rj{width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}.form-container.svelte-1c4l5rj form input.svelte-1c4l5rj{caret-color:var(--tertiary-color);width:80%;max-width:250px;height:50px;margin-bottom:2em;border-radius:1em;padding:10px;box-sizing:border-box;font-size:16px;font-weight:bold;box-sizing:border-box;font-family:"Fira Code"}.form-container.svelte-1c4l5rj form input.svelte-1c4l5rj:nth-child(1){text-transform:capitalize}.form-container.svelte-1c4l5rj form input.svelte-1c4l5rj:focus{outline:none;border:1px solid var(--tertiary-color)}.form-container.svelte-1c4l5rj form button.svelte-1c4l5rj{border:none;padding:8px 1em;border-radius:10px;color:black;background-color:var(--tertiary-color);font-weight:bolder;font-size:0.9em;font-family:"Fira Code";transition:all .5s linear}.form-container.svelte-1c4l5rj form button.svelte-1c4l5rj:hover{background-color:green}@media(orientation: landscape){.center-box.svelte-1c4l5rj.svelte-1c4l5rj{transform:translateY(2em)}}',
+      code: '#opaque.svelte-11dv1dp.svelte-11dv1dp{position:relative;opacity:40%;z-index:-2}.center-box.svelte-11dv1dp.svelte-11dv1dp{position:absolute;inset:0;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center}.form-container.svelte-11dv1dp.svelte-11dv1dp{width:100%}.form-container.svelte-11dv1dp form.svelte-11dv1dp{width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}.form-container.svelte-11dv1dp form input.svelte-11dv1dp{border:1px solid var(--tertiary-color);caret-color:var(--tertiary-color);width:80%;max-width:250px;height:50px;margin-bottom:2em;border-radius:1em;padding:10px;box-sizing:border-box;font-size:16px;font-weight:bold;box-sizing:border-box;font-family:"Fira Code"}.form-container.svelte-11dv1dp form input.svelte-11dv1dp:nth-child(1){text-transform:capitalize}.form-container.svelte-11dv1dp form input.svelte-11dv1dp:focus{outline:none;border:1px solid var(green)}.form-container.svelte-11dv1dp form button.svelte-11dv1dp{border:none;padding:8px 1em;border-radius:10px;color:black;background-color:var(--tertiary-color);font-weight:bolder;font-size:0.9em;font-family:"Fira Code";transition:all .5s linear}.form-container.svelte-11dv1dp form button.svelte-11dv1dp:hover{background-color:green}@media(orientation: landscape){.center-box.svelte-11dv1dp.svelte-11dv1dp{transform:translateY(2em)}}',
       map: null
     };
     Form = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1339,16 +1339,16 @@ var init_Layout = __esm({
       if ($$props.collapse === void 0 && $$bindings.collapse && collapse !== void 0)
         $$bindings.collapse(collapse);
       $$result.css.add(css$13);
-      return `<div class="center-box svelte-1c4l5rj"${add_attribute("id", !collapse && "opaque", 0)}>${validate_component(ContactUs, "ContactUs").$$render($$result, {}, {}, {})} <div class="form-container svelte-1c4l5rj"><form class="svelte-1c4l5rj"><input type="text" placeholder="Full Name" class="svelte-1c4l5rj"${add_attribute("this", inputRef, 0)}> <input type="text" placeholder="Email" class="svelte-1c4l5rj"> <input type="text" placeholder="Message" class="svelte-1c4l5rj"> <button class="svelte-1c4l5rj" data-svelte-h="svelte-11upy20">send</button></form></div> ${validate_component(Visit, "Visit").$$render($$result, {}, {}, {})} </div>`;
+      return `<div class="center-box svelte-11dv1dp"${add_attribute("id", !collapse && "opaque", 0)}>${validate_component(ContactUs, "ContactUs").$$render($$result, {}, {}, {})} <div class="form-container svelte-11dv1dp"><form class="svelte-11dv1dp"><input type="text" placeholder="Full Name" class="svelte-11dv1dp"${add_attribute("this", inputRef, 0)}> <input type="text" placeholder="Email" class="svelte-11dv1dp"> <input type="text" placeholder="Message" class="svelte-11dv1dp"> <button class="svelte-11dv1dp" data-svelte-h="svelte-11upy20">send</button></form></div> ${validate_component(Visit, "Visit").$$render($$result, {}, {}, {})} </div>`;
     });
     css3 = {
-      code: ".phone-box.svelte-j2vol0{position:absolute;z-index:10;right:1em;top:1em;width:40px;height:40px;border-radius:50%;display:flex;justify-content:center;align-items:center;background:#000}#phone-icon{color:var(--secondary-color)}#navicon{position:relative;z-index:2;transition:color .5s linear}#navicon:hover{color:var(--tertiary-color)}",
+      code: ".phone-box.svelte-7tfr1i{position:absolute;z-index:10;right:1em;bottom:1em;width:40px;height:40px;border-radius:50%;display:flex;justify-content:center;align-items:center;background:#000}#phone-icon{color:var(--secondary-color)}#navicon{position:relative;z-index:2;transition:color .5s linear}#navicon:hover{color:var(--tertiary-color)}",
       map: null
     };
     _Layout_2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let collapse = true;
       $$result.css.add(css3);
-      return `<a href="tel: +2348171983663"><div class="phone-box svelte-j2vol0">${validate_component(Icon, "Icon").$$render(
+      return `<a href="tel: +2348171983663"><div class="phone-box svelte-7tfr1i">${validate_component(Icon, "Icon").$$render(
         $$result,
         {
           data: phone,
@@ -1401,8 +1401,8 @@ var init__5 = __esm({
     index5 = 4;
     component5 = async () => (await Promise.resolve().then(() => (init_page_svelte2(), page_svelte_exports2))).default;
     universal_id4 = "src/routes/contact/+page.js";
-    imports5 = ["_app/immutable/nodes/4.f52f2aea.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/index.c5889ac7.js", "_app/immutable/chunks/__Layout__.222e2e0c.js", "_app/immutable/chunks/Theme.8fd90d30.js"];
-    stylesheets5 = ["_app/immutable/assets/__Layout__.0fe6c386.css", "_app/immutable/assets/Theme.971c833a.css"];
+    imports5 = ["_app/immutable/nodes/4.76eeee4f.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/index.c5889ac7.js", "_app/immutable/chunks/__Layout__.63643c4b.js", "_app/immutable/chunks/Theme.9aa46bd8.js"];
+    stylesheets5 = ["_app/immutable/assets/__Layout__.794230b4.css", "_app/immutable/assets/Theme.5f36dade.css"];
     fonts5 = [];
   }
 });
@@ -1595,7 +1595,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "jpcmc6"
+  version_hash: "18xn3iv"
 };
 function get_hooks() {
   return {};
@@ -4898,7 +4898,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.png", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg"]),
   mimeTypes: { ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" },
   _: {
-    client: { "start": "_app/immutable/entry/start.48e82344.js", "app": "_app/immutable/entry/app.cdff05b2.js", "imports": ["_app/immutable/entry/start.48e82344.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/singletons.3cccd18b.js", "_app/immutable/entry/app.cdff05b2.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/index.c5889ac7.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.6135d533.js", "app": "_app/immutable/entry/app.6445b79c.js", "imports": ["_app/immutable/entry/start.6135d533.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/singletons.324bb77d.js", "_app/immutable/entry/app.6445b79c.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/index.c5889ac7.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

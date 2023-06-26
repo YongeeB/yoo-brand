@@ -33,7 +33,7 @@
     }
 
     .links-container nav a {
-        font-weight: bold;
+        font-weight: 900;
         text-decoration: none;
         color: inherit;
         transition: color .5s ease-in-out;

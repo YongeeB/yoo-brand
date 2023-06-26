@@ -53,6 +53,7 @@
     }
 
     .form-container form input {
+        border: 1px solid var(--tertiary-color);
         caret-color: var(--tertiary-color);
         width: 80%;
         max-width: 250px;
@@ -73,7 +74,7 @@
 
     .form-container form input:focus {
         outline: none;
-        border: 1px solid var(--tertiary-color);
+        border: 1px solid var(green);
     }
 
     .form-container form button {

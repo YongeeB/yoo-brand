@@ -46,7 +46,7 @@
         position: absolute;
         z-index: 10;
         right: 1em;
-        top: 1em;
+        bottom: 1em;
         width: 40px;
         height: 40px;
         border-radius: 50%;

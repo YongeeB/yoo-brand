@@ -36,5 +36,9 @@
         h2 {
             display: none;
         }
+        :global(.links-container){
+            transform: translateX(-32px);
+        }
+
     }
 </style>

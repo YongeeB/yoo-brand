@@ -39,9 +39,6 @@
 </div>
 
 <style>
-    .theme {
-        margin-left: auto;
-    }
     :global(:root[data-theme="dark"]) {
   background-color: var(--secondary-background);
   color: var(--secondary-color);
