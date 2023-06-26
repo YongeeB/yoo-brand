@@ -31,7 +31,7 @@
     <!-- svelte-ignore a11y-click-events-have-key-events -->
     <!-- svelte-ignore a11y-no-static-element-interactions -->
     <div class="collapse">
-        <div on:click={collapse}>X</div>
+        <div on:click={collapse}>x</div>
     </div>
     <div class="links-container">
         <div id={pathName == "/" && "active"}>
@@ -79,7 +79,7 @@
 
     .collapse {
         position: absolute;
-        right: 1em;
+        right: 5px;
         top: 5px;
         z-index: 10;
         width: 15px;
@@ -101,7 +101,7 @@
     .collapse div {
         align-items: center;
         font-weight: bolder;
-        font-size: 1.15srem;
+        font-size: 12px;
         font-family: "Fira Code";
         cursor: pointer;
     }

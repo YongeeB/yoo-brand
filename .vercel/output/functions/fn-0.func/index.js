@@ -731,7 +731,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.0db80758.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/index.c5889ac7.js", "_app/immutable/chunks/singletons.ce6023c5.js"];
+    imports2 = ["_app/immutable/nodes/1.a1b6e392.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/index.c5889ac7.js", "_app/immutable/chunks/singletons.d4fcb7e8.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1401,8 +1401,8 @@ var init__5 = __esm({
     index5 = 4;
     component5 = async () => (await Promise.resolve().then(() => (init_page_svelte2(), page_svelte_exports2))).default;
     universal_id4 = "src/routes/contact/+page.js";
-    imports5 = ["_app/immutable/nodes/4.55c406ff.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/index.c5889ac7.js", "_app/immutable/chunks/__Layout__.24170ef6.js", "_app/immutable/chunks/Theme.9aa46bd8.js"];
-    stylesheets5 = ["_app/immutable/assets/__Layout__.a290937a.css", "_app/immutable/assets/Theme.5f36dade.css"];
+    imports5 = ["_app/immutable/nodes/4.72aaa79d.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/index.c5889ac7.js", "_app/immutable/chunks/__Layout__.b53cea20.js", "_app/immutable/chunks/Theme.9aa46bd8.js"];
+    stylesheets5 = ["_app/immutable/assets/__Layout__.0ede9036.css", "_app/immutable/assets/Theme.5f36dade.css"];
     fonts5 = [];
   }
 });
@@ -1595,7 +1595,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "vbfgc8"
+  version_hash: "inko8i"
 };
 function get_hooks() {
   return {};
@@ -4898,7 +4898,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.png", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg"]),
   mimeTypes: { ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" },
   _: {
-    client: { "start": "_app/immutable/entry/start.82dbdf93.js", "app": "_app/immutable/entry/app.3a612ed6.js", "imports": ["_app/immutable/entry/start.82dbdf93.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/singletons.ce6023c5.js", "_app/immutable/entry/app.3a612ed6.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/index.c5889ac7.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.05c0ff8a.js", "app": "_app/immutable/entry/app.776936e9.js", "imports": ["_app/immutable/entry/start.05c0ff8a.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/singletons.d4fcb7e8.js", "_app/immutable/entry/app.776936e9.js", "_app/immutable/chunks/scheduler.74c35085.js", "_app/immutable/chunks/index.c5889ac7.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
