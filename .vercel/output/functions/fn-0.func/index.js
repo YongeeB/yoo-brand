@@ -731,7 +731,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.dd0d8284.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js", "_app/immutable/chunks/singletons.e9355012.js"];
+    imports2 = ["_app/immutable/nodes/1.8b91c08c.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js", "_app/immutable/chunks/singletons.73f39465.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1029,13 +1029,13 @@ var init_page_svelte = __esm({
     init_ssr();
     init_Theme_svelte_svelte_type_style_lang();
     css$5 = {
-      code: ".links-container.svelte-qq45i5.svelte-qq45i5{flex-grow:2;margin:10px}.links-container.svelte-qq45i5 nav.svelte-qq45i5{width:100%;display:flex;justify-content:space-around;align-items:center}.links-container.svelte-qq45i5 nav a.svelte-qq45i5{font-weight:bold;text-decoration:none;color:inherit;transition:color .5s ease-in-out}.links-container.svelte-qq45i5 nav a.svelte-qq45i5:hover{color:var(--tertiary-color)}.links-container.svelte-qq45i5 nav #active.svelte-qq45i5{padding:5px;background-color:orange;color:black;font-weight:900;border-radius:5px}",
+      code: ".links-container.svelte-gq9jq8.svelte-gq9jq8{flex-grow:2;margin:10px}.links-container.svelte-gq9jq8 nav.svelte-gq9jq8{width:100%;display:flex;justify-content:space-between;align-items:center}.links-container.svelte-gq9jq8 nav a.svelte-gq9jq8{font-weight:bold;text-decoration:none;color:inherit;transition:color .5s ease-in-out;font-size:13px}.links-container.svelte-gq9jq8 nav a.svelte-gq9jq8:hover{color:var(--tertiary-color)}.links-container.svelte-gq9jq8 nav #active.svelte-gq9jq8{padding:5px;background-color:orange;color:black;font-weight:500;border-radius:5px}",
       map: null
     };
     Links = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let pathName;
       $$result.css.add(css$5);
-      return `<div class="links-container svelte-qq45i5"><nav class="svelte-qq45i5"><a href="/"${add_attribute("id", pathName == "/", 0)} class="svelte-qq45i5">Home</a> <a href="/products"${add_attribute("id", pathName == "/products", 0)} class="svelte-qq45i5">Products</a> <a href="/store"${add_attribute("id", pathName == "/store", 0)} class="svelte-qq45i5">Store</a> <a href="/contact"${add_attribute("id", pathName == "/contact", 0)} class="svelte-qq45i5">Contact</a></nav> </div>`;
+      return `<div class="links-container svelte-gq9jq8"><nav class="svelte-gq9jq8"><a href="/"${add_attribute("id", pathName == "/", 0)} class="svelte-gq9jq8">Home</a> <a href="/products"${add_attribute("id", pathName == "/products", 0)} class="svelte-gq9jq8">Products</a> <a href="/store"${add_attribute("id", pathName == "/store", 0)} class="svelte-gq9jq8">Store</a> <a href="/contact"${add_attribute("id", pathName == "/contact", 0)} class="svelte-gq9jq8">Contact</a></nav> </div>`;
     });
     css$4 = {
       code: ':root[data-theme="dark"]{background-color:var(--secondary-background);color:var(--secondary-color)}:root[data-theme="light"]{background-color:var(--primary-background);color:var(--primary-color)}',
@@ -1247,8 +1247,8 @@ var init__3 = __esm({
     index3 = 2;
     component3 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id2 = "src/routes/+page.js";
-    imports3 = ["_app/immutable/nodes/2.f6f91865.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js", "_app/immutable/chunks/Theme.7b73d2f6.js"];
-    stylesheets3 = ["_app/immutable/assets/2.d55759cc.css", "_app/immutable/assets/Theme.4e7c58da.css"];
+    imports3 = ["_app/immutable/nodes/2.a98886ff.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js", "_app/immutable/chunks/Theme.7b73d2f6.js"];
+    stylesheets3 = ["_app/immutable/assets/2.31fbdd63.css", "_app/immutable/assets/Theme.4e7c58da.css"];
     fonts3 = [];
   }
 });
@@ -1414,7 +1414,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1tzoh83"
+  version_hash: "1l6168i"
 };
 function get_hooks() {
   return {};
@@ -4717,7 +4717,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.png", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg"]),
   mimeTypes: { ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" },
   _: {
-    client: { "start": "_app/immutable/entry/start.79be1faf.js", "app": "_app/immutable/entry/app.9a38aa49.js", "imports": ["_app/immutable/entry/start.79be1faf.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/singletons.e9355012.js", "_app/immutable/entry/app.9a38aa49.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.ecc886aa.js", "app": "_app/immutable/entry/app.db807f53.js", "imports": ["_app/immutable/entry/start.ecc886aa.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/singletons.73f39465.js", "_app/immutable/entry/app.db807f53.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
