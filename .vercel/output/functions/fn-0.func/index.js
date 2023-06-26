@@ -731,7 +731,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.dabee22f.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js", "_app/immutable/chunks/singletons.8b1391de.js"];
+    imports2 = ["_app/immutable/nodes/1.dd0d8284.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js", "_app/immutable/chunks/singletons.e9355012.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1050,7 +1050,7 @@ var init_page_svelte = __esm({
       return `  <div class="theme">${validate_component(Icon, "Icon").$$render($$result, { data: moonO, scale, flip: "horizontal" }, {}, {})} </div>`;
     });
     css$3 = {
-      code: 'header.svelte-f1nrkp h2.svelte-f1nrkp{text-align:center;color:transparent;font-weight:900;font-family:"Allura"}#dark.svelte-f1nrkp.svelte-f1nrkp{background:linear-gradient(var(--primary-background), orange, var(--primary-background));-webkit-background-clip:text;background-clip:text}#light.svelte-f1nrkp.svelte-f1nrkp{background:linear-gradient(var(--secondary-background), orange, var(--secondary-background));-webkit-background-clip:text;background-clip:text}',
+      code: 'header.svelte-1oy9lf5 h2.svelte-1oy9lf5{text-align:center;color:transparent;font-weight:900;font-family:"Allura"}#dark.svelte-1oy9lf5.svelte-1oy9lf5{background:linear-gradient(var(--primary-background), orange, var(--primary-background));-webkit-background-clip:text;background-clip:text}#light.svelte-1oy9lf5.svelte-1oy9lf5{background:linear-gradient(var(--secondary-background), orange, var(--secondary-background));-webkit-background-clip:text;background-clip:text}@media(max-width: 650px){h2.svelte-1oy9lf5.svelte-1oy9lf5{display:none}}',
       map: null
     };
     Name = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1058,7 +1058,7 @@ var init_page_svelte = __esm({
       if ($$props.currentTheme === void 0 && $$bindings.currentTheme && currentTheme !== void 0)
         $$bindings.currentTheme(currentTheme);
       $$result.css.add(css$3);
-      return `<header class="svelte-f1nrkp"><h2${add_attribute("id", currentTheme && currentTheme, 0)} class="svelte-f1nrkp">Yoo
+      return `<header class="svelte-1oy9lf5"><h2${add_attribute("id", currentTheme && currentTheme, 0)} class="svelte-1oy9lf5">Yoo
         <br>
         Brands</h2> </header>`;
     });
@@ -1208,12 +1208,12 @@ var init_page_svelte = __esm({
       })} </div>`;
     });
     css2 = {
-      code: '.info-container.svelte-1apskek.svelte-1apskek{line-height:2rem}.info-container.svelte-1apskek #content.svelte-1apskek{font-size:clamp(12px, 1em, 18px);text-align:center;font-family:"Fira Code"}',
+      code: '.info-container.svelte-8f97jr.svelte-8f97jr{line-height:2rem}.info-container.svelte-8f97jr #content.svelte-8f97jr{font-size:clamp(12px, 14px, 18px);font-family:"Fira Code"}',
       map: null
     };
     YooBrandInfo = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css2);
-      return `<div class="info-container svelte-1apskek" data-svelte-h="svelte-14et3ng"><p id="content" class="svelte-1apskek">At Yoo Brand, we have a passion for creating art that inspires and brings joy to people&#39;s lives. Our commitment to quality and attention to details is evident in everything we do, from Photography and Painting to Sculpture and Embroidery. We believe that Art is a powerful way to connect with others, and we are dedicated to providing a personalized and memorable experience for each and every customer. Whether you are looking for a custom pieceto add to your collection or want to explore our diverse range of creative expression, we invite you to discover the unique beauty and quality of Yoo Brand.</p> </div>`;
+      return `<div class="info-container svelte-8f97jr" data-svelte-h="svelte-14et3ng"><p id="content" class="svelte-8f97jr">At Yoo Brand, we have a passion for creating art that inspires and brings joy to people&#39;s lives. Our commitment to quality and attention to details is evident in everything we do, from Photography and Painting to Sculpture and Embroidery. We believe that Art is a powerful way to connect with others, and we are dedicated to providing a personalized and memorable experience for each and every customer. Whether you are looking for a custom pieceto add to your collection or want to explore our diverse range of creative expression, we invite you to discover the unique beauty and quality of Yoo Brand.</p> </div>`;
     });
     _Layout_ = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let currentTheme;
@@ -1247,8 +1247,8 @@ var init__3 = __esm({
     index3 = 2;
     component3 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id2 = "src/routes/+page.js";
-    imports3 = ["_app/immutable/nodes/2.ef5fdf2e.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js", "_app/immutable/chunks/Theme.7b73d2f6.js"];
-    stylesheets3 = ["_app/immutable/assets/2.3a361192.css", "_app/immutable/assets/Theme.4e7c58da.css"];
+    imports3 = ["_app/immutable/nodes/2.f6f91865.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js", "_app/immutable/chunks/Theme.7b73d2f6.js"];
+    stylesheets3 = ["_app/immutable/assets/2.d55759cc.css", "_app/immutable/assets/Theme.4e7c58da.css"];
     fonts3 = [];
   }
 });
@@ -1414,7 +1414,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "iwcubd"
+  version_hash: "1tzoh83"
 };
 function get_hooks() {
   return {};
@@ -4717,7 +4717,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.png", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg"]),
   mimeTypes: { ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" },
   _: {
-    client: { "start": "_app/immutable/entry/start.b0486db3.js", "app": "_app/immutable/entry/app.1ad33054.js", "imports": ["_app/immutable/entry/start.b0486db3.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/singletons.8b1391de.js", "_app/immutable/entry/app.1ad33054.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.79be1faf.js", "app": "_app/immutable/entry/app.9a38aa49.js", "imports": ["_app/immutable/entry/start.79be1faf.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/singletons.e9355012.js", "_app/immutable/entry/app.9a38aa49.js", "_app/immutable/chunks/scheduler.b168ff3b.js", "_app/immutable/chunks/index.a463bea2.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

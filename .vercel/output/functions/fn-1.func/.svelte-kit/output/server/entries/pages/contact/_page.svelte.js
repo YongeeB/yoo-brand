@@ -2,12 +2,12 @@ import { c as create_ssr_component, d as add_attribute, v as validate_component 
 import { H as Header, I as Icon, n as navicon } from "../../../chunks/Theme.svelte_svelte_type_style_lang.js";
 const ContactUs_svelte_svelte_type_style_lang = "";
 const css$3 = {
-  code: "section.svelte-1kukmsj header h3.svelte-1kukmsj{text-align:center;color:var(--tertiary-color);font-weight:900}",
+  code: 'section.svelte-1528ap8 header h3.svelte-1528ap8{text-align:center;color:var(--tertiary-color);font-weight:900;font-size:crimson;font-family:"Fira Code"}',
   map: null
 };
 const ContactUs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$3);
-  return `<section class="svelte-1kukmsj" data-svelte-h="svelte-g9ixa2"><header><h3 class="svelte-1kukmsj">Contact Us</h3></header> </section>`;
+  return `<section class="svelte-1528ap8" data-svelte-h="svelte-g9ixa2"><header><h3 class="svelte-1528ap8">Contact Us</h3></header> </section>`;
 });
 const Visit_svelte_svelte_type_style_lang = "";
 const css$2 = {
@@ -20,7 +20,7 @@ const Visit = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const Form_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: "#opaque.svelte-4a56kc.svelte-4a56kc{position:relative;opacity:40%;z-index:-2}.center-box.svelte-4a56kc.svelte-4a56kc{position:absolute;inset:0;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center}.form-container.svelte-4a56kc.svelte-4a56kc{width:100%}.form-container.svelte-4a56kc form.svelte-4a56kc{width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}.form-container.svelte-4a56kc form input.svelte-4a56kc{caret-color:var(--tertiary-color);width:80%;max-width:250px;height:40px;margin-bottom:2em;border-radius:5px;padding:1em;box-sizing:border-box;font-size:16px;font-weight:bolder;box-sizing:border-box}.form-container.svelte-4a56kc form input.svelte-4a56kc:nth-child(1){text-transform:capitalize}.form-container.svelte-4a56kc form input.svelte-4a56kc:focus{outline:none;border:1px solid var(--tertiary-color)}.form-container.svelte-4a56kc form button.svelte-4a56kc{border:none;padding:8px 1em;border-radius:5px;color:black;background-color:var(--tertiary-color);font-weight:bolder}",
+  code: "#opaque.svelte-1d26o6x.svelte-1d26o6x{position:relative;opacity:40%;z-index:-2}.center-box.svelte-1d26o6x.svelte-1d26o6x{position:absolute;inset:0;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center}.form-container.svelte-1d26o6x.svelte-1d26o6x{width:100%}.form-container.svelte-1d26o6x form.svelte-1d26o6x{width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}.form-container.svelte-1d26o6x form input.svelte-1d26o6x{caret-color:var(--tertiary-color);width:80%;max-width:250px;height:40px;margin-bottom:2em;border-radius:5px;padding:1em;box-sizing:border-box;font-size:16px;font-weight:bolder;box-sizing:border-box}.form-container.svelte-1d26o6x form input.svelte-1d26o6x:placeholder{color:var(--tertiary-color)}.form-container.svelte-1d26o6x form input.svelte-1d26o6x:nth-child(1){text-transform:capitalize}.form-container.svelte-1d26o6x form input.svelte-1d26o6x:focus{outline:none;border:1px solid var(--tertiary-color)}.form-container.svelte-1d26o6x form button.svelte-1d26o6x{border:none;padding:8px 1em;border-radius:5px;color:black;background-color:var(--tertiary-color);font-weight:bolder}",
   map: null
 };
 const Form = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -29,7 +29,7 @@ const Form = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   if ($$props.collapse === void 0 && $$bindings.collapse && collapse !== void 0)
     $$bindings.collapse(collapse);
   $$result.css.add(css$1);
-  return `<div class="center-box svelte-4a56kc"${add_attribute("id", !collapse && "opaque", 0)}>${validate_component(ContactUs, "ContactUs").$$render($$result, {}, {}, {})} <div class="form-container svelte-4a56kc"><form class="svelte-4a56kc"><input type="text" placeholder="Full Name" class="svelte-4a56kc"${add_attribute("this", inputRef, 0)}> <input type="text" placeholder="Email" class="svelte-4a56kc"> <input type="text" placeholder="Message" class="svelte-4a56kc"> <button class="svelte-4a56kc" data-svelte-h="svelte-11upy20">send</button></form></div> ${validate_component(Visit, "Visit").$$render($$result, {}, {}, {})} </div>`;
+  return `<div class="center-box svelte-1d26o6x"${add_attribute("id", !collapse && "opaque", 0)}>${validate_component(ContactUs, "ContactUs").$$render($$result, {}, {}, {})} <div class="form-container svelte-1d26o6x"><form class="svelte-1d26o6x"><input type="text" placeholder="Full Name" class="svelte-1d26o6x"${add_attribute("this", inputRef, 0)}> <input type="text" placeholder="Email" class="svelte-1d26o6x"> <input type="text" placeholder="Message" class="svelte-1d26o6x"> <button class="svelte-1d26o6x" data-svelte-h="svelte-11upy20">send</button></form></div> ${validate_component(Visit, "Visit").$$render($$result, {}, {}, {})} </div>`;
 });
 const NavComponents_svelte_svelte_type_style_lang = "";
 const __Layout___svelte_svelte_type_style_lang = "";

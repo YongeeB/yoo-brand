@@ -66,6 +66,10 @@
         box-sizing: border-box;
     }
 
+    .form-container form input:placeholder {
+        color: var(--tertiary-color);
+    }
+
     .form-container form input:nth-child(1){
         text-transform: capitalize;
     }

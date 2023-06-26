@@ -31,4 +31,10 @@
         -webkit-background-clip: text;
         background-clip: text;
     }
+
+    @media(max-width: 650px){
+        h2 {
+            display: none;
+        }
+    }
 </style>

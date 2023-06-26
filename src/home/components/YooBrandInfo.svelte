@@ -10,8 +10,7 @@
     }
 
     .info-container #content {
-        font-size: clamp(12px, 1em, 18px);
-        text-align: center;
+        font-size: clamp(12px, 14px, 18px);
         font-family: "Fira Code";
     }
 </style>
