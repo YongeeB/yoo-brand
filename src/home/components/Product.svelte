@@ -19,7 +19,7 @@
     </p>
     <p id="product-info">
         {product.info.substr(0, 300) + "..."}
-        <a href="/">see more</a>
+        <li><a href="/">see more</a></li>
     </p>
 </div>
 
@@ -28,6 +28,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    li {
+        list-style-type: none;
     }
 
     :global(.lazy-container) {
