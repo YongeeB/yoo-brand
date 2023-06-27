@@ -12,5 +12,12 @@
     .info-container #content {
         font-size: clamp(12px, 14px, 18px);
         font-family: "Fira Code";
+
+    }
+
+    #content::first-letter {
+        color: var(--tertiary-color);
+        font-family: "Allura";
+        font-size: 2.5em;
     }
 </style>

@@ -72,11 +72,16 @@
 
     .product-card #product-info {
         transform: translateY(-40px);
-        text-align: center;
         line-height: 1.8em;
         font-family: "Fira Code";
         font-size: 1em;
         padding: 0 2em;
+    }
+
+    .product-card #product-info::first-letter {
+        color: var(--tertiary-color);
+        font-family: "Allura";
+        font-size: 2em;
     }
 
     .product-card #product-info a {
