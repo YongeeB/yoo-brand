@@ -734,7 +734,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.e013b9e7.js", "_app/immutable/chunks/scheduler.943d25be.js", "_app/immutable/chunks/index.2fe3d9aa.js", "_app/immutable/chunks/singletons.35de3277.js"];
+    imports2 = ["_app/immutable/nodes/1.e62c082b.js", "_app/immutable/chunks/scheduler.943d25be.js", "_app/immutable/chunks/index.2fe3d9aa.js", "_app/immutable/chunks/singletons.110e0f4b.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1265,7 +1265,7 @@ var init_page_svelte = __esm({
     };
     YooBrandInfo = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css2);
-      return `<div class="info-container svelte-47jhq7" data-svelte-h="svelte-14et3ng"><p id="content" class="svelte-47jhq7">At Yoo Brand, we have a passion for creating art that inspires and brings joy to people&#39;s lives. Our commitment to quality and attention to details is evident in everything we do, from Photography and Painting to Sculpture and Embroidery. We believe that Art is a powerful way to connect with others, and we are dedicated to providing a personalized and memorable experience for each and every customer. Whether you are looking for a custom pieceto add to your collection or want to explore our diverse range of creative expression, we invite you to discover the unique beauty and quality of Yoo Brand.</p> </div>`;
+      return `<div class="info-container svelte-47jhq7" data-svelte-h="svelte-y90yyi"><p id="content" class="svelte-47jhq7">At <span style="font-weight: bold; color: var(--tertiary-color)">Yoo Brand</span>, we have a passion for creating art that inspires and brings joy to people&#39;s lives. Our commitment to quality and attention to details is evident in everything we do, from Photography and Painting to Sculpture and Embroidery. We believe that Art is a powerful way to connect with others, and we are dedicated to providing a personalized and memorable experience for each and every customer. Whether you are looking for a custom pieceto add to your collection or want to explore our diverse range of creative expression, we invite you to discover the unique beauty and quality of Yoo Brand.</p> </div>`;
     });
     _Layout_ = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let currentTheme;
@@ -1308,7 +1308,7 @@ var init__4 = __esm({
     index4 = 3;
     component4 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id3 = "src/routes/+page.js";
-    imports4 = ["_app/immutable/nodes/3.a94249e9.js", "_app/immutable/chunks/scheduler.943d25be.js", "_app/immutable/chunks/index.2fe3d9aa.js", "_app/immutable/chunks/Name.542021aa.js"];
+    imports4 = ["_app/immutable/nodes/3.e14b54a7.js", "_app/immutable/chunks/scheduler.943d25be.js", "_app/immutable/chunks/index.2fe3d9aa.js", "_app/immutable/chunks/Name.542021aa.js"];
     stylesheets4 = ["_app/immutable/assets/3.395db139.css", "_app/immutable/assets/Name.4337adc5.css"];
     fonts4 = [];
   }
@@ -1736,7 +1736,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "tc3d7g"
+  version_hash: "opdhlj"
 };
 function get_hooks() {
   return {};
@@ -5039,7 +5039,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.png", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg"]),
   mimeTypes: { ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" },
   _: {
-    client: { "start": "_app/immutable/entry/start.2cbeba41.js", "app": "_app/immutable/entry/app.27f330a4.js", "imports": ["_app/immutable/entry/start.2cbeba41.js", "_app/immutable/chunks/scheduler.943d25be.js", "_app/immutable/chunks/singletons.35de3277.js", "_app/immutable/entry/app.27f330a4.js", "_app/immutable/chunks/scheduler.943d25be.js", "_app/immutable/chunks/index.2fe3d9aa.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.bd354dba.js", "app": "_app/immutable/entry/app.3f6bd754.js", "imports": ["_app/immutable/entry/start.bd354dba.js", "_app/immutable/chunks/scheduler.943d25be.js", "_app/immutable/chunks/singletons.110e0f4b.js", "_app/immutable/entry/app.3f6bd754.js", "_app/immutable/chunks/scheduler.943d25be.js", "_app/immutable/chunks/index.2fe3d9aa.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
