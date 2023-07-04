@@ -5,8 +5,8 @@
   --secondary-color: #fff;
   --primary-background: #fff;
   --secondary-background: #000;
-  --tertiary-color: crimson;
-  --tertiary-background: crimson;
+  --tertiary-color: orange;
+  --tertiary-background: orange;
 }
 
 :global(:root[data-theme="dark"]) {
@@ -19,11 +19,6 @@
   color: var(--primary-color);
 }
 
-body {
-  padding: 0;
-  margin: 0;
-}
-
-.container {
+body .container {
   margin: 1em;
 }

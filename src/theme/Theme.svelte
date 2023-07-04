@@ -22,7 +22,6 @@
     })
     
     function setTheme(theme){
-        console.log(theme)
         document.documentElement.setAttribute("data-theme", theme);
         currentTheme = theme;
         localStorage.setItem("theme", theme);
@@ -39,7 +38,7 @@
 </div>
 
 <style>
-    :global(:root[data-theme="dark"]) {
+ :global(:root[data-theme="dark"]) {
   background-color: var(--secondary-background);
   color: var(--secondary-color);
 }

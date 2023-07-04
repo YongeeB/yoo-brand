@@ -37,7 +37,7 @@
         text-decoration: none;
         color: inherit;
         transition: color .5s ease-in-out;
-        font-size: 12px;
+        font-size: 1em;
     }
 
     .links-container nav a:hover {
@@ -51,4 +51,5 @@
         font-weight: 500;
         border-radius: 5px;
     }
+
 </style>

@@ -1,6 +1,6 @@
 <script>
     import Product from "./Product.svelte";
-import {PRODUCTS} from "./Products"
+    import {PRODUCTS} from "./Products"
 </script>
 
 <div class="products-container">

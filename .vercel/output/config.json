@@ -11,18 +11,6 @@
 			"handle": "filesystem"
 		},
 		{
-			"src": "^/?(?:/__data.json)?$",
-			"dest": "/fn-0"
-		},
-		{
-			"src": "^/contact copy/?(?:/__data.json)?$",
-			"dest": "/fn-1"
-		},
-		{
-			"src": "^/contact/?(?:/__data.json)?$",
-			"dest": "/fn-0"
-		},
-		{
 			"src": "/.*",
 			"dest": "/fn"
 		}

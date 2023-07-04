@@ -1,49 +1,31 @@
 <script>
-//@ts-nocheck
+// @ts-nocheck
+
   import { onMount } from "svelte";
- import ContactUs from "./ContactUs.svelte"
-  import Visit from "./Visit.svelte";
 
-  let inputRef;
-  export let collapse;
+    let inputRef;
 
-  onMount(()=> {
-    inputRef.focus();
-  })
-
+    onMount(()=>
+        inputRef.focus()
+    )
 </script>
-<div class="center-box" id={!collapse && "opaque"}>
-<ContactUs />
 <div class="form-container">
     <form on:submit|preventDefault>
-        <input type="text" placeholder="Full Name" bind:this={inputRef}/>
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Message" />
-        <button>send</button>
-    </form>
-</div>
-<Visit />
+        <input type="text" placeholder="Full Name" bind:this={inputRef} maxlength="100"/>
+        <input type="text" placeholder="Email" maxlength="100"/>
+            <input type="text" placeholder="Message" />
+            <button type="submit">send</button>
+        </form>
 </div>
 
+
 <style>
-    #opaque {
-        position: relative;
-        opacity: 40%;
-        z-index: -2;
-    }
-    .center-box {
-        position: absolute;
-        inset: 0;
-        height: 100vh;
+    .form-container {
+        width: 100dvw;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .form-container {
-        width: 100%;
-    }
-
     .form-container form {
         width: 100%;
         display: flex;
@@ -51,51 +33,46 @@
         justify-content: center;
         align-items: center;
     }
-
-    .form-container form input {
-        border: 1px solid var(--tertiary-color);
-        caret-color: var(--tertiary-color);
+    .form-container input {
+        margin-bottom: 1em;
         width: 80%;
-        max-width: 250px;
-        height: 50px;
-        margin-bottom: 2em;
-        border-radius: 1em;
-        padding: 10px;
-        box-sizing: border-box;
-        font-size: 16px;
-        font-weight: bold;
-        box-sizing: border-box;
-        font-family: "Fira Code";
+        max-width: 300px;
+        height: 40px;
+        border-radius: 5px;
+        padding: 5px;
+        outline: none;
+        font-size: 1.05em;
+        letter-spacing: 0.05em;
+        caret-color: green;
     }
 
-    .form-container form input:nth-child(1){
+    .form-container input:nth-child(1){
         text-transform: capitalize;
     }
 
-    .form-container form input:focus {
-        outline: none;
-        border: 1px solid var(green);
+    .form-container input:focus {
+        border: 1px solid red;
     }
 
-    .form-container form button {
+    .form-container input::placeholder {
+        color: rgba(0,255,0, .7);
+    }
+
+    .form-container button {
+        width: 70px;
+        height: 40px;
+        border-radius: 5px;
+        background: rgba(0,255, 0, .7);
+        color: whitesmoke;
+        font-weight: bold;
+        font-size: 1em;
         border: none;
-        padding: 8px 1em;
-        border-radius: 10px;
-        color: black;
-        background-color: var(--tertiary-color);
-        font-weight: bolder;
-        font-size: 0.9em;
-        font-family: "Fira Code";
-        transition: all .5s linear;
+        transition: background-color .5s ease;
     }
 
-    .form-container form button:hover{
+    .form-container button:hover {
         background-color: green;
     }
 
-    @media(orientation: landscape){
-        .center-box {
-            transform: translateY(2em);
-        }
-    }
+    
 </style>

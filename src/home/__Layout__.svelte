@@ -1,7 +1,9 @@
 <script>
 // @ts-nocheck
 
-  import Header from "../header/Header.svelte";
+  import "../global.css";
+
+  import TopBar from "../top-bar/TopBar.svelte";
   import Links from "../navigation/Links.svelte";
   import Theme from "../theme/Theme.svelte";
   import Name from "../web/Name.svelte";
@@ -14,11 +16,11 @@
 
 
 </script>
-<Header>
-    <Name {currentTheme}/>
+<TopBar>
+    <Name {currentTheme} responsive="yes" size="1.3em" />
     <Links />
-    <Theme on:toggle-theme={changeTheme} scale={1.2}/>
-</Header>
+    <Theme on:toggle-theme={changeTheme} scale={1.2} />
+</TopBar>
 <YooBrandInfo />
 <Products />
 

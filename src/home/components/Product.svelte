@@ -24,19 +24,26 @@
 </div>
 
 <style>
+    :global(.lazy-container) {
+        width: 100%;
+    }
+    
     .product-card {
         display: flex;
         flex-direction: column;
         align-items: center;
+        transition: transform .3s linear;
+        
+    }
+
+    .product-card:hover {
+        transform: scale(1.01);
     }
 
     li {
         list-style-type: none;
     }
 
-    :global(.lazy-container) {
-        width: 100%;
-    }
 
     #png {
         background-color: white;
@@ -58,16 +65,18 @@
         height: 300px;
         border-radius: 2em;
         transition: transform .5s ease-in-out;
-    }
-
-    .product-card img:hover {
-        transform: scale(1.05);
+        background-size: contain;
     }
 
     .product-card #product-name {
         color: var(--tertiary-color);
         font-size: 1.5em;
         font-weight: 900;
+        transition: color .5s ease;
+    }
+
+    .product-card #product-name:hover {
+        color: green;
     }
 
     .product-card #product-info {
@@ -79,16 +88,11 @@
         padding: 0 2em;
     }
 
-    .product-card #product-info::first-letter {
-        color: var(--tertiary-color);
-        font-family: "Allura";
-        font-size: 2em;
-    }
-
     .product-card #product-info a {
         color: var(--tertiary-color);
         text-decoration: none;
         transition: color .5s ease;
+        font-size: 1em;
     }
 
     .product-card #product-info a:hover {

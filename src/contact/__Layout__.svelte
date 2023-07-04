@@ -1,69 +1,33 @@
 <script>
 // @ts-nocheck
+    import CallUs from "./components/CallUs.svelte";
+    import SwipeDetector from "./components/SwipeDetector.svelte";
+    import SideBar from "./components/SideBar.svelte";
+    import ContactUs from "./components/ContactYooBrand.svelte";
+    import { onMount } from "svelte";
 
-  import "../global.css";
-  import Header from "../header/Header.svelte";
-  import Icon from "svelte-awesome/components/Icon.svelte"
-  import { navicon, phone } from "svelte-awesome/icons"
-  import Form from "./components/Form.svelte";
-  import NavComponents from "./components/NavComponents.svelte";
 
-  let collapse = true;
+    let navRef;
+    let currentTheme;
+    let fade;
 
-  function handleClick(){
-    collapse = false;
-  }
+    const handleRef = e => navRef = e.detail;
 
-  function handleCollapse(e){
-    collapse = e.detail;
-  }
+    const handleTheme = e => currentTheme = e.detail;
 
+    const SwipeRight = e => fade = e.detail;
+
+    const handleOutsideClick = e => fade = e.detail;
+
+    onMount(()=> currentTheme = localStorage.getItem("theme"))
+
+    
 </script>
-<a href="tel: +2348171983663">
-<div class="phone-box">
-    <Icon data={phone} flip="horizontal" scale={1.4} id="phone-icon" />
-</div>
-</a>
 
-{#if !collapse}
-    <NavComponents on:collapse={handleCollapse}/>
-{/if}
-
-<main class="container">
-    <!-- svelte-ignore a11y-no-static-element-interactions -->
-    <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <div on:click={handleClick}>
-    <Header>
-        <Icon data={navicon} scale={1.3} id="navicon"/>
-    </Header>
-    </div>
-    <Form {collapse}/>
+<main>
+    <CallUs />
+    <SwipeDetector {navRef} on:swipe-right={SwipeRight} on:outside-click={handleOutsideClick}>
+        <SideBar on:reference={handleRef} {currentTheme} on:toggle-theme={handleTheme} />
+    </SwipeDetector>
+    <ContactUs {currentTheme} {fade} />
 </main>
-
-<style>
-
-    .phone-box {
-        position: absolute;
-        z-index: 10;
-        right: 1em;
-        bottom: 1em;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #000;
-    }
-    :global(#phone-icon){
-        color: var(--secondary-color);
-    }
-    :global(#navicon){
-        position: relative;
-        z-index: 2;
-        transition: color .5s linear;
-    }
-    :global(#navicon:hover){
-        color: var(--tertiary-color);
-    }
-</style>

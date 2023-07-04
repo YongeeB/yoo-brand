@@ -2,17 +2,25 @@
 // @ts-nocheck
 
   export let currentTheme;
+  export let responsive;
+  export let size;
 </script>
 
 <header>
-    <h2 id={currentTheme && currentTheme}>
+    <a href="/">
+    <h2 class={`${currentTheme} ${responsive=="yes" && "responsive"}`} style={`font-size: ${size ? size : "normal"};`}>
+        
         Yoo
         <br />
         Brands
     </h2>
+</a>
 </header>
 
 <style>
+    header a {
+        text-decoration: none;
+    }
     header h2 {
         text-align: center;
         color: transparent;
@@ -20,20 +28,20 @@
         font-family: "Allura";
     }
 
-    #dark {
-        background: linear-gradient(var(--primary-background), orange, var(--primary-background));
+    .dark {
+        background: linear-gradient(var(--primary-background), var(--tertiary-background), var(--primary-background));
         -webkit-background-clip: text;
         background-clip: text;
     }
 
-    #light {
-        background: linear-gradient(var(--secondary-background), orange, var(--secondary-background));
+    .light {
+        background: linear-gradient(var(--secondary-background), var(--tertiary-background), var(--secondary-background));
         -webkit-background-clip: text;
         background-clip: text;
     }
 
     @media(max-width: 650px){
-        h2 {
+        .responsive {
             display: none;
         }
         :global(.links-container){
