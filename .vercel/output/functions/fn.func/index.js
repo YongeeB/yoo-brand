@@ -734,7 +734,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.5e8a0df4.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/singletons.a40a6466.js"];
+    imports2 = ["_app/immutable/nodes/1.bb955825.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/singletons.c0d4fdd1.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1461,7 +1461,7 @@ var init_page_svelte2 = __esm({
       return `<div class="appIcons-box svelte-1c3kgku">${validate_component(AppIcon, "AppIcon").$$render(
         $$result,
         {
-          src: "/",
+          src: "https://instagram.com/yooaesthetics?igshid=MzNINGNkZWQ4Mg==",
           name: "Instagram",
           imgSrc: "/app-icons/instagram.svg"
         },
@@ -1479,7 +1479,7 @@ var init_page_svelte2 = __esm({
       )} ${validate_component(AppIcon, "AppIcon").$$render(
         $$result,
         {
-          src: "/",
+          src: "https://www.tiktok.com/@yoo_gallery?_t=8dD4UoGxDQT&_r=1",
           name: "TikTok",
           imgSrc: "/app-icons/tiktok.svg"
         },
@@ -1545,7 +1545,7 @@ var init__5 = __esm({
     index5 = 4;
     component5 = async () => (await Promise.resolve().then(() => (init_page_svelte2(), page_svelte_exports2))).default;
     universal_id4 = "src/routes/contact/+page.js";
-    imports5 = ["_app/immutable/nodes/4.2ec3503d.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/index.1e18b19d.js"];
+    imports5 = ["_app/immutable/nodes/4.dc7335e6.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/index.1e18b19d.js"];
     stylesheets5 = ["_app/immutable/assets/4.f18cd84d.css", "_app/immutable/assets/index.ad1cf886.css"];
     fonts5 = [];
   }
@@ -1739,7 +1739,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "15su3ap"
+  version_hash: "2vnhyr"
 };
 function get_hooks() {
   return {};
@@ -5042,7 +5042,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.png", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg"]),
   mimeTypes: { ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" },
   _: {
-    client: { "start": "_app/immutable/entry/start.9ec0b9b9.js", "app": "_app/immutable/entry/app.b6ef354e.js", "imports": ["_app/immutable/entry/start.9ec0b9b9.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/singletons.a40a6466.js", "_app/immutable/entry/app.b6ef354e.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.0ff601aa.js", "app": "_app/immutable/entry/app.4095a8fd.js", "imports": ["_app/immutable/entry/start.0ff601aa.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/singletons.c0d4fdd1.js", "_app/immutable/entry/app.4095a8fd.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
