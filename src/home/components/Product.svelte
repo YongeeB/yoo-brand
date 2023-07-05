@@ -81,7 +81,7 @@
     }
 
     .product-card #product-info {
-        transform: translateY(-40px);
+        transform: translateY(-20px);
         text-align: center;
         line-height: 1.8em;
         font-family: "Fira Code";

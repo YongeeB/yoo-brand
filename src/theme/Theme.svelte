@@ -49,7 +49,7 @@
 
 :global(.theme-icon){
     transition: color .5s ease-in;
-    color: gold;
+    color: crimson;
 }
 
 :global(.theme-icon:hover){

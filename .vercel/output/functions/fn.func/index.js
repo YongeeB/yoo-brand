@@ -734,7 +734,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.20ff9694.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/singletons.a6c5b7c5.js"];
+    imports2 = ["_app/immutable/nodes/1.5e8a0df4.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/singletons.a40a6466.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1054,7 +1054,7 @@ var init_Theme = __esm({
     moonO = { "moon-o": { "width": 1536, "height": 1792, "paths": [{ "d": "M1262 1303q-54 9-110 9-182 0-337-90t-245-245-90-337q0-192 104-357-201 60-328.5 229t-127.5 384q0 130 51 248.5t136.5 204 204 136.5 248.5 51q144 0 273.5-61.5t220.5-171.5zM1465 1218q-94 203-283.5 324.5t-413.5 121.5q-156 0-298-61t-245-164-164-245-61-298q0-153 57.5-292.5t156-241.5 235.5-164.5 290-68.5q44-2 61 39 18 41-15 72-86 78-131.5 181.5t-45.5 218.5q0 148 73 273t198 198 273 73q118 0 228-51 41-18 72 13 14 14 17.5 34t-4.5 38z" }] } };
     productHunt = { "product-hunt": { "width": 1792, "height": 1792, "paths": [{ "d": "M1150 762q0 56-39.5 95t-95.5 39h-253v-269h253q56 0 95.5 39.5t39.5 95.5zM1329 762q0-130-91.5-222t-222.5-92h-433v896h180v-269h253q130 0 222-91.5t92-221.5zM1792 896q0 182-71 348t-191 286-286 191-348 71-348-71-286-191-191-286-71-348 71-348 191-286 286-191 348-71 348 71 286 191 191 286 71 348z" }] } };
     css = {
-      code: ':root[data-theme="dark"]{background-color:var(--secondary-background);color:var(--secondary-color)}:root[data-theme="light"]{background-color:var(--primary-background);color:var(--primary-color)}.theme-icon{transition:color .5s ease-in;color:gold}.theme-icon:hover{color:blue}',
+      code: ':root[data-theme="dark"]{background-color:var(--secondary-background);color:var(--secondary-color)}:root[data-theme="light"]{background-color:var(--primary-background);color:var(--primary-color)}.theme-icon{transition:color .5s ease-in;color:crimson}.theme-icon:hover{color:blue}',
       map: null
     };
     Theme = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1167,7 +1167,7 @@ var init_page_svelte = __esm({
       return `<div${add_attribute("class", rootClass, 0)} style="${"height: " + escape(rootInitialHeight, true)}">${`${placeholder ? `${validate_component(Placeholder, "Placeholder").$$render($$result, { placeholder, placeholderProps }, {}, {})}` : ``}`} </div>`;
     });
     css$2 = {
-      code: '.lazy-container{width:100%}.product-card.svelte-1dbeija.svelte-1dbeija{display:flex;flex-direction:column;align-items:center;transition:transform .3s linear}.product-card.svelte-1dbeija.svelte-1dbeija:hover{transform:scale(1.01)}li.svelte-1dbeija.svelte-1dbeija{list-style-type:none}#png.svelte-1dbeija.svelte-1dbeija{background-color:white}.product-card.svelte-1dbeija .image-container.svelte-1dbeija{width:100%;display:flex;justify-content:center}.product-card.svelte-1dbeija img.svelte-1dbeija{margin:0 auto;width:80%;max-width:350px;height:300px;border-radius:2em;transition:transform .5s ease-in-out;background-size:contain}.product-card.svelte-1dbeija #product-name.svelte-1dbeija{color:var(--tertiary-color);font-size:1.5em;font-weight:900;transition:color .5s ease;font-family:"Mukta"}.product-card.svelte-1dbeija #product-name.svelte-1dbeija:hover{color:green}.product-card.svelte-1dbeija #product-info.svelte-1dbeija{transform:translateY(-40px);text-align:center;line-height:1.8em;font-family:"Fira Code";font-size:1em;padding:0 2em}.product-card.svelte-1dbeija #product-info.svelte-1dbeija::first-letter{font-family:"Allura";font-size:2em}.product-card.svelte-1dbeija #product-info a.svelte-1dbeija{color:var(--tertiary-color);text-decoration:none;transition:color .5s ease;font-size:1em}.product-card.svelte-1dbeija #product-info a.svelte-1dbeija:hover{color:green}',
+      code: '.lazy-container{width:100%}.product-card.svelte-17mctk4.svelte-17mctk4{display:flex;flex-direction:column;align-items:center;transition:transform .3s linear}.product-card.svelte-17mctk4.svelte-17mctk4:hover{transform:scale(1.01)}li.svelte-17mctk4.svelte-17mctk4{list-style-type:none}#png.svelte-17mctk4.svelte-17mctk4{background-color:white}.product-card.svelte-17mctk4 .image-container.svelte-17mctk4{width:100%;display:flex;justify-content:center}.product-card.svelte-17mctk4 img.svelte-17mctk4{margin:0 auto;width:80%;max-width:350px;height:300px;border-radius:2em;transition:transform .5s ease-in-out;background-size:contain}.product-card.svelte-17mctk4 #product-name.svelte-17mctk4{color:var(--tertiary-color);font-size:1.5em;font-weight:900;transition:color .5s ease;font-family:"Mukta"}.product-card.svelte-17mctk4 #product-name.svelte-17mctk4:hover{color:green}.product-card.svelte-17mctk4 #product-info.svelte-17mctk4{transform:translateY(-20px);text-align:center;line-height:1.8em;font-family:"Fira Code";font-size:1em;padding:0 2em}.product-card.svelte-17mctk4 #product-info.svelte-17mctk4::first-letter{font-family:"Allura";font-size:2em}.product-card.svelte-17mctk4 #product-info a.svelte-17mctk4{color:var(--tertiary-color);text-decoration:none;transition:color .5s ease;font-size:1em}.product-card.svelte-17mctk4 #product-info a.svelte-17mctk4:hover{color:green}',
       map: null
     };
     Product = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1176,11 +1176,11 @@ var init_page_svelte = __esm({
       if ($$props.product === void 0 && $$bindings.product && product !== void 0)
         $$bindings.product(product);
       $$result.css.add(css$2);
-      return `<div class="product-card svelte-1dbeija">${validate_component(Src, "Lazy").$$render($$result, { class: "lazy-container" }, {}, {
+      return `<div class="product-card svelte-17mctk4">${validate_component(Src, "Lazy").$$render($$result, { class: "lazy-container" }, {}, {
         default: () => {
-          return `<div class="image-container svelte-1dbeija"><img${add_attribute("src", product.imgSrc, 0)}${add_attribute("alt", product.name, 0)}${add_attribute("id", png == "png" && png, 0)} class="svelte-1dbeija"></div>`;
+          return `<div class="image-container svelte-17mctk4"><img${add_attribute("src", product.imgSrc, 0)}${add_attribute("alt", product.name, 0)}${add_attribute("id", png == "png" && png, 0)} class="svelte-17mctk4"></div>`;
         }
-      })} <p id="product-name" class="svelte-1dbeija">${escape(product.name)}</p> <p id="product-info" class="svelte-1dbeija">${escape(product.info.substr(0, 300) + "...")} <li class="svelte-1dbeija" data-svelte-h="svelte-zz7tti"><a href="/" class="svelte-1dbeija">see more</a></li></p> </div>`;
+      })} <p id="product-name" class="svelte-17mctk4">${escape(product.name)}</p> <p id="product-info" class="svelte-17mctk4">${escape(product.info.substr(0, 300) + "...")} <li class="svelte-17mctk4" data-svelte-h="svelte-zz7tti"><a href="/" class="svelte-17mctk4">see more</a></li></p> </div>`;
     });
     PRODUCTS = [
       {
@@ -1318,8 +1318,8 @@ var init__4 = __esm({
     index4 = 3;
     component4 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id3 = "src/routes/+page.js";
-    imports4 = ["_app/immutable/nodes/3.5d47baa9.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/index.bedd29d2.js"];
-    stylesheets4 = ["_app/immutable/assets/3.1b5ec228.css", "_app/immutable/assets/index.36a1cff8.css"];
+    imports4 = ["_app/immutable/nodes/3.022b1a79.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/index.1e18b19d.js"];
+    stylesheets4 = ["_app/immutable/assets/3.ad39cbcc.css", "_app/immutable/assets/index.ad1cf886.css"];
     fonts4 = [];
   }
 });
@@ -1545,8 +1545,8 @@ var init__5 = __esm({
     index5 = 4;
     component5 = async () => (await Promise.resolve().then(() => (init_page_svelte2(), page_svelte_exports2))).default;
     universal_id4 = "src/routes/contact/+page.js";
-    imports5 = ["_app/immutable/nodes/4.12d68e66.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/index.bedd29d2.js"];
-    stylesheets5 = ["_app/immutable/assets/4.f18cd84d.css", "_app/immutable/assets/index.36a1cff8.css"];
+    imports5 = ["_app/immutable/nodes/4.2ec3503d.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/index.1e18b19d.js"];
+    stylesheets5 = ["_app/immutable/assets/4.f18cd84d.css", "_app/immutable/assets/index.ad1cf886.css"];
     fonts5 = [];
   }
 });
@@ -1739,7 +1739,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "125ef3p"
+  version_hash: "15su3ap"
 };
 function get_hooks() {
   return {};
@@ -5042,7 +5042,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.png", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg"]),
   mimeTypes: { ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" },
   _: {
-    client: { "start": "_app/immutable/entry/start.7dfeb582.js", "app": "_app/immutable/entry/app.6114d7cf.js", "imports": ["_app/immutable/entry/start.7dfeb582.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/singletons.a6c5b7c5.js", "_app/immutable/entry/app.6114d7cf.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.9ec0b9b9.js", "app": "_app/immutable/entry/app.b6ef354e.js", "imports": ["_app/immutable/entry/start.9ec0b9b9.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/singletons.a40a6466.js", "_app/immutable/entry/app.b6ef354e.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
