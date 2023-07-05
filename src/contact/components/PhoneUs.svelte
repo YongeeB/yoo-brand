@@ -3,30 +3,31 @@
     import { phone } from "svelte-awesome/icons"
 </script>
 
-<div class="phoneUs-container">
+<div class="phone-container">
     <a href="tel:+2348171983663">
-    <Icon data={phone} scale={1.5} />
+        <Icon data={phone} scale={1.2}/>
     </a>
+    
 </div>
 
 <style>
-    .phoneUs-container {
+    .phone-container {
         position: absolute;
         right: 1em;
-        top: 1em;
+        bottom: 1em;
         width: 40px;
         height: 40px;
-        background-color: var(--tertiary-background);
+        background: green;
+        color: cornsilk;
         border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
-    .phoneUs-container a {
+    .phone-container a {
+        display: flex;
+        height: inherit;
+        justify-content: center;
+        align-items: center;
         text-decoration: none;
         color: inherit;
-        display: flex;
-
     }
 </style>

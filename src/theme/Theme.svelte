@@ -1,5 +1,4 @@
 <script>
-// @ts-nocheck
 
     import {createEventDispatcher, onMount} from "svelte";
     import Icon from "svelte-awesome/components/Icon.svelte"
@@ -34,7 +33,7 @@
 <!-- svelte-ignore a11y-click-events-have-key-events -->
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <div class="theme" on:click={whiteTheme ? ()=> setTheme("dark") : ()=> setTheme("light")}>
-    <Icon data={moonO} scale={scale} flip="horizontal" />
+    <Icon data={moonO} scale={scale} flip="horizontal" class="theme-icon" />
 </div>
 
 <style>
@@ -48,6 +47,14 @@
   color: var(--primary-color);
 }
 
+:global(.theme-icon){
+    transition: color .5s ease-in;
+    color: gold;
+}
+
+:global(.theme-icon:hover){
+    color: blue;
+}
 
 
 </style>

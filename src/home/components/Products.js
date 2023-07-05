@@ -1,4 +1,3 @@
-// @ts-nocheck
 export let PRODUCTS = [
   {
     name: "Yoo Aesthetics",

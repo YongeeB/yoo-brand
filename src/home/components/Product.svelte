@@ -1,5 +1,5 @@
 <script>
-// @ts-nocheck
+
     import Lazy from "svelte-lazy"
 
     export let product;
@@ -73,6 +73,7 @@
         font-size: 1.5em;
         font-weight: 900;
         transition: color .5s ease;
+        font-family: "Mukta";
     }
 
     .product-card #product-name:hover {
@@ -86,6 +87,11 @@
         font-family: "Fira Code";
         font-size: 1em;
         padding: 0 2em;
+    }
+
+    .product-card #product-info::first-letter {
+        font-family: "Allura";
+        font-size: 2em;
     }
 
     .product-card #product-info a {

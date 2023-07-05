@@ -675,7 +675,7 @@ var init__ = __esm({
     index = 0;
     component = async () => (await Promise.resolve().then(() => (init_layout_svelte(), layout_svelte_exports))).default;
     universal_id = "src/routes/+layout.js";
-    imports = ["_app/immutable/nodes/0.f4070905.js", "_app/immutable/chunks/layout.43590fb5.js", "_app/immutable/chunks/scheduler.943d25be.js", "_app/immutable/chunks/index.2fe3d9aa.js"];
+    imports = ["_app/immutable/nodes/0.8a90f07d.js", "_app/immutable/chunks/layout.d3360e33.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js"];
     stylesheets = [];
     fonts = [];
   }
@@ -734,7 +734,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.e62c082b.js", "_app/immutable/chunks/scheduler.943d25be.js", "_app/immutable/chunks/index.2fe3d9aa.js", "_app/immutable/chunks/singletons.110e0f4b.js"];
+    imports2 = ["_app/immutable/nodes/1.20ff9694.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/singletons.a6c5b7c5.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -772,7 +772,7 @@ var init__3 = __esm({
     index3 = 2;
     component3 = async () => (await Promise.resolve().then(() => (init_layout_svelte(), layout_svelte_exports))).default;
     universal_id2 = "src/routes/contact/+layout.js";
-    imports3 = ["_app/immutable/nodes/2.f4070905.js", "_app/immutable/chunks/layout.43590fb5.js", "_app/immutable/chunks/scheduler.943d25be.js", "_app/immutable/chunks/index.2fe3d9aa.js"];
+    imports3 = ["_app/immutable/nodes/2.8a90f07d.js", "_app/immutable/chunks/layout.d3360e33.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js"];
     stylesheets3 = [];
     fonts3 = [];
   }
@@ -792,7 +792,7 @@ var init_page = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/Name.js
+// .svelte-kit/output/server/chunks/Theme.js
 function normaliseData(data) {
   let name;
   let iconData;
@@ -823,9 +823,9 @@ function normaliseData(data) {
   }
   return iconData;
 }
-var globals, Raw, css$2, Svg, Object_1, outerScale, Icon, home, shoppingCart, phone, mobilePhone, moonO, productHunt, css$1, Theme, css, Name;
-var init_Name = __esm({
-  ".svelte-kit/output/server/chunks/Name.js"() {
+var globals, Raw, css$1, Svg, Object_1, outerScale, Icon, home, shoppingCart, phone, phoneSquare, moonO, productHunt, css, Theme;
+var init_Theme = __esm({
+  ".svelte-kit/output/server/chunks/Theme.js"() {
     init_ssr();
     globals = typeof window !== "undefined" ? window : typeof globalThis !== "undefined" ? globalThis : (
       // @ts-ignore Node typings have this
@@ -864,7 +864,7 @@ var init_Name = __esm({
       raw = getRaw(data);
       return `<g><!-- HTML_TAG_START -->${raw}<!-- HTML_TAG_END --></g>`;
     });
-    css$2 = {
+    css$1 = {
       code: ".fa-icon.svelte-1mc5hvj{display:inline-block;fill:currentColor}.fa-flip-horizontal.svelte-1mc5hvj{transform:scale(-1, 1)}.fa-flip-vertical.svelte-1mc5hvj{transform:scale(1, -1)}.fa-spin.svelte-1mc5hvj{animation:svelte-1mc5hvj-fa-spin 1s 0s infinite linear}.fa-inverse.svelte-1mc5hvj{color:#fff}.fa-pulse.svelte-1mc5hvj{animation:svelte-1mc5hvj-fa-spin 1s infinite steps(8)}@keyframes svelte-1mc5hvj-fa-spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}",
       map: null
     };
@@ -900,7 +900,7 @@ var init_Name = __esm({
         $$bindings.style(style);
       if ($$props.label === void 0 && $$bindings.label && label !== void 0)
         $$bindings.label(label);
-      $$result.css.add(css$2);
+      $$result.css.add(css$1);
       return `<svg${spread(
         [
           { version: "1.1" },
@@ -1050,11 +1050,11 @@ var init_Name = __esm({
     home = { "home": { "width": 1664, "height": 1792, "paths": [{ "d": "M1408 992v480q0 26-19 45t-45 19h-384v-384h-256v384h-384q-26 0-45-19t-19-45v-480q0-1 0.5-3t0.5-3l575-474 575 474q1 2 1 6zM1631 923l-62 74q-8 9-21 11h-3q-13 0-21-7l-692-577-692 577q-12 8-24 7-13-2-21-11l-62-74q-8-10-7-23.5t11-21.5l719-599q32-26 76-26t76 26l244 204v-195q0-14 9-23t23-9h192q14 0 23 9t9 23v408l219 182q10 8 11 21.5t-7 23.5z" }] } };
     shoppingCart = { "shopping-cart": { "width": 1664, "height": 1792, "paths": [{ "d": "M640 1536q0 52-38 90t-90 38-90-38-38-90 38-90 90-38 90 38 38 90zM1536 1536q0 52-38 90t-90 38-90-38-38-90 38-90 90-38 90 38 38 90zM1664 448v512q0 24-16.5 42.5t-40.5 21.5l-1044 122q13 60 13 70 0 16-24 64h920q26 0 45 19t19 45-19 45-45 19h-1024q-26 0-45-19t-19-45q0-11 8-31.5t16-36 21.5-40 15.5-29.5l-177-823h-204q-26 0-45-19t-19-45 19-45 45-19h256q16 0 28.5 6.5t19.5 15.5 13 24.5 8 26 5.5 29.5 4.5 26h1201q26 0 45 19t19 45z" }] } };
     phone = { "phone": { "width": 1408, "height": 1792, "paths": [{ "d": "M1408 1240q0 27-10 70.5t-21 68.5q-21 50-122 106-94 51-186 51-27 0-53-3.5t-57.5-12.5-47-14.5-55.5-20.5-49-18q-98-35-175-83-127-79-264-216t-216-264q-48-77-83-175-3-9-18-49t-20.5-55.5-14.5-47-12.5-57.5-3.5-53q0-92 51-186 56-101 106-122 25-11 68.5-21t70.5-10q14 0 21 3 18 6 53 76 11 19 30 54t35 63.5 31 53.5q3 4 17.5 25t21.5 35.5 7 28.5q0 20-28.5 50t-62 55-62 53-28.5 46q0 9 5 22.5t8.5 20.5 14 24 11.5 19q76 137 174 235t235 174q2 1 19 11.5t24 14 20.5 8.5 22.5 5q18 0 46-28.5t53-62 55-62 50-28.5q14 0 28.5 7t35.5 21.5 25 17.5q25 15 53.5 31t63.5 35 54 30q70 35 76 53 3 7 3 21z" }] } };
-    mobilePhone = { "mobile-phone": { "width": 768, "height": 1792, "paths": [{ "d": "M464 1408q0-33-23.5-56.5t-56.5-23.5-56.5 23.5-23.5 56.5 23.5 56.5 56.5 23.5 56.5-23.5 23.5-56.5zM672 1248v-704q0-13-9.5-22.5t-22.5-9.5h-512q-13 0-22.5 9.5t-9.5 22.5v704q0 13 9.5 22.5t22.5 9.5h512q13 0 22.5-9.5t9.5-22.5zM480 400q0-16-16-16h-160q-16 0-16 16t16 16h160q16 0 16-16zM768 384v1024q0 52-38 90t-90 38h-512q-52 0-90-38t-38-90v-1024q0-52 38-90t90-38h512q52 0 90 38t38 90z" }] } };
+    phoneSquare = { "phone-square": { "width": 1536, "height": 1792, "paths": [{ "d": "M1280 1193q0-11-2-16t-18-16.5-40.5-25-47.5-26.5-45.5-25-28.5-15q-5-3-19-13t-25-15-21-5q-15 0-36.5 20.5t-39.5 45-38.5 45-33.5 20.5q-7 0-16.5-3.5t-15.5-6.5-17-9.5-14-8.5q-99-55-170-126.5t-127-170.5q-2-3-8.5-14t-9.5-17-6.5-15.5-3.5-16.5q0-13 20.5-33.5t45-38.5 45-39.5 20.5-36.5q0-10-5-21t-15-25-13-19q-3-6-15-28.5t-25-45.5-26.5-47.5-25-40.5-16.5-18-16-2q-48 0-101 22-46 21-80 94.5t-34 130.5q0 16 2.5 34t5 30.5 9 33 10 29.5 12.5 33 11 30q60 164 216.5 320.5t320.5 216.5q6 2 30 11t33 12.5 29.5 10 33 9 30.5 5 34 2.5q57 0 130.5-34t94.5-80q22-53 22-101zM1536 416v960q0 119-84.5 203.5t-203.5 84.5h-960q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" }] } };
     moonO = { "moon-o": { "width": 1536, "height": 1792, "paths": [{ "d": "M1262 1303q-54 9-110 9-182 0-337-90t-245-245-90-337q0-192 104-357-201 60-328.5 229t-127.5 384q0 130 51 248.5t136.5 204 204 136.5 248.5 51q144 0 273.5-61.5t220.5-171.5zM1465 1218q-94 203-283.5 324.5t-413.5 121.5q-156 0-298-61t-245-164-164-245-61-298q0-153 57.5-292.5t156-241.5 235.5-164.5 290-68.5q44-2 61 39 18 41-15 72-86 78-131.5 181.5t-45.5 218.5q0 148 73 273t198 198 273 73q118 0 228-51 41-18 72 13 14 14 17.5 34t-4.5 38z" }] } };
     productHunt = { "product-hunt": { "width": 1792, "height": 1792, "paths": [{ "d": "M1150 762q0 56-39.5 95t-95.5 39h-253v-269h253q56 0 95.5 39.5t39.5 95.5zM1329 762q0-130-91.5-222t-222.5-92h-433v896h180v-269h253q130 0 222-91.5t92-221.5zM1792 896q0 182-71 348t-191 286-286 191-348 71-348-71-286-191-191-286-71-348 71-348 191-286 286-191 348-71 348 71 286 191 191 286 71 348z" }] } };
-    css$1 = {
-      code: ':root[data-theme="dark"]{background-color:var(--secondary-background);color:var(--secondary-color)}:root[data-theme="light"]{background-color:var(--primary-background);color:var(--primary-color)}',
+    css = {
+      code: ':root[data-theme="dark"]{background-color:var(--secondary-background);color:var(--secondary-color)}:root[data-theme="light"]{background-color:var(--primary-background);color:var(--primary-color)}.theme-icon{transition:color .5s ease-in;color:gold}.theme-icon:hover{color:blue}',
       map: null
     };
     Theme = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1062,11 +1062,51 @@ var init_Name = __esm({
       createEventDispatcher();
       if ($$props.scale === void 0 && $$bindings.scale && scale !== void 0)
         $$bindings.scale(scale);
-      $$result.css.add(css$1);
-      return `  <div class="theme">${validate_component(Icon, "Icon").$$render($$result, { data: moonO, scale, flip: "horizontal" }, {}, {})} </div>`;
+      $$result.css.add(css);
+      return `  <div class="theme">${validate_component(Icon, "Icon").$$render(
+        $$result,
+        {
+          data: moonO,
+          scale,
+          flip: "horizontal",
+          class: "theme-icon"
+        },
+        {},
+        {}
+      )} </div>`;
     });
-    css = {
-      code: 'header.svelte-8iahwb a.svelte-8iahwb{text-decoration:none}header.svelte-8iahwb h2.svelte-8iahwb{text-align:center;color:transparent;font-weight:900;font-family:"Allura"}.dark.svelte-8iahwb.svelte-8iahwb{background:linear-gradient(var(--primary-background), var(--tertiary-background), var(--primary-background));-webkit-background-clip:text;background-clip:text}.light.svelte-8iahwb.svelte-8iahwb{background:linear-gradient(var(--secondary-background), var(--tertiary-background), var(--secondary-background));-webkit-background-clip:text;background-clip:text}@media(max-width: 650px){.responsive.svelte-8iahwb.svelte-8iahwb{display:none}.links-container{transform:translateX(-1em)}}',
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/_page.svelte.js
+var page_svelte_exports = {};
+__export(page_svelte_exports, {
+  default: () => Page
+});
+var css$5, TopBar, css$4, Links, css$3, Name, placeholderClass, Placeholder, Src, css$2, Product, PRODUCTS, css$12, Products, css2, YooBrandInfo, _Layout_, Page;
+var init_page_svelte = __esm({
+  ".svelte-kit/output/server/entries/pages/_page.svelte.js"() {
+    init_ssr();
+    init_Theme();
+    css$5 = {
+      code: ".navTop-container.svelte-j6at6z{display:flex;align-items:center;justify-content:space-between}",
+      map: null
+    };
+    TopBar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      $$result.css.add(css$5);
+      return `<div class="navTop-container svelte-j6at6z">${slots.default ? slots.default({}) : ``} </div>`;
+    });
+    css$4 = {
+      code: ".links-container.svelte-1x24812.svelte-1x24812{width:100%}.links-container.svelte-1x24812 nav.svelte-1x24812{width:100%;display:flex;justify-content:space-around;align-items:center}.links-container.svelte-1x24812 nav a.svelte-1x24812{width:100%;display:flex;justify-content:space-between;font-weight:900;text-decoration:none;color:inherit;transition:color .5s ease-in-out;font-size:0.75em}.links-container.svelte-1x24812 nav a.svelte-1x24812:hover{color:var(--tertiary-color)}.links-container.svelte-1x24812 nav a #active.svelte-1x24812{padding:5px;background-color:var(--tertiary-color);color:black;font-weight:500;border-radius:5px}",
+      map: null
+    };
+    Links = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let pathName;
+      $$result.css.add(css$4);
+      return `<div class="links-container svelte-1x24812"><nav class="svelte-1x24812"><a href="/" data-sveltekit-preload-data="hover" class="svelte-1x24812"><span${add_attribute("id", pathName == "/", 0)} class="svelte-1x24812">Home</span></a> <a href="/products" data-sveltekit-preload-data="hover" class="svelte-1x24812"><span${add_attribute("id", pathName == "/products", 0)} class="svelte-1x24812">Products</span></a> <a href="/store" data-sveltekit-preload-data="hover" class="svelte-1x24812"><span${add_attribute("id", pathName == "/order", 0)} class="svelte-1x24812">Order</span></a> <a href="/contact" data-sveltekit-preload-data="hover" class="svelte-1x24812"><span${add_attribute("id", pathName == "/contact", 0)} class="svelte-1x24812">Contact</span></a></nav> </div>`;
+    });
+    css$3 = {
+      code: 'header.svelte-10z7xyf a.svelte-10z7xyf{text-decoration:none}header.svelte-10z7xyf h2.svelte-10z7xyf{text-align:center;color:transparent;font-weight:900;font-family:"Allura";margin-right:1em}.dark.svelte-10z7xyf.svelte-10z7xyf{background:linear-gradient(var(--primary-background), var(--tertiary-background), var(--primary-background));-webkit-background-clip:text;background-clip:text}.light.svelte-10z7xyf.svelte-10z7xyf{background:linear-gradient(var(--secondary-background), var(--tertiary-background), var(--secondary-background));-webkit-background-clip:text;background-clip:text}@media(max-width: 650px){.responsive.svelte-10z7xyf.svelte-10z7xyf{display:none}}',
       map: null
     };
     Name = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1079,40 +1119,10 @@ var init_Name = __esm({
         $$bindings.responsive(responsive);
       if ($$props.size === void 0 && $$bindings.size && size !== void 0)
         $$bindings.size(size);
-      $$result.css.add(css);
-      return `<header class="svelte-8iahwb"><a href="/" class="svelte-8iahwb"><h2 class="${escape(null_to_empty(`${currentTheme} ${responsive == "yes" && "responsive"}`), true) + " svelte-8iahwb"}"${add_attribute("style", `font-size: ${size ? size : "normal"};`, 0)}>Yoo
+      $$result.css.add(css$3);
+      return `<header class="svelte-10z7xyf"><a href="/" class="svelte-10z7xyf"><h2 class="${escape(null_to_empty(`${currentTheme} ${responsive == "yes" && "responsive"}`), true) + " svelte-10z7xyf"}"${add_attribute("style", `font-size: ${size ? size : "normal"};`, 0)}>Yoo
         <br>
         Brands</h2></a> </header>`;
-    });
-  }
-});
-
-// .svelte-kit/output/server/entries/pages/_page.svelte.js
-var page_svelte_exports = {};
-__export(page_svelte_exports, {
-  default: () => Page
-});
-var css$4, TopBar, css$3, Links, placeholderClass, Placeholder, Src, css$22, Product, PRODUCTS, css$12, Products, css2, YooBrandInfo, _Layout_, Page;
-var init_page_svelte = __esm({
-  ".svelte-kit/output/server/entries/pages/_page.svelte.js"() {
-    init_ssr();
-    init_Name();
-    css$4 = {
-      code: ".navTop-container.svelte-j6at6z{display:flex;align-items:center;justify-content:space-between}",
-      map: null
-    };
-    TopBar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      $$result.css.add(css$4);
-      return `<div class="navTop-container svelte-j6at6z">${slots.default ? slots.default({}) : ``} </div>`;
-    });
-    css$3 = {
-      code: ".links-container.svelte-zgzct0.svelte-zgzct0{flex-grow:2}.links-container.svelte-zgzct0 nav.svelte-zgzct0{width:100%;display:flex;justify-content:space-around;align-items:center}.links-container.svelte-zgzct0 nav a.svelte-zgzct0{font-weight:900;text-decoration:none;color:inherit;transition:color .5s ease-in-out;font-size:1em}.links-container.svelte-zgzct0 nav a.svelte-zgzct0:hover{color:var(--tertiary-color)}.links-container.svelte-zgzct0 nav #active.svelte-zgzct0{padding:5px;background-color:var(--tertiary-color);color:black;font-weight:500;border-radius:5px}",
-      map: null
-    };
-    Links = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let pathName;
-      $$result.css.add(css$3);
-      return `<div class="links-container svelte-zgzct0"><nav class="svelte-zgzct0"><a href="/"${add_attribute("id", pathName == "/", 0)} class="svelte-zgzct0">Home</a> <a href="/products"${add_attribute("id", pathName == "/products", 0)} class="svelte-zgzct0">Products</a> <a href="/store"${add_attribute("id", pathName == "/store", 0)} class="svelte-zgzct0">Store</a> <a href="/contact"${add_attribute("id", pathName == "/contact", 0)} class="svelte-zgzct0">Contact</a></nav> </div>`;
     });
     placeholderClass = "svelte-lazy-placeholder";
     Placeholder = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1156,8 +1166,8 @@ var init_page_svelte = __esm({
         $$bindings.class(className);
       return `<div${add_attribute("class", rootClass, 0)} style="${"height: " + escape(rootInitialHeight, true)}">${`${placeholder ? `${validate_component(Placeholder, "Placeholder").$$render($$result, { placeholder, placeholderProps }, {}, {})}` : ``}`} </div>`;
     });
-    css$22 = {
-      code: '.lazy-container{width:100%}.product-card.svelte-1g8tf0n.svelte-1g8tf0n{display:flex;flex-direction:column;align-items:center;transition:transform .3s linear}.product-card.svelte-1g8tf0n.svelte-1g8tf0n:hover{transform:scale(1.01)}li.svelte-1g8tf0n.svelte-1g8tf0n{list-style-type:none}#png.svelte-1g8tf0n.svelte-1g8tf0n{background-color:white}.product-card.svelte-1g8tf0n .image-container.svelte-1g8tf0n{width:100%;display:flex;justify-content:center}.product-card.svelte-1g8tf0n img.svelte-1g8tf0n{margin:0 auto;width:80%;max-width:350px;height:300px;border-radius:2em;transition:transform .5s ease-in-out;background-size:contain}.product-card.svelte-1g8tf0n #product-name.svelte-1g8tf0n{color:var(--tertiary-color);font-size:1.5em;font-weight:900;transition:color .5s ease}.product-card.svelte-1g8tf0n #product-name.svelte-1g8tf0n:hover{color:green}.product-card.svelte-1g8tf0n #product-info.svelte-1g8tf0n{transform:translateY(-40px);text-align:center;line-height:1.8em;font-family:"Fira Code";font-size:1em;padding:0 2em}.product-card.svelte-1g8tf0n #product-info a.svelte-1g8tf0n{color:var(--tertiary-color);text-decoration:none;transition:color .5s ease;font-size:1em}.product-card.svelte-1g8tf0n #product-info a.svelte-1g8tf0n:hover{color:green}',
+    css$2 = {
+      code: '.lazy-container{width:100%}.product-card.svelte-1dbeija.svelte-1dbeija{display:flex;flex-direction:column;align-items:center;transition:transform .3s linear}.product-card.svelte-1dbeija.svelte-1dbeija:hover{transform:scale(1.01)}li.svelte-1dbeija.svelte-1dbeija{list-style-type:none}#png.svelte-1dbeija.svelte-1dbeija{background-color:white}.product-card.svelte-1dbeija .image-container.svelte-1dbeija{width:100%;display:flex;justify-content:center}.product-card.svelte-1dbeija img.svelte-1dbeija{margin:0 auto;width:80%;max-width:350px;height:300px;border-radius:2em;transition:transform .5s ease-in-out;background-size:contain}.product-card.svelte-1dbeija #product-name.svelte-1dbeija{color:var(--tertiary-color);font-size:1.5em;font-weight:900;transition:color .5s ease;font-family:"Mukta"}.product-card.svelte-1dbeija #product-name.svelte-1dbeija:hover{color:green}.product-card.svelte-1dbeija #product-info.svelte-1dbeija{transform:translateY(-40px);text-align:center;line-height:1.8em;font-family:"Fira Code";font-size:1em;padding:0 2em}.product-card.svelte-1dbeija #product-info.svelte-1dbeija::first-letter{font-family:"Allura";font-size:2em}.product-card.svelte-1dbeija #product-info a.svelte-1dbeija{color:var(--tertiary-color);text-decoration:none;transition:color .5s ease;font-size:1em}.product-card.svelte-1dbeija #product-info a.svelte-1dbeija:hover{color:green}',
       map: null
     };
     Product = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1165,12 +1175,12 @@ var init_page_svelte = __esm({
       const [, png] = product.imgSrc.split(".");
       if ($$props.product === void 0 && $$bindings.product && product !== void 0)
         $$bindings.product(product);
-      $$result.css.add(css$22);
-      return `<div class="product-card svelte-1g8tf0n">${validate_component(Src, "Lazy").$$render($$result, { class: "lazy-container" }, {}, {
+      $$result.css.add(css$2);
+      return `<div class="product-card svelte-1dbeija">${validate_component(Src, "Lazy").$$render($$result, { class: "lazy-container" }, {}, {
         default: () => {
-          return `<div class="image-container svelte-1g8tf0n"><img${add_attribute("src", product.imgSrc, 0)}${add_attribute("alt", product.name, 0)}${add_attribute("id", png == "png" && png, 0)} class="svelte-1g8tf0n"></div>`;
+          return `<div class="image-container svelte-1dbeija"><img${add_attribute("src", product.imgSrc, 0)}${add_attribute("alt", product.name, 0)}${add_attribute("id", png == "png" && png, 0)} class="svelte-1dbeija"></div>`;
         }
-      })} <p id="product-name" class="svelte-1g8tf0n">${escape(product.name)}</p> <p id="product-info" class="svelte-1g8tf0n">${escape(product.info.substr(0, 300) + "...")} <li class="svelte-1g8tf0n" data-svelte-h="svelte-zz7tti"><a href="/" class="svelte-1g8tf0n">see more</a></li></p> </div>`;
+      })} <p id="product-name" class="svelte-1dbeija">${escape(product.name)}</p> <p id="product-info" class="svelte-1dbeija">${escape(product.info.substr(0, 300) + "...")} <li class="svelte-1dbeija" data-svelte-h="svelte-zz7tti"><a href="/" class="svelte-1dbeija">see more</a></li></p> </div>`;
     });
     PRODUCTS = [
       {
@@ -1250,22 +1260,22 @@ var init_page_svelte = __esm({
       }
     ];
     css$12 = {
-      code: ".products-container.svelte-1etmzz9{display:grid;justify-content:center;align-content:center;grid-template-columns:repeat(auto-fit, minmax(380px, 1fr));gap:10px}",
+      code: ".products-container.svelte-1q1far2{display:grid;justify-content:center;align-content:center;grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));gap:5px}",
       map: null
     };
     Products = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css$12);
-      return `<div class="products-container svelte-1etmzz9">${each(PRODUCTS, (product, index6) => {
+      return `<div class="products-container svelte-1q1far2">${each(PRODUCTS, (product, index6) => {
         return `${validate_component(Product, "Product").$$render($$result, { product }, {}, {})}`;
       })} </div>`;
     });
     css2 = {
-      code: '.info-container.svelte-47jhq7.svelte-47jhq7{line-height:2rem}.info-container.svelte-47jhq7 #content.svelte-47jhq7{font-size:clamp(12px, 14px, 18px);font-family:"Fira Code"}#content.svelte-47jhq7.svelte-47jhq7::first-letter{color:var(--tertiary-color);font-family:"Allura";font-size:2.5em}',
+      code: '.info-container.svelte-tzyp61.svelte-tzyp61{line-height:2rem}.info-container.svelte-tzyp61 #content.svelte-tzyp61{font-size:clamp(12px, 14px, 18px);font-family:"Fira Code"}#content.svelte-tzyp61.svelte-tzyp61::first-letter{font-family:"Allura";font-size:2.5em}',
       map: null
     };
     YooBrandInfo = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css2);
-      return `<div class="info-container svelte-47jhq7" data-svelte-h="svelte-y90yyi"><p id="content" class="svelte-47jhq7">At <span style="font-weight: bold; color: var(--tertiary-color)">Yoo Brand</span>, we have a passion for creating art that inspires and brings joy to people&#39;s lives. Our commitment to quality and attention to details is evident in everything we do, from Photography and Painting to Sculpture and Embroidery. We believe that Art is a powerful way to connect with others, and we are dedicated to providing a personalized and memorable experience for each and every customer. Whether you are looking for a custom pieceto add to your collection or want to explore our diverse range of creative expression, we invite you to discover the unique beauty and quality of Yoo Brand.</p> </div>`;
+      return `<div class="info-container svelte-tzyp61" data-svelte-h="svelte-8o0o4n"><p id="content" class="svelte-tzyp61">At <span style="font-weight: bold; color: green">Yoo Brand</span>, we have a passion for creating art that inspires and brings joy to people&#39;s lives. Our commitment to quality and attention to details is evident in everything we do, from Photography and Painting to Sculpture and Embroidery. We believe that Art is a powerful way to connect with others, and we are dedicated to providing a personalized and memorable experience for each and every customer. Whether you are looking for a custom pieceto add to your collection or want to explore our diverse range of creative expression, we invite you to discover the unique beauty and quality of Yoo Brand.</p> </div>`;
     });
     _Layout_ = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let currentTheme;
@@ -1308,8 +1318,8 @@ var init__4 = __esm({
     index4 = 3;
     component4 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id3 = "src/routes/+page.js";
-    imports4 = ["_app/immutable/nodes/3.e14b54a7.js", "_app/immutable/chunks/scheduler.943d25be.js", "_app/immutable/chunks/index.2fe3d9aa.js", "_app/immutable/chunks/Name.542021aa.js"];
-    stylesheets4 = ["_app/immutable/assets/3.395db139.css", "_app/immutable/assets/Name.4337adc5.css"];
+    imports4 = ["_app/immutable/nodes/3.5d47baa9.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/index.bedd29d2.js"];
+    stylesheets4 = ["_app/immutable/assets/3.1b5ec228.css", "_app/immutable/assets/index.36a1cff8.css"];
     fonts4 = [];
   }
 });
@@ -1333,190 +1343,183 @@ var page_svelte_exports2 = {};
 __export(page_svelte_exports2, {
   default: () => Page2
 });
-var css$6, CallUs, SwipeDetector, css$5, Link, css$42, SideBar, css$32, Form, css$23, App, css$13, baseUrl, VisitUs, css3, ContactYooBrand, _Layout_2, Page2;
+var SwipeDetector, css$6, SideBarLink, css$52, SideBarComponents, SideBar, css$42, Form, css$32, AppIcon, css$22, AppsIcons, css$13, ContactUs, css3, PhoneUs, _Layout_2, Page2;
 var init_page_svelte2 = __esm({
   ".svelte-kit/output/server/entries/pages/contact/_page.svelte.js"() {
     init_ssr();
-    init_Name();
-    css$6 = {
-      code: ".phoneUs-container.svelte-116644f.svelte-116644f{position:absolute;right:1em;top:1em;width:40px;height:40px;background-color:var(--tertiary-background);border-radius:50%;display:flex;justify-content:center;align-items:center}.phoneUs-container.svelte-116644f a.svelte-116644f{text-decoration:none;color:inherit;display:flex}",
-      map: null
-    };
-    CallUs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      $$result.css.add(css$6);
-      return `<div class="phoneUs-container svelte-116644f"><a href="tel:+2348171983663" class="svelte-116644f">${validate_component(Icon, "Icon").$$render($$result, { data: phone, scale: 1.5 }, {}, {})}</a> </div>`;
-    });
+    init_Theme();
     SwipeDetector = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let { navRef } = $$props;
       createEventDispatcher();
-      if ($$props.navRef === void 0 && $$bindings.navRef && navRef !== void 0)
-        $$bindings.navRef(navRef);
-      return `<main>${``}</main>`;
+      return `<main>${slots.default ? slots.default({}) : ``}</main>`;
     });
-    css$5 = {
-      code: ".link-container.svelte-192ulme.svelte-192ulme{display:grid;grid-template-columns:30% 70%;height:30px;justify-content:space-around;align-content:center;width:100%}#active.svelte-192ulme.svelte-192ulme{background-color:var(--tertiary-background);border-radius:1em;padding:1em}#active.svelte-192ulme.svelte-192ulme:hover{background:var(--tertiary-color)}.link-container.svelte-192ulme a.svelte-192ulme{text-decoration:none;color:inherit;font-size:1.5em;text-align:center;font-weight:bolder;transition:color .5s linear}.link-container.svelte-192ulme a.svelte-192ulme:hover{color:var(--tertiary-color)}.icon{height:30px;align-self:center;width:100%}",
+    css$6 = {
+      code: ".link-box.svelte-14suc5i.svelte-14suc5i{display:flex;flex-direction:row}.link-box#active.svelte-14suc5i.svelte-14suc5i{background:var(--tertiary-color);border-radius:1em}.link-box.svelte-14suc5i a.svelte-14suc5i{width:100%;display:flex;justify-content:space-around;align-items:center;text-decoration:none;color:inherit;transition:color .5s linear}.link-box.svelte-14suc5i a.svelte-14suc5i:hover{color:var(--tertiary-color)}.link-box.svelte-14suc5i a #name.svelte-14suc5i{flex-basis:70%;text-align:center;font-size:17px;font-weight:bolder}#icon{flex-basis:30%;height:30px}",
       map: null
     };
-    Link = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let { src } = $$props;
+    SideBarLink = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { iconName } = $$props;
+      let { src } = $$props;
       let { name } = $$props;
-      let pageName = window.location.pathname;
-      console.log(pageName, src);
-      console.log(pageName == src);
-      if ($$props.src === void 0 && $$bindings.src && src !== void 0)
-        $$bindings.src(src);
+      let { pagePath } = $$props;
       if ($$props.iconName === void 0 && $$bindings.iconName && iconName !== void 0)
         $$bindings.iconName(iconName);
+      if ($$props.src === void 0 && $$bindings.src && src !== void 0)
+        $$bindings.src(src);
       if ($$props.name === void 0 && $$bindings.name && name !== void 0)
         $$bindings.name(name);
-      $$result.css.add(css$5);
-      return `<div class="link-container svelte-192ulme"${add_attribute("id", pageName == src && "active", 0)}>${validate_component(Icon, "Icon").$$render($$result, { data: iconName, class: "icon" }, {}, {})} <a${add_attribute("href", src, 0)} class="svelte-192ulme">${escape(name)}</a> </div>`;
+      if ($$props.pagePath === void 0 && $$bindings.pagePath && pagePath !== void 0)
+        $$bindings.pagePath(pagePath);
+      $$result.css.add(css$6);
+      return `<div class="link-box svelte-14suc5i"${add_attribute("id", pagePath == src ? "active" : "", 0)}><a${add_attribute("href", src, 0)} data-sveltekit-preload-data="hover" class="svelte-14suc5i">${validate_component(Icon, "Icon").$$render($$result, { data: iconName, id: "icon" }, {}, {})} <h3 id="name" class="svelte-14suc5i">${escape(name)}</h3></a> </div>`;
     });
-    css$42 = {
-      code: ".nav-container.svelte-11o8tem.svelte-11o8tem{position:absolute;top:0;height:100%;width:50%;max-width:200px;z-index:2}.nav-container.light.svelte-11o8tem.svelte-11o8tem{background-color:white}.nav-container.dark.svelte-11o8tem.svelte-11o8tem{background-color:black}.link-box.svelte-11o8tem.svelte-11o8tem{height:95%;width:100%}.link-box.svelte-11o8tem nav.svelte-11o8tem{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:space-around}.theme-container.svelte-11o8tem.svelte-11o8tem{position:absolute;right:10px}",
+    css$52 = {
+      code: ".sidebar-container.svelte-1yemp9a{position:absolute;top:0;left:0;width:50%;height:100%;max-width:200px;z-index:10;display:none}.sidebar-container#lightTheme.svelte-1yemp9a{background-color:var(--primary-background)}.sidebar-container#darkTheme.svelte-1yemp9a{background-color:var(--secondary-background)}.components-box.svelte-1yemp9a{position:relative;height:inherit;display:flex;flex-direction:column;justify-content:space-evenly}.theme-box.svelte-1yemp9a{display:flex;justify-content:flex-end}",
       map: null
     };
-    SideBar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let { currentTheme } = $$props;
+    SideBarComponents = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let pagePath;
+      let sideBarRef;
       createEventDispatcher();
-      let navRef;
-      if ($$props.currentTheme === void 0 && $$bindings.currentTheme && currentTheme !== void 0)
-        $$bindings.currentTheme(currentTheme);
-      $$result.css.add(css$42);
-      return `<div class="${escape(null_to_empty(`nav-container ${currentTheme == "light" ? "light" : "dark"}`), true) + " svelte-11o8tem"}"${add_attribute("this", navRef, 0)}><div class="link-box svelte-11o8tem"><nav class="svelte-11o8tem">${validate_component(Link, "Link").$$render($$result, { src: "/", iconName: home, name: "Home" }, {}, {})} ${validate_component(Link, "Link").$$render(
+      $$result.css.add(css$52);
+      return `<div class="sidebar-container svelte-1yemp9a" style="display: none;"${add_attribute("id", "darkTheme", 0)}${add_attribute("this", sideBarRef, 0)}><div class="components-box svelte-1yemp9a">${validate_component(SideBarLink, "Link").$$render(
         $$result,
         {
-          src: "/products",
+          name: "Home",
+          src: "/",
+          iconName: home,
+          pagePath
+        },
+        {},
+        {}
+      )} ${validate_component(SideBarLink, "Link").$$render(
+        $$result,
+        {
+          name: "Product",
+          src: "/product",
           iconName: productHunt,
-          name: "Products"
+          pagePath
         },
         {},
         {}
-      )} ${validate_component(Link, "Link").$$render(
+      )} ${validate_component(SideBarLink, "Link").$$render(
         $$result,
         {
-          src: "/store",
+          name: "Order",
+          src: "/order",
           iconName: shoppingCart,
-          name: "Store"
+          pagePath
         },
         {},
         {}
-      )} ${validate_component(Link, "Link").$$render(
+      )} ${validate_component(SideBarLink, "Link").$$render(
         $$result,
         {
+          name: "Contact",
           src: "/contact",
-          iconName: mobilePhone,
-          name: "Products"
+          iconName: phoneSquare,
+          pagePath
         },
         {},
         {}
-      )}</nav> <div class="theme-container svelte-11o8tem">${validate_component(Theme, "Theme").$$render($$result, { scale: 1.8 }, {}, {})}</div></div> </div>`;
+      )} <div class="theme-box svelte-1yemp9a">${validate_component(Theme, "Theme").$$render($$result, { scale: 2 }, {}, {})}</div></div> </div>`;
     });
-    css$32 = {
-      code: ".form-container.svelte-vz06rv.svelte-vz06rv{width:100dvw;display:flex;justify-content:center;align-items:center}.form-container.svelte-vz06rv form.svelte-vz06rv{width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}.form-container.svelte-vz06rv input.svelte-vz06rv{margin-bottom:1em;width:80%;max-width:300px;height:40px;border-radius:5px;padding:5px;outline:none;font-size:1.05em;letter-spacing:0.05em;caret-color:green}.form-container.svelte-vz06rv input.svelte-vz06rv:nth-child(1){text-transform:capitalize}.form-container.svelte-vz06rv input.svelte-vz06rv:focus{border:1px solid red}.form-container.svelte-vz06rv input.svelte-vz06rv::placeholder{color:rgba(0,255,0, .7)}.form-container.svelte-vz06rv button.svelte-vz06rv{width:70px;height:40px;border-radius:5px;background:rgba(0,255, 0, .7);color:whitesmoke;font-weight:bold;font-size:1em;border:none;transition:background-color .5s ease}.form-container.svelte-vz06rv button.svelte-vz06rv:hover{background-color:green}",
+    SideBar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<main>${validate_component(SideBarComponents, "SideBarComponents").$$render($$result, {}, {}, {})}</main>`;
+    });
+    css$42 = {
+      code: '.form-container.svelte-1527vup.svelte-1527vup{width:100dvw}.form-container.svelte-1527vup form.svelte-1527vup{display:flex;flex-direction:column;align-items:center}form.svelte-1527vup input.svelte-1527vup{display:block;width:75%;max-width:300px;margin-bottom:1em;height:50px;border-radius:0.5em;padding:5px 10px;box-sizing:border-box;font-family:"Fira Code";border:1px solid black;outline:none}form.svelte-1527vup input.svelte-1527vup:nth-child(1){text-transform:capitalize}form.svelte-1527vup input.svelte-1527vup:not(:nth-child(3)){font-weight:bold}form.svelte-1527vup input.svelte-1527vup:focus{outline:none;border:1px solid var(--tertiary-color)}form.svelte-1527vup button.svelte-1527vup{width:50px;height:30px;border-radius:5px;border:none;font-weight:bold;background-color:var(--tertiary-color);transition:all .5s linear}form.svelte-1527vup button.svelte-1527vup:hover{background-color:green;color:cornsilk}',
       map: null
     };
     Form = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let inputRef;
+      $$result.css.add(css$42);
+      return `<div class="form-container svelte-1527vup"><form class="svelte-1527vup"><input type="text" placeholder="Full Name" class="svelte-1527vup"${add_attribute("this", inputRef, 0)}> <input type="text" placeholder="Email" class="svelte-1527vup"> <input type="text" placeholder="Message" class="svelte-1527vup"> <button type="submit" class="svelte-1527vup" data-svelte-h="svelte-oi6wzx">send</button></form> </div>`;
+    });
+    css$32 = {
+      code: "a.svelte-wpfmsk.svelte-wpfmsk{text-decoration:none;color:inherit;margin-right:1em}a.svelte-wpfmsk img.svelte-wpfmsk{width:30px;height:30px}",
+      map: null
+    };
+    AppIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let { src } = $$props;
+      let { imgSrc } = $$props;
+      let { name } = $$props;
+      if ($$props.src === void 0 && $$bindings.src && src !== void 0)
+        $$bindings.src(src);
+      if ($$props.imgSrc === void 0 && $$bindings.imgSrc && imgSrc !== void 0)
+        $$bindings.imgSrc(imgSrc);
+      if ($$props.name === void 0 && $$bindings.name && name !== void 0)
+        $$bindings.name(name);
       $$result.css.add(css$32);
-      return `<div class="form-container svelte-vz06rv"><form class="svelte-vz06rv"><input type="text" placeholder="Full Name" maxlength="100" class="svelte-vz06rv"${add_attribute("this", inputRef, 0)}> <input type="text" placeholder="Email" maxlength="100" class="svelte-vz06rv"> <input type="text" placeholder="Message" class="svelte-vz06rv"> <button type="submit" class="svelte-vz06rv" data-svelte-h="svelte-oi6wzx">send</button></form> </div>`;
+      return `<a${add_attribute("href", src, 0)} class="svelte-wpfmsk"><img${add_attribute("src", imgSrc, 0)}${add_attribute("alt", name, 0)} class="svelte-wpfmsk"> </a>`;
     });
-    css$23 = {
-      code: "a.svelte-yjn1xu.svelte-yjn1xu{text-decoration:none}a.svelte-yjn1xu img.svelte-yjn1xu{width:30px;height:30px;margin-right:2em}",
+    css$22 = {
+      code: ".appIcons-box.svelte-1c3kgku{display:inline}",
       map: null
     };
-    App = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let { iconSrc } = $$props;
-      let { iconName } = $$props;
-      let { link } = $$props;
-      if ($$props.iconSrc === void 0 && $$bindings.iconSrc && iconSrc !== void 0)
-        $$bindings.iconSrc(iconSrc);
-      if ($$props.iconName === void 0 && $$bindings.iconName && iconName !== void 0)
-        $$bindings.iconName(iconName);
-      if ($$props.link === void 0 && $$bindings.link && link !== void 0)
-        $$bindings.link(link);
-      $$result.css.add(css$23);
-      return `<a${add_attribute("href", link, 0)} class="svelte-yjn1xu"><img${add_attribute("src", iconSrc, 0)}${add_attribute("alt", iconName, 0)} class="svelte-yjn1xu"> </a>`;
-    });
-    css$13 = {
-      code: ".app-Container.svelte-12z1xjw.svelte-12z1xjw{height:40px;display:flex;justify-content:space-around;align-items:center}.visit-us.svelte-12z1xjw p.svelte-12z1xjw{font-size:1.2em;font-weight:bold;font-family:cursive}",
-      map: null
-    };
-    baseUrl = "/app-icons";
-    VisitUs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      $$result.css.add(css$13);
-      return `<div class="visit-us svelte-12z1xjw" data-svelte-h="svelte-5ku5ro"><p class="svelte-12z1xjw">Visit us on</p></div> <div class="app-Container svelte-12z1xjw">${validate_component(App, "App").$$render(
+    AppsIcons = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      $$result.css.add(css$22);
+      return `<div class="appIcons-box svelte-1c3kgku">${validate_component(AppIcon, "AppIcon").$$render(
         $$result,
         {
-          iconSrc: baseUrl + "/instagram.svg",
-          iconName: "Instagram",
-          link: "https://instagram.com/yooaesthetics?igshid=MzNINGNkZWQ4Mg=="
+          src: "/",
+          name: "Instagram",
+          imgSrc: "/app-icons/instagram.svg"
         },
         {},
         {}
-      )} ${validate_component(App, "App").$$render(
+      )} ${validate_component(AppIcon, "AppIcon").$$render(
         $$result,
         {
-          iconSrc: baseUrl + "/snapchat.svg",
-          iconName: "Snapchat",
-          link: "/"
+          src: "/",
+          name: "Snapchat",
+          imgSrc: "/app-icons/snapchat.svg"
         },
         {},
         {}
-      )} ${validate_component(App, "App").$$render(
+      )} ${validate_component(AppIcon, "AppIcon").$$render(
         $$result,
         {
-          iconSrc: baseUrl + "/tiktok.svg",
-          iconName: "TikTok",
-          link: "https://www.tiktok.com/@yoo_gallery?_t=8dD4UoGxDQT&_r=1"
+          src: "/",
+          name: "TikTok",
+          imgSrc: "/app-icons/tiktok.svg"
         },
         {},
         {}
-      )} ${validate_component(App, "App").$$render(
+      )} ${validate_component(AppIcon, "AppIcon").$$render(
         $$result,
         {
-          iconSrc: baseUrl + "/whatsapp.svg",
-          iconName: "WhatsApp",
-          link: "/"
+          src: "/",
+          name: "WhatsApp",
+          imgSrc: "/app-icons/whatsapp.svg"
         },
         {},
         {}
       )} </div>`;
     });
-    css3 = {
-      code: ".center-box.svelte-13svyg5{margin:0;position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}.center-box.fade.svelte-13svyg5{opacity:50%}.center-box.unfade.svelte-13svyg5{opacity:100%}@media(min-width: 768px){.center-box.svelte-13svyg5{transform:translateX(100px)}}@media(orientation: landscape){.center-box.svelte-13svyg5{transform:translateY(2em)}}",
+    css$13 = {
+      code: '.contact-us_container.svelte-1oe5sur{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:opacity .5s ease}#title.svelte-1oe5sur{color:red;font-weight:bolder;font-size:1.5em;font-family:"Fira Code"}@media(min-width: 768px){.contact-us_container.svelte-1oe5sur{transform:translateX(13%)}}',
       map: null
     };
-    ContactYooBrand = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let { currentTheme } = $$props;
-      let { fade } = $$props;
-      let pageTheme;
-      if ($$props.currentTheme === void 0 && $$bindings.currentTheme && currentTheme !== void 0)
-        $$bindings.currentTheme(currentTheme);
-      if ($$props.fade === void 0 && $$bindings.fade && fade !== void 0)
-        $$bindings.fade(fade);
+    ContactUs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let contactUs_Ref;
+      createEventDispatcher();
+      $$result.css.add(css$13);
+      return `<div class="contact-us_container svelte-1oe5sur"${add_attribute("this", contactUs_Ref, 0)}><p id="title" class="svelte-1oe5sur" data-svelte-h="svelte-8blmau">Contact Us</p> ${validate_component(Form, "Form").$$render($$result, {}, {}, {})} <h4 style="font-family: cursive" data-svelte-h="svelte-1efzaxb">Visit us at</h4> ${validate_component(AppsIcons, "AppsIcons").$$render($$result, {}, {}, {})} </div>`;
+    });
+    css3 = {
+      code: ".phone-container.svelte-1uy2iyd.svelte-1uy2iyd{position:absolute;right:1em;bottom:1em;width:40px;height:40px;background:green;color:cornsilk;border-radius:50%}.phone-container.svelte-1uy2iyd a.svelte-1uy2iyd{display:flex;height:inherit;justify-content:center;align-items:center;text-decoration:none;color:inherit}",
+      map: null
+    };
+    PhoneUs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css3);
-      return `<main><div class="${escape(null_to_empty(`center-box ${fade ? "fade" : "unfade"} `), true) + " svelte-13svyg5"}">${validate_component(Name, "Name").$$render(
-        $$result,
-        {
-          currentTheme: currentTheme ? currentTheme : pageTheme,
-          responsive: "no",
-          size: "2em"
-        },
-        {},
-        {}
-      )} ${validate_component(Form, "Form").$$render($$result, {}, {}, {})} ${validate_component(VisitUs, "VisitUs").$$render($$result, {}, {}, {})}</div> </main>`;
+      return `<div class="phone-container svelte-1uy2iyd"><a href="tel:+2348171983663" class="svelte-1uy2iyd">${validate_component(Icon, "Icon").$$render($$result, { data: phone, scale: 1.2 }, {}, {})}</a> </div>`;
     });
     _Layout_2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      let navRef;
-      let currentTheme;
-      let fade;
-      return `<main>${validate_component(CallUs, "CallUs").$$render($$result, {}, {}, {})} ${validate_component(SwipeDetector, "SwipeDetector").$$render($$result, { navRef }, {}, {
+      return `<div>${validate_component(SwipeDetector, "SwipeDetector").$$render($$result, {}, {}, {
         default: () => {
-          return `${validate_component(SideBar, "SideBar").$$render($$result, { currentTheme }, {}, {})}`;
+          return `${validate_component(SideBar, "SideBar").$$render($$result, {}, {}, {})}`;
         }
-      })} ${validate_component(ContactYooBrand, "ContactUs").$$render($$result, { currentTheme, fade }, {}, {})}</main>`;
+      })} ${validate_component(ContactUs, "ContactUs").$$render($$result, {}, {}, {})} ${validate_component(PhoneUs, "PhoneUs").$$render($$result, {}, {}, {})}</div>`;
     });
     Page2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${validate_component(_Layout_2, "Layout").$$render($$result, {}, {}, {})}`;
@@ -1542,8 +1545,8 @@ var init__5 = __esm({
     index5 = 4;
     component5 = async () => (await Promise.resolve().then(() => (init_page_svelte2(), page_svelte_exports2))).default;
     universal_id4 = "src/routes/contact/+page.js";
-    imports5 = ["_app/immutable/nodes/4.e39ed92e.js", "_app/immutable/chunks/scheduler.943d25be.js", "_app/immutable/chunks/index.2fe3d9aa.js", "_app/immutable/chunks/Name.542021aa.js"];
-    stylesheets5 = ["_app/immutable/assets/4.65dd9179.css", "_app/immutable/assets/Name.4337adc5.css"];
+    imports5 = ["_app/immutable/nodes/4.12d68e66.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/index.bedd29d2.js"];
+    stylesheets5 = ["_app/immutable/assets/4.f18cd84d.css", "_app/immutable/assets/index.36a1cff8.css"];
     fonts5 = [];
   }
 });
@@ -1736,7 +1739,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "opdhlj"
+  version_hash: "125ef3p"
 };
 function get_hooks() {
   return {};
@@ -5039,7 +5042,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.png", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg"]),
   mimeTypes: { ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" },
   _: {
-    client: { "start": "_app/immutable/entry/start.bd354dba.js", "app": "_app/immutable/entry/app.3f6bd754.js", "imports": ["_app/immutable/entry/start.bd354dba.js", "_app/immutable/chunks/scheduler.943d25be.js", "_app/immutable/chunks/singletons.110e0f4b.js", "_app/immutable/entry/app.3f6bd754.js", "_app/immutable/chunks/scheduler.943d25be.js", "_app/immutable/chunks/index.2fe3d9aa.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.7dfeb582.js", "app": "_app/immutable/entry/app.6114d7cf.js", "imports": ["_app/immutable/entry/start.7dfeb582.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/singletons.a6c5b7c5.js", "_app/immutable/entry/app.6114d7cf.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

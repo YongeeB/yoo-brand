@@ -1,0 +1,1 @@
+import{L as r}from"../chunks/layout.d3360e33.js";const e={runtime:"nodejs18.x"},o=Object.freeze(Object.defineProperty({__proto__:null,config:e},Symbol.toStringTag,{value:"Module"}));export{r as component,o as universal};

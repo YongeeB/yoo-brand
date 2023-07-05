@@ -1,33 +1,75 @@
 <script>
-// @ts-nocheck
-    import CallUs from "./components/CallUs.svelte";
-    import SwipeDetector from "./components/SwipeDetector.svelte";
-    import SideBar from "./components/SideBar.svelte";
-    import ContactUs from "./components/ContactYooBrand.svelte";
-    import { onMount } from "svelte";
+  import SwipeDetector from "./components/SwipeDetector.svelte";
+  import SideBar from "./components/SideBar.svelte";
+  import { onMount } from "svelte";
+  import ContactUs from "./components/ContactUs.svelte";
+  import PhoneUs from "./components/PhoneUs.svelte";
+  import { fade } from "svelte/transition";
 
+  let direction;
+  let sideBarRef;
+  let pageWidth;
+  let contactRef;
 
-    let navRef;
-    let currentTheme;
-    let fade;
+  function side_bar(display){
+    sideBarRef.style.display = display;
+  }
 
-    const handleRef = e => navRef = e.detail;
-
-    const handleTheme = e => currentTheme = e.detail;
-
-    const SwipeRight = e => fade = e.detail;
-
-    const handleOutsideClick = e => fade = e.detail;
-
-    onMount(()=> currentTheme = localStorage.getItem("theme"))
-
+  function handleDirection(e){
+    direction = e.detail;
     
+    if(direction == "right") {
+        side_bar("block")
+        contactRef.style.opacity = 0.5;
+        console.log(contactRef)
+    }
+  }
+
+  function navRef(ref){
+    sideBarRef = ref.detail;
+  }
+
+  function windowResize(){
+    pageWidth = window.innerWidth;
+
+    (pageWidth >= 768 || direction == "right") ? side_bar("block") :
+    side_bar("none");
+        
+  }
+
+  function handleOutsideClick(e){
+     let outsideClick = !e.composedPath().includes(sideBarRef);
+
+     if(outsideClick && pageWidth < 768){
+        sideBarRef.style.display = "none";
+        contactRef.style.opacity = 1;
+     }
+  }
+
+  function handleContactRef(ref){
+    contactRef = ref.detail;
+  }
+
+  onMount(()=>{
+    pageWidth = window.innerWidth;
+
+    if(pageWidth >= 768){ 
+        side_bar("block");
+        contactRef.style.opacity = 1;
+    }
+
+    window.addEventListener("resize", windowResize);
+
+    document.addEventListener("click", handleOutsideClick)
+  })
+
 </script>
 
-<main>
-    <CallUs />
-    <SwipeDetector {navRef} on:swipe-right={SwipeRight} on:outside-click={handleOutsideClick}>
-        <SideBar on:reference={handleRef} {currentTheme} on:toggle-theme={handleTheme} />
-    </SwipeDetector>
-    <ContactUs {currentTheme} {fade} />
-</main>
+<div in:fade="{{duration: 2500}}">
+<SwipeDetector on:swipe={handleDirection}>
+    <SideBar on:reference={navRef}/>
+</SwipeDetector>
+<ContactUs on:contact-ref={handleContactRef}/>
+<PhoneUs />
+</div>
+

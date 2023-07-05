@@ -1,5 +1,4 @@
 <script>
-// @ts-nocheck
 
   export let currentTheme;
   export let responsive;
@@ -26,6 +25,7 @@
         color: transparent;
         font-weight: 900;
         font-family: "Allura";
+        margin-right: 1em;
     }
 
     .dark {
@@ -43,9 +43,6 @@
     @media(max-width: 650px){
         .responsive {
             display: none;
-        }
-        :global(.links-container){
-            transform: translateX(-1em);
         }
 
     }

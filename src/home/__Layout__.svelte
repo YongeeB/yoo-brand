@@ -1,6 +1,4 @@
 <script>
-// @ts-nocheck
-
   import "../global.css";
 
   import TopBar from "../top-bar/TopBar.svelte";

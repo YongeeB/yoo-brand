@@ -1,5 +1,4 @@
 <script>
-// @ts-nocheck
 
   import { onMount } from "svelte";
 
@@ -13,16 +12,24 @@
 
 <div class="links-container">
     <nav>
-        <a href="/" id={pathName == "/" && "active"}>Home</a>
-        <a href="/products" id={pathName == "/products" && "active"}>Products</a>
-        <a href="/store" id={pathName == "/store" && "active"}>Store</a>
-        <a href="/contact" id={pathName == "/contact" && "active"}>Contact</a>
+        <a href="/" data-sveltekit-preload-data="hover">
+        <span id={pathName == "/" && "active"}>Home</span>
+        </a>
+        <a href="/products" data-sveltekit-preload-data="hover">
+         <span id={pathName == "/products" && "active"}>Products</span>
+        </a>
+        <a href="/store" data-sveltekit-preload-data="hover">
+         <span id={pathName == "/order" && "active"}>Order</span>
+        </a>
+        <a href="/contact" data-sveltekit-preload-data="hover">
+         <span id={pathName == "/contact" && "active"}>Contact</span>
+        </a>
     </nav>
 </div>
 
 <style>
     .links-container {
-        flex-grow: 2;
+        width: 100%;
     }
 
     .links-container nav {
@@ -33,18 +40,21 @@
     }
 
     .links-container nav a {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
         font-weight: 900;
         text-decoration: none;
         color: inherit;
         transition: color .5s ease-in-out;
-        font-size: 1em;
+        font-size: 0.75em;
     }
 
     .links-container nav a:hover {
         color: var(--tertiary-color);
     }
 
-    .links-container nav #active {
+    .links-container nav a #active {
         padding: 5px;
         background-color: var(--tertiary-color);
         color: black;
