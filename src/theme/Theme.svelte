@@ -47,14 +47,6 @@
   color: var(--primary-color);
 }
 
-:global(.theme-icon){
-    transition: color .5s ease-in;
-    color: crimson;
-}
-
-:global(.theme-icon:hover){
-    color: blue;
-}
 
 
 </style>
