@@ -28,8 +28,8 @@
 
     form input {
         display: block;
-        width: 75%;
-        max-width: 300px;
+        width: 85%;
+        max-width: 350px;
         margin-bottom: 1em;
         height: 50px;
         border-radius: 0.5em;

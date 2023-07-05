@@ -734,7 +734,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.8f7aed7a.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/singletons.88c5469c.js"];
+    imports2 = ["_app/immutable/nodes/1.4c09de04.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/singletons.5ac203d7.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1427,13 +1427,13 @@ var init_page_svelte2 = __esm({
       return `<main>${validate_component(SideBarComponents, "SideBarComponents").$$render($$result, {}, {}, {})}</main>`;
     });
     css$42 = {
-      code: '.form-container.svelte-1527vup.svelte-1527vup{width:100dvw}.form-container.svelte-1527vup form.svelte-1527vup{display:flex;flex-direction:column;align-items:center}form.svelte-1527vup input.svelte-1527vup{display:block;width:75%;max-width:300px;margin-bottom:1em;height:50px;border-radius:0.5em;padding:5px 10px;box-sizing:border-box;font-family:"Fira Code";border:1px solid black;outline:none}form.svelte-1527vup input.svelte-1527vup:nth-child(1){text-transform:capitalize}form.svelte-1527vup input.svelte-1527vup:not(:nth-child(3)){font-weight:bold}form.svelte-1527vup input.svelte-1527vup:focus{outline:none;border:1px solid var(--tertiary-color)}form.svelte-1527vup button.svelte-1527vup{width:50px;height:30px;border-radius:5px;border:none;font-weight:bold;background-color:var(--tertiary-color);transition:all .5s linear}form.svelte-1527vup button.svelte-1527vup:hover{background-color:green;color:cornsilk}',
+      code: '.form-container.svelte-1xoqbs5.svelte-1xoqbs5{width:100dvw}.form-container.svelte-1xoqbs5 form.svelte-1xoqbs5{display:flex;flex-direction:column;align-items:center}form.svelte-1xoqbs5 input.svelte-1xoqbs5{display:block;width:85%;max-width:350px;margin-bottom:1em;height:50px;border-radius:0.5em;padding:5px 10px;box-sizing:border-box;font-family:"Fira Code";border:1px solid black;outline:none}form.svelte-1xoqbs5 input.svelte-1xoqbs5:nth-child(1){text-transform:capitalize}form.svelte-1xoqbs5 input.svelte-1xoqbs5:not(:nth-child(3)){font-weight:bold}form.svelte-1xoqbs5 input.svelte-1xoqbs5:focus{outline:none;border:1px solid var(--tertiary-color)}form.svelte-1xoqbs5 button.svelte-1xoqbs5{width:50px;height:30px;border-radius:5px;border:none;font-weight:bold;background-color:var(--tertiary-color);transition:all .5s linear}form.svelte-1xoqbs5 button.svelte-1xoqbs5:hover{background-color:green;color:cornsilk}',
       map: null
     };
     Form = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let inputRef;
       $$result.css.add(css$42);
-      return `<div class="form-container svelte-1527vup"><form class="svelte-1527vup"><input type="text" placeholder="Full Name" class="svelte-1527vup"${add_attribute("this", inputRef, 0)}> <input type="text" placeholder="Email" class="svelte-1527vup"> <input type="text" placeholder="Message" class="svelte-1527vup"> <button type="submit" class="svelte-1527vup" data-svelte-h="svelte-oi6wzx">send</button></form> </div>`;
+      return `<div class="form-container svelte-1xoqbs5"><form class="svelte-1xoqbs5"><input type="text" placeholder="Full Name" class="svelte-1xoqbs5"${add_attribute("this", inputRef, 0)}> <input type="text" placeholder="Email" class="svelte-1xoqbs5"> <input type="text" placeholder="Message" class="svelte-1xoqbs5"> <button type="submit" class="svelte-1xoqbs5" data-svelte-h="svelte-oi6wzx">send</button></form> </div>`;
     });
     css$32 = {
       code: "a.svelte-wpfmsk.svelte-wpfmsk{text-decoration:none;color:inherit;margin-right:1em}a.svelte-wpfmsk img.svelte-wpfmsk{width:30px;height:30px}",
@@ -1497,14 +1497,14 @@ var init_page_svelte2 = __esm({
       )} </div>`;
     });
     css$13 = {
-      code: '.contact-us_container.svelte-1oe5sur{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:opacity .5s ease}#title.svelte-1oe5sur{color:red;font-weight:bolder;font-size:1.5em;font-family:"Fira Code"}@media(min-width: 768px){.contact-us_container.svelte-1oe5sur{transform:translateX(13%)}}',
+      code: '.contact-us_container.svelte-j9g0mw{position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;transition:opacity .5s ease}#title.svelte-j9g0mw{color:var(--tertiary-color);font-weight:bolder;font-size:1.5em;font-family:"Fira Code"}@media(min-width: 768px){.contact-us_container.svelte-j9g0mw{transform:translateX(13%)}}',
       map: null
     };
     ContactUs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let contactUs_Ref;
       createEventDispatcher();
       $$result.css.add(css$13);
-      return `<div class="contact-us_container svelte-1oe5sur"${add_attribute("this", contactUs_Ref, 0)}><p id="title" class="svelte-1oe5sur" data-svelte-h="svelte-8blmau">Contact Us</p> ${validate_component(Form, "Form").$$render($$result, {}, {}, {})} <h4 style="font-family: cursive" data-svelte-h="svelte-1efzaxb">Visit us at</h4> ${validate_component(AppsIcons, "AppsIcons").$$render($$result, {}, {}, {})} </div>`;
+      return `<div class="contact-us_container svelte-j9g0mw"${add_attribute("this", contactUs_Ref, 0)}><p id="title" class="svelte-j9g0mw" data-svelte-h="svelte-8blmau">Contact Us</p> ${validate_component(Form, "Form").$$render($$result, {}, {}, {})} <h4 style="font-family: cursive" data-svelte-h="svelte-1efzaxb">Visit us at</h4> ${validate_component(AppsIcons, "AppsIcons").$$render($$result, {}, {}, {})} </div>`;
     });
     css3 = {
       code: ".phone-container.svelte-1uy2iyd.svelte-1uy2iyd{position:absolute;right:1em;bottom:1em;width:40px;height:40px;background:green;color:cornsilk;border-radius:50%}.phone-container.svelte-1uy2iyd a.svelte-1uy2iyd{display:flex;height:inherit;justify-content:center;align-items:center;text-decoration:none;color:inherit}",
@@ -1545,8 +1545,8 @@ var init__5 = __esm({
     index5 = 4;
     component5 = async () => (await Promise.resolve().then(() => (init_page_svelte2(), page_svelte_exports2))).default;
     universal_id4 = "src/routes/contact/+page.js";
-    imports5 = ["_app/immutable/nodes/4.d4f139de.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/index.a2f7ae49.js"];
-    stylesheets5 = ["_app/immutable/assets/4.f18cd84d.css", "_app/immutable/assets/index.b9d58c9b.css"];
+    imports5 = ["_app/immutable/nodes/4.da4fbb0e.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/index.a2f7ae49.js"];
+    stylesheets5 = ["_app/immutable/assets/4.f93cc8e2.css", "_app/immutable/assets/index.b9d58c9b.css"];
     fonts5 = [];
   }
 });
@@ -1739,7 +1739,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "pruymq"
+  version_hash: "12tmx00"
 };
 function get_hooks() {
   return {};
@@ -5042,7 +5042,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.png", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg"]),
   mimeTypes: { ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" },
   _: {
-    client: { "start": "_app/immutable/entry/start.703e0d56.js", "app": "_app/immutable/entry/app.8561e32d.js", "imports": ["_app/immutable/entry/start.703e0d56.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/singletons.88c5469c.js", "_app/immutable/entry/app.8561e32d.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.7827f22b.js", "app": "_app/immutable/entry/app.dd255a65.js", "imports": ["_app/immutable/entry/start.7827f22b.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/singletons.5ac203d7.js", "_app/immutable/entry/app.dd255a65.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

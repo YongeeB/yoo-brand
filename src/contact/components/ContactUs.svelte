@@ -34,7 +34,7 @@
     }
 
     #title {
-        color: red;
+        color: var(--tertiary-color);
         font-weight: bolder;
         font-size: 1.5em;
         font-family: "Fira Code";
