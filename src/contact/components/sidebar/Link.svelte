@@ -23,6 +23,7 @@
 
     .link-box#active {
         background: var(--tertiary-color);
+        color: black;
         border-radius: 1em;
     }
 
@@ -36,7 +37,7 @@
         transition: color .5s linear;
     }
 
-    .link-box a:hover {
+    .link-box:not(#active) a:hover {
         color: var(--tertiary-color);
     }
 
