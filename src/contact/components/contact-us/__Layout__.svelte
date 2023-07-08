@@ -1,7 +1,8 @@
 <script>
   import { createEventDispatcher, onMount } from "svelte";
   import Form from "./Form.svelte";
-  import AppsIcons from "./AppsIcons.svelte";
+  import AppsIcons from "./apps/Icons.svelte";
+  
     let contactUs_Ref;
     const dispatch = createEventDispatcher();
 
@@ -11,9 +12,14 @@
 </script>
 
 <div class="contact-us_container" bind:this={contactUs_Ref}>
-    <p id="title">
-        Contact Us
-    </p>
+    <header>
+        <a href="/">
+        <h1>Yoo
+            <br />   
+            Brand 
+        </h1>
+        </a>
+    </header>
     <Form />
     <h4 style="font-family: cursive">Visit us at</h4>
     <AppsIcons />
@@ -33,15 +39,28 @@
         transition: opacity .5s ease;
     }
 
-    #title {
-        color: var(--tertiary-color);
-        font-weight: bolder;
-        font-size: 1.5em;
-        font-family: "Fira Code";
-        
+    header a {
+        color: inherit;
+        text-decoration: inherit;
     }
 
-    @media(min-width: 768px){
+    header a h1 {
+        text-align: center;
+        font-family: "Allura";
+        transition: color 1s linear; 
+        font-family: 'Caprasimo';
+        font-size: 2em;
+        color: transparent;
+        background: radial-gradient(var(--tertiary-color), green);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+
+    header a h1:hover {
+        color: var(--tertiary-color);
+    }
+
+    @media(min-width: 768px) and (max-width: 1000px){
         .contact-us_container {
             transform: translateX(13%);
         }

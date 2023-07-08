@@ -1,11 +1,9 @@
 <script>
-  import "../global.css";
-
   import TopBar from "../top-bar/TopBar.svelte";
   import Links from "../navigation/Links.svelte";
   import Theme from "../theme/Theme.svelte";
   import Name from "../web/Name.svelte";
-  import Products from "./components/Products.svelte";
+  import YooProducts from "./components/yoo-products/__Layout__.svelte"
   import YooBrandInfo from "./components/YooBrandInfo.svelte";
 
   let currentTheme;
@@ -20,5 +18,5 @@
     <Theme on:toggle-theme={changeTheme} scale={1.2} />
 </TopBar>
 <YooBrandInfo />
-<Products />
+<YooProducts />
 

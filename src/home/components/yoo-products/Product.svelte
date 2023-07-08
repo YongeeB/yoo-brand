@@ -5,6 +5,7 @@
     export let product;
 
     const [, png] = product.imgSrc.split(".");
+    const [yoo, name] = product.name.split(" ");
 
 </script>
 
@@ -15,7 +16,7 @@
     </div>
      </Lazy>
     <p id="product-name">
-        {product.name}
+        <span style="font-family: Allura; font-size: 1.3em;">{yoo} </span>{name}
     </p>
     <p id="product-info">
         {product.info.substr(0, 300) + "..."}
@@ -60,12 +61,10 @@
 
     .product-card img {
         margin: 0 auto;
-        width: 80%;
-        max-width: 350px;
+        width: 100%;
+        max-width: 400px;
         height: 300px;
-        border-radius: 2em;
-        transition: transform .5s ease-in-out;
-        background-size: contain;
+        border-radius: 20px;
     }
 
     .product-card #product-name {
@@ -77,7 +76,7 @@
     }
 
     .product-card #product-name:hover {
-        color: green;
+        color: greenyellow;
     }
 
     .product-card #product-info {

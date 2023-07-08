@@ -1,5 +1,5 @@
 <script>
-  import AppIcon from "./AppIcon.svelte";
+  import AppIcon from "./Icon.svelte";
 
 </script>
 

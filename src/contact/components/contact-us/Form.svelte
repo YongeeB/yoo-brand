@@ -17,7 +17,7 @@
 
 <style>
     .form-container {
-        width: 100dvw;
+        width: 100vw;
     }
 
     .form-container form {
@@ -28,7 +28,7 @@
 
     form input {
         display: block;
-        width: 85%;
+        width: 80%;
         max-width: 350px;
         margin-bottom: 1em;
         height: 50px;
@@ -53,8 +53,8 @@
         border: 1px solid var(--tertiary-color);
     }
     form button {
-        width: 50px;
-        height: 30px;
+        width: 60px;
+        height: 40px;
         border-radius: 5px;
         border: none;
         font-weight: bold;

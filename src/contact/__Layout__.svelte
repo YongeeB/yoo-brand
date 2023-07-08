@@ -1,8 +1,8 @@
 <script>
   import SwipeDetector from "./components/SwipeDetector.svelte";
-  import SideBar from "./components/SideBar.svelte";
+  import SideBar from "./components/sidebar/__Layout__.svelte";
   import { onMount } from "svelte";
-  import ContactUs from "./components/ContactUs.svelte";
+  import ContactUs from "./components/contact-us/__Layout__.svelte";
   import PhoneUs from "./components/PhoneUs.svelte";
   import { fade } from "svelte/transition";
 
@@ -52,6 +52,8 @@
 
   onMount(()=>{
     pageWidth = window.innerWidth;
+
+    console.log(sideBarRef)
 
     if(pageWidth >= 768){ 
         side_bar("block");

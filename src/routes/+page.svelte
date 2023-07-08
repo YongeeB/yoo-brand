@@ -1,5 +1,4 @@
 <script>
-  import "../global.css"
   import Layout from "../home/__Layout__.svelte";
 
 </script>

@@ -1,12 +1,11 @@
 <script>
   import { home, productHunt, shoppingCart, phoneSquare } from "svelte-awesome/icons"
-  import Link from "./SideBarLink.svelte";
+  import Link from "./Link.svelte";
   import { createEventDispatcher, onMount } from "svelte";
-  import Theme from "../../theme/Theme.svelte";
 
   let pagePath;
   let sideBarRef;
-  let currentTheme;
+  export let currentTheme;
 
   const dispatch = createEventDispatcher()
 
@@ -16,9 +15,7 @@
     
   })
 
-  function changeTheme(e){
-    currentTheme = e.detail;
-  }
+  
 
   
 
@@ -35,7 +32,7 @@
         src="/order" iconName={shoppingCart} {pagePath}/>
         <Link name="Contact" src="/contact" iconName={phoneSquare} {pagePath}/>
         <div class="theme-box">
-            <Theme scale={2} on:toggle-theme={changeTheme}/>
+           <slot></slot> 
         </div>
         
 
