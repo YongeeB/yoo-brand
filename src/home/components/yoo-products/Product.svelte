@@ -61,7 +61,7 @@
 
     .product-card img {
         margin: 0 auto;
-        width: 100%;
+        width: 90%;
         max-width: 400px;
         height: 300px;
         border-radius: 20px;
@@ -94,7 +94,7 @@
     }
 
     .product-card #product-info a {
-        color: var(--tertiary-color);
+        color: green;
         text-decoration: none;
         transition: color .5s ease;
         font-size: 1em;
