@@ -734,7 +734,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.95256900.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/singletons.ee6b1db6.js"];
+    imports2 = ["_app/immutable/nodes/1.8bf71dd7.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/singletons.e6aec88c.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1167,7 +1167,7 @@ var init_page_svelte = __esm({
       return `<div${add_attribute("class", rootClass, 0)} style="${"height: " + escape(rootInitialHeight, true)}">${`${placeholder ? `${validate_component(Placeholder, "Placeholder").$$render($$result, { placeholder, placeholderProps }, {}, {})}` : ``}`} </div>`;
     });
     css$2 = {
-      code: '.lazy-container{width:100%}.product-card.svelte-8php1q.svelte-8php1q{display:flex;flex-direction:column;align-items:center;transition:transform .3s linear}.product-card.svelte-8php1q.svelte-8php1q:hover{transform:scale(1.01)}li.svelte-8php1q.svelte-8php1q{list-style-type:none}#png.svelte-8php1q.svelte-8php1q{background-color:white}.product-card.svelte-8php1q .image-container.svelte-8php1q{width:100%;display:flex;justify-content:center}.product-card.svelte-8php1q img.svelte-8php1q{margin:0 auto;width:90%;max-width:400px;height:300px;border-radius:20px}.product-card.svelte-8php1q #product-name.svelte-8php1q{color:var(--tertiary-color);font-size:1.5em;font-weight:900;transition:color .5s ease;font-family:"Mukta"}.product-card.svelte-8php1q #product-name.svelte-8php1q:hover{color:greenyellow}.product-card.svelte-8php1q #product-info.svelte-8php1q{transform:translateY(-20px);text-align:center;line-height:1.8em;font-family:"Fira Code";font-size:1em;padding:0 2em}.product-card.svelte-8php1q #product-info.svelte-8php1q::first-letter{font-family:"Allura";font-size:2em}.product-card.svelte-8php1q #product-info a.svelte-8php1q{color:green;text-decoration:none;transition:color .5s ease;font-size:1em}.product-card.svelte-8php1q #product-info a.svelte-8php1q:hover{color:green}',
+      code: '.product-card.svelte-5hx1lm.svelte-5hx1lm{display:flex;flex-direction:column;align-items:center;transition:transform .3s linear}.product-card.svelte-5hx1lm.svelte-5hx1lm:hover{transform:scale(1.01)}li.svelte-5hx1lm.svelte-5hx1lm{list-style-type:none}.lazy-container{width:100%;display:flex;justify-content:center}#png.svelte-5hx1lm.svelte-5hx1lm{background-color:white}.product-card.svelte-5hx1lm img.svelte-5hx1lm{width:90%;max-width:400px;height:250px;border-radius:20px}.product-card.svelte-5hx1lm #product-name.svelte-5hx1lm{color:var(--tertiary-color);font-size:1.5em;font-weight:900;transition:color .5s ease;font-family:"Mukta"}.product-card.svelte-5hx1lm #product-name.svelte-5hx1lm:hover{color:greenyellow}.product-card.svelte-5hx1lm #product-info.svelte-5hx1lm{transform:translateY(-20px);text-align:center;line-height:1.8em;font-family:"Fira Code";font-size:1em;padding:0 2em}.product-card.svelte-5hx1lm #product-info.svelte-5hx1lm::first-letter{font-family:"Allura";font-size:2em}.product-card.svelte-5hx1lm #product-info a.svelte-5hx1lm{color:green;text-decoration:none;transition:color .5s ease;font-size:1em}.product-card.svelte-5hx1lm #product-info a.svelte-5hx1lm:hover{color:green}',
       map: null
     };
     Product = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1177,11 +1177,11 @@ var init_page_svelte = __esm({
       if ($$props.product === void 0 && $$bindings.product && product !== void 0)
         $$bindings.product(product);
       $$result.css.add(css$2);
-      return `<div class="product-card svelte-8php1q">${validate_component(Src, "Lazy").$$render($$result, { class: "lazy-container" }, {}, {
+      return `<div class="product-card svelte-5hx1lm">${validate_component(Src, "Lazy").$$render($$result, { class: "lazy-container" }, {}, {
         default: () => {
-          return `<div class="image-container svelte-8php1q"><img${add_attribute("src", product.imgSrc, 0)}${add_attribute("alt", product.name, 0)}${add_attribute("id", png == "png" && png, 0)} class="svelte-8php1q"></div>`;
+          return `<img${add_attribute("src", product.imgSrc, 0)}${add_attribute("alt", product.name, 0)}${add_attribute("id", png == "png" && png, 0)} class="svelte-5hx1lm">`;
         }
-      })} <p id="product-name" class="svelte-8php1q"><span style="font-family: Allura; font-size: 1.3em;">${escape(yoo)} </span>${escape(name)}</p> <p id="product-info" class="svelte-8php1q">${escape(product.info.substr(0, 300) + "...")} <li class="svelte-8php1q" data-svelte-h="svelte-zz7tti"><a href="/" class="svelte-8php1q">see more</a></li></p> </div>`;
+      })} <p id="product-name" class="svelte-5hx1lm"><span style="font-family: Allura; font-size: 1.3em;">${escape(yoo)} </span>${escape(name)}</p> <p id="product-info" class="svelte-5hx1lm">${escape(product.info.substr(0, 300) + "...")} <li class="svelte-5hx1lm" data-svelte-h="svelte-zz7tti"><a href="/" class="svelte-5hx1lm">see more</a></li></p> </div>`;
     });
     PRODUCTS = [
       {
@@ -1261,12 +1261,12 @@ var init_page_svelte = __esm({
       }
     ];
     css$12 = {
-      code: ".products-container.svelte-1t373ai{display:grid;justify-content:center;align-content:center;grid-template-columns:repeat(auto-fit, minmax(420px, 1fr));gap:1em}",
+      code: ".products-container.svelte-1whagcy{display:grid;grid-template-columns:repeat(auto-fit, minmax(410px, 1fr))}",
       map: null
     };
     _Layout_$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css$12);
-      return `<div class="products-container svelte-1t373ai">${each(PRODUCTS, (product, index6) => {
+      return `<div class="products-container svelte-1whagcy">${each(PRODUCTS, (product, index6) => {
         return `${validate_component(Product, "Product").$$render($$result, { product }, {}, {})}`;
       })} </div>`;
     });
@@ -1319,8 +1319,8 @@ var init__4 = __esm({
     index4 = 3;
     component4 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id3 = "src/routes/+page.js";
-    imports4 = ["_app/immutable/nodes/3.9262ef50.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/index.6ae33396.js"];
-    stylesheets4 = ["_app/immutable/assets/3.c4a1f087.css", "_app/immutable/assets/index.569b1071.css"];
+    imports4 = ["_app/immutable/nodes/3.7f8fbbdf.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/index.6ae33396.js"];
+    stylesheets4 = ["_app/immutable/assets/3.206627db.css", "_app/immutable/assets/index.569b1071.css"];
     fonts4 = [];
   }
 });
@@ -1750,7 +1750,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "6k8s3e"
+  version_hash: "1bab183"
 };
 function get_hooks() {
   return {};
@@ -5053,7 +5053,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.png", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg"]),
   mimeTypes: { ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" },
   _: {
-    client: { "start": "_app/immutable/entry/start.c1bedb83.js", "app": "_app/immutable/entry/app.170e8910.js", "imports": ["_app/immutable/entry/start.c1bedb83.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/singletons.ee6b1db6.js", "_app/immutable/entry/app.170e8910.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.0b6cc08e.js", "app": "_app/immutable/entry/app.dca3b8de.js", "imports": ["_app/immutable/entry/start.0b6cc08e.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/singletons.e6aec88c.js", "_app/immutable/entry/app.dca3b8de.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

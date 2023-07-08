@@ -15,9 +15,6 @@
 <style>
     .products-container {
         display: grid;
-        justify-content: center;
-        align-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-        gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
     }
 </style>

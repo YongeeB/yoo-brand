@@ -11,9 +11,7 @@
 
 <div class="product-card">
     <Lazy class="lazy-container">
-    <div class="image-container">
             <img src={product.imgSrc} alt={product.name} id={png == "png" && png}>
-    </div>
      </Lazy>
     <p id="product-name">
         <span style="font-family: Allura; font-size: 1.3em;">{yoo} </span>{name}
@@ -25,9 +23,6 @@
 </div>
 
 <style>
-    :global(.lazy-container) {
-        width: 100%;
-    }
     
     .product-card {
         display: flex;
@@ -45,25 +40,23 @@
         list-style-type: none;
     }
 
-
-    #png {
-        background-color: white;
-
-    }
-
-    .product-card .image-container {
+    :global(.lazy-container){
         width: 100%;
         display: flex;
         justify-content: center;
     }
 
 
+    #png {
+        background-color: white;
+
+    }
+
 
     .product-card img {
-        margin: 0 auto;
         width: 90%;
         max-width: 400px;
-        height: 300px;
+        height: 250px;
         border-radius: 20px;
     }
 
@@ -103,4 +96,6 @@
     .product-card #product-info a:hover {
         color: green;
     }
+
+    
 </style>
