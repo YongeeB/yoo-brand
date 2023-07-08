@@ -734,7 +734,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.8bf71dd7.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/singletons.e6aec88c.js"];
+    imports2 = ["_app/immutable/nodes/1.a006a4ad.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/singletons.9b9f7c60.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1261,12 +1261,12 @@ var init_page_svelte = __esm({
       }
     ];
     css$12 = {
-      code: ".products-container.svelte-1whagcy{display:grid;grid-template-columns:repeat(auto-fit, minmax(410px, 1fr))}",
+      code: ".products-container.svelte-nmeucv{display:grid;grid-template-columns:repeat(auto-fit, minmax(350px, 1fr))}",
       map: null
     };
     _Layout_$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css$12);
-      return `<div class="products-container svelte-1whagcy">${each(PRODUCTS, (product, index6) => {
+      return `<div class="products-container svelte-nmeucv">${each(PRODUCTS, (product, index6) => {
         return `${validate_component(Product, "Product").$$render($$result, { product }, {}, {})}`;
       })} </div>`;
     });
@@ -1319,8 +1319,8 @@ var init__4 = __esm({
     index4 = 3;
     component4 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id3 = "src/routes/+page.js";
-    imports4 = ["_app/immutable/nodes/3.7f8fbbdf.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/index.6ae33396.js"];
-    stylesheets4 = ["_app/immutable/assets/3.206627db.css", "_app/immutable/assets/index.569b1071.css"];
+    imports4 = ["_app/immutable/nodes/3.cca433b5.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/index.6ae33396.js"];
+    stylesheets4 = ["_app/immutable/assets/3.a4593fdb.css", "_app/immutable/assets/index.569b1071.css"];
     fonts4 = [];
   }
 });
@@ -1750,7 +1750,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1bab183"
+  version_hash: "1p35yux"
 };
 function get_hooks() {
   return {};
@@ -5053,7 +5053,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.png", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg"]),
   mimeTypes: { ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" },
   _: {
-    client: { "start": "_app/immutable/entry/start.0b6cc08e.js", "app": "_app/immutable/entry/app.dca3b8de.js", "imports": ["_app/immutable/entry/start.0b6cc08e.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/singletons.e6aec88c.js", "_app/immutable/entry/app.dca3b8de.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.21d8ce79.js", "app": "_app/immutable/entry/app.c2b65ffd.js", "imports": ["_app/immutable/entry/start.21d8ce79.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/singletons.9b9f7c60.js", "_app/immutable/entry/app.c2b65ffd.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
