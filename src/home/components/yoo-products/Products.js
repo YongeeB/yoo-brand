@@ -37,7 +37,7 @@ export let PRODUCTS = [
   {
     name: "Yoo Paws",
     info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ex architecto repudiandae asperiores ab maxime voluptas soluta, vero praesentium quasi deleniti perferendis ratione nemo doloremque eveniet nobis repellat quod. Quasi culpa inventore officiis distinctio aperiam perferendis, eius suscipit omnis dolorem.",
-    imgSrc: "/yoo-products/paws.png",
+    imgSrc: "/yoo-products/paws.jpg",
   },
   {
     name: "Yoo Pottery",

@@ -29,7 +29,6 @@
         flex-direction: column;
         align-items: center;
         transition: transform .3s linear;
-        
     }
 
     .product-card:hover {
@@ -40,23 +39,16 @@
         list-style-type: none;
     }
 
-    :global(.lazy-container){
-        display: flex;
-        justify-content: center;
-    }
-
 
     #png {
+        width: 100;
         background-color: white;
 
     }
 
-
-    .product-card img {
-        width: inherit;
-        display: flex;
-        max-width: 300px;
-        height: 150px;
+     :global(.product-card .lazy-container img) {
+        width: 100%;
+        height: 250px;
         border-radius: 20px;
     }
 
