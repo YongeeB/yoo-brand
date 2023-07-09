@@ -41,7 +41,6 @@
     }
 
     :global(.lazy-container){
-        width: 100%;
         display: flex;
         justify-content: center;
     }
@@ -54,10 +53,10 @@
 
 
     .product-card img {
-        width: 100%;
+        width: inherit;
         display: flex;
-        max-width: 400px;
-        height: 300px;
+        max-width: 300px;
+        height: 150px;
         border-radius: 20px;
     }
 
@@ -79,6 +78,7 @@
         line-height: 1.8em;
         font-family: "Fira Code";
         font-size: 1em;
+        padding: 0 1em;
     }
 
     .product-card #product-info::first-letter {

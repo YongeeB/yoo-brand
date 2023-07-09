@@ -734,7 +734,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.d044a458.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/singletons.42be40a7.js"];
+    imports2 = ["_app/immutable/nodes/1.ec5c8ddd.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/singletons.b3c59c0f.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1167,7 +1167,7 @@ var init_page_svelte = __esm({
       return `<div${add_attribute("class", rootClass, 0)} style="${"height: " + escape(rootInitialHeight, true)}">${`${placeholder ? `${validate_component(Placeholder, "Placeholder").$$render($$result, { placeholder, placeholderProps }, {}, {})}` : ``}`} </div>`;
     });
     css$2 = {
-      code: '.product-card.svelte-6p7pnu.svelte-6p7pnu{display:flex;flex-direction:column;align-items:center;transition:transform .3s linear}.product-card.svelte-6p7pnu.svelte-6p7pnu:hover{transform:scale(1.01)}li.svelte-6p7pnu.svelte-6p7pnu{list-style-type:none}.lazy-container{width:100%;display:flex;justify-content:center}#png.svelte-6p7pnu.svelte-6p7pnu{background-color:white}.product-card.svelte-6p7pnu img.svelte-6p7pnu{width:100%;display:flex;max-width:400px;height:300px;border-radius:20px}.product-card.svelte-6p7pnu #product-name.svelte-6p7pnu{color:var(--tertiary-color);font-size:2em;font-weight:900;transition:color .5s ease;font-family:"Mukta"}.product-card.svelte-6p7pnu #product-name.svelte-6p7pnu:hover{color:greenyellow}.product-card.svelte-6p7pnu #product-info.svelte-6p7pnu{transform:translateY(-20px);text-align:center;line-height:1.8em;font-family:"Fira Code";font-size:1em}.product-card.svelte-6p7pnu #product-info.svelte-6p7pnu::first-letter{font-family:"Allura";font-size:2em}.product-card.svelte-6p7pnu #product-info a.svelte-6p7pnu{color:green;text-decoration:none;transition:color .5s ease;font-size:1em}.product-card.svelte-6p7pnu #product-info a.svelte-6p7pnu:hover{color:green}',
+      code: '.product-card.svelte-bh5gy3.svelte-bh5gy3{display:flex;flex-direction:column;align-items:center;transition:transform .3s linear}.product-card.svelte-bh5gy3.svelte-bh5gy3:hover{transform:scale(1.01)}li.svelte-bh5gy3.svelte-bh5gy3{list-style-type:none}.lazy-container{display:flex;justify-content:center}#png.svelte-bh5gy3.svelte-bh5gy3{background-color:white}.product-card.svelte-bh5gy3 img.svelte-bh5gy3{width:inherit;display:flex;max-width:300px;height:150px;border-radius:20px}.product-card.svelte-bh5gy3 #product-name.svelte-bh5gy3{color:var(--tertiary-color);font-size:2em;font-weight:900;transition:color .5s ease;font-family:"Mukta"}.product-card.svelte-bh5gy3 #product-name.svelte-bh5gy3:hover{color:greenyellow}.product-card.svelte-bh5gy3 #product-info.svelte-bh5gy3{transform:translateY(-20px);text-align:center;line-height:1.8em;font-family:"Fira Code";font-size:1em;padding:0 1em}.product-card.svelte-bh5gy3 #product-info.svelte-bh5gy3::first-letter{font-family:"Allura";font-size:2em}.product-card.svelte-bh5gy3 #product-info a.svelte-bh5gy3{color:green;text-decoration:none;transition:color .5s ease;font-size:1em}.product-card.svelte-bh5gy3 #product-info a.svelte-bh5gy3:hover{color:green}',
       map: null
     };
     Product = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1177,11 +1177,11 @@ var init_page_svelte = __esm({
       if ($$props.product === void 0 && $$bindings.product && product !== void 0)
         $$bindings.product(product);
       $$result.css.add(css$2);
-      return `<div class="product-card svelte-6p7pnu">${validate_component(Src, "Lazy").$$render($$result, { class: "lazy-container" }, {}, {
+      return `<div class="product-card svelte-bh5gy3">${validate_component(Src, "Lazy").$$render($$result, { class: "lazy-container" }, {}, {
         default: () => {
-          return `<img${add_attribute("src", product.imgSrc, 0)}${add_attribute("alt", product.name, 0)}${add_attribute("id", png == "png" && png, 0)} class="svelte-6p7pnu">`;
+          return `<img${add_attribute("src", product.imgSrc, 0)}${add_attribute("alt", product.name, 0)}${add_attribute("id", png == "png" && png, 0)} class="svelte-bh5gy3">`;
         }
-      })} <p id="product-name" class="svelte-6p7pnu"><span style="font-family: Allura; font-size: 1.3em;">${escape(yoo)} </span>${escape(name)}</p> <p id="product-info" class="svelte-6p7pnu">${escape(product.info.substr(0, 300) + "...")} <li class="svelte-6p7pnu" data-svelte-h="svelte-zz7tti"><a href="/" class="svelte-6p7pnu">see more</a></li></p> </div>`;
+      })} <p id="product-name" class="svelte-bh5gy3"><span style="font-family: Allura; font-size: 1.3em;">${escape(yoo)} </span>${escape(name)}</p> <p id="product-info" class="svelte-bh5gy3">${escape(product.info.substr(0, 300) + "...")} <li class="svelte-bh5gy3" data-svelte-h="svelte-zz7tti"><a href="/" class="svelte-bh5gy3">see more</a></li></p> </div>`;
     });
     PRODUCTS = [
       {
@@ -1261,22 +1261,22 @@ var init_page_svelte = __esm({
       }
     ];
     css$12 = {
-      code: ".products-container.svelte-qw02p6{display:grid;grid-template-columns:repeat(auto-fit, minmax(430px, 1fr));gap:1em}",
+      code: ".products-container.svelte-fyiz5s{display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:1em}",
       map: null
     };
     _Layout_$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css$12);
-      return `<div class="products-container svelte-qw02p6">${each(PRODUCTS, (product, index6) => {
+      return `<div class="products-container svelte-fyiz5s">${each(PRODUCTS, (product, index6) => {
         return `${validate_component(Product, "Product").$$render($$result, { product }, {}, {})}`;
       })} </div>`;
     });
     css2 = {
-      code: '.info-container.svelte-1c6g8m9.svelte-1c6g8m9{line-height:1.5rem}.info-container.svelte-1c6g8m9 #content.svelte-1c6g8m9{font-size:clamp(12px, 14px, 18px);font-family:"Fira Code"}#content.svelte-1c6g8m9.svelte-1c6g8m9::first-letter{font-family:"Allura";font-size:2.5em}',
+      code: '.info-container.svelte-avu0vk.svelte-avu0vk{line-height:1.5rem}.info-container.svelte-avu0vk #content.svelte-avu0vk{font-size:clamp(12px, 14px, 18px);font-family:"Fira Code";text-align:center}#content.svelte-avu0vk.svelte-avu0vk::first-letter{font-family:"Allura";font-size:2.5em}',
       map: null
     };
     YooBrandInfo = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css2);
-      return `<div class="info-container svelte-1c6g8m9" data-svelte-h="svelte-1miuvrp"><p id="content" class="svelte-1c6g8m9">At <span style="font-weight: bold; color: var(--tertiary-color);">Yoo Brand</span>, we have a passion for creating art that inspires and brings joy to people&#39;s lives. Our commitment to quality and attention to details is evident in everything we do, from Photography and Painting to Sculpture and Embroidery. We believe that Art is a powerful way to connect with others, and we are dedicated to providing a personalized and memorable experience for each and every customer. Whether you are looking for a custom pieceto add to your collection or want to explore our diverse range of creative expression, we invite you to discover the unique beauty and quality of Yoo Brand.</p> </div>`;
+      return `<div class="info-container svelte-avu0vk" data-svelte-h="svelte-1miuvrp"><p id="content" class="svelte-avu0vk">At <span style="font-weight: bold; color: var(--tertiary-color);">Yoo Brand</span>, we have a passion for creating art that inspires and brings joy to people&#39;s lives. Our commitment to quality and attention to details is evident in everything we do, from Photography and Painting to Sculpture and Embroidery. We believe that Art is a powerful way to connect with others, and we are dedicated to providing a personalized and memorable experience for each and every customer. Whether you are looking for a custom pieceto add to your collection or want to explore our diverse range of creative expression, we invite you to discover the unique beauty and quality of Yoo Brand.</p> </div>`;
     });
     _Layout_ = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let currentTheme;
@@ -1319,8 +1319,8 @@ var init__4 = __esm({
     index4 = 3;
     component4 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id3 = "src/routes/+page.js";
-    imports4 = ["_app/immutable/nodes/3.6fbbbd1c.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/index.9a9a0e78.js"];
-    stylesheets4 = ["_app/immutable/assets/3.44218664.css", "_app/immutable/assets/index.ac58bdd8.css"];
+    imports4 = ["_app/immutable/nodes/3.c2fa2f79.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js", "_app/immutable/chunks/index.9a9a0e78.js"];
+    stylesheets4 = ["_app/immutable/assets/3.2f91f067.css", "_app/immutable/assets/index.ac58bdd8.css"];
     fonts4 = [];
   }
 });
@@ -1750,7 +1750,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "18gcvqw"
+  version_hash: "1uehbqo"
 };
 function get_hooks() {
   return {};
@@ -5053,7 +5053,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.png", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg"]),
   mimeTypes: { ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" },
   _: {
-    client: { "start": "_app/immutable/entry/start.2025c0ec.js", "app": "_app/immutable/entry/app.a2b7d7c6.js", "imports": ["_app/immutable/entry/start.2025c0ec.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/singletons.42be40a7.js", "_app/immutable/entry/app.a2b7d7c6.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.ff1737fd.js", "app": "_app/immutable/entry/app.28c5705f.js", "imports": ["_app/immutable/entry/start.ff1737fd.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/singletons.b3c59c0f.js", "_app/immutable/entry/app.28c5705f.js", "_app/immutable/chunks/scheduler.3339ba20.js", "_app/immutable/chunks/index.22f5a88e.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
