@@ -88,11 +88,14 @@ function compute_rest_props(props, keys) {
       rest[k] = props[k];
   return rest;
 }
+function null_to_empty(value) {
+  return value == null ? "" : value;
+}
 function custom_event(type, detail, { bubbles = false, cancelable = false } = {}) {
   return new CustomEvent(type, { detail, bubbles, cancelable });
 }
-function set_current_component(component4) {
-  current_component = component4;
+function set_current_component(component6) {
+  current_component = component6;
 }
 function get_current_component() {
   if (!current_component)
@@ -100,9 +103,9 @@ function get_current_component() {
   return current_component;
 }
 function createEventDispatcher() {
-  const component4 = get_current_component();
+  const component6 = get_current_component();
   return (type, detail, { cancelable = false } = {}) => {
-    const callbacks = component4.$$.callbacks[type];
+    const callbacks = component6.$$.callbacks[type];
     if (callbacks) {
       const event = custom_event(
         /** @type {string} */
@@ -111,7 +114,7 @@ function createEventDispatcher() {
         { cancelable }
       );
       callbacks.slice().forEach((fn) => {
-        fn.call(component4, event);
+        fn.call(component6, event);
       });
       return !event.defaultPrevented;
     }
@@ -219,15 +222,15 @@ function each(items, fn) {
   }
   return str;
 }
-function validate_component(component4, name) {
-  if (!component4 || !component4.$$render) {
+function validate_component(component6, name) {
+  if (!component6 || !component6.$$render) {
     if (name === "svelte:component")
       name += " this={...}";
     throw new Error(
       `<${name}> is not a valid SSR component. You may need to review your build config to ensure that dependencies are compiled, rather than imported as pre-compiled modules. Otherwise you may need to fix a <${name}>.`
     );
   }
-  return component4;
+  return component6;
 }
 function create_ssr_component(fn) {
   function $$render(result, props, bindings, slots, context) {
@@ -255,7 +258,7 @@ function create_ssr_component(fn) {
       return {
         html,
         css: {
-          code: Array.from(result.css).map((css3) => css3.code).join("\n"),
+          code: Array.from(result.css).map((css6) => css6.code).join("\n"),
           map: null
           // TODO
         },
@@ -315,6 +318,83 @@ var init_ssr = __esm({
   }
 });
 
+// .svelte-kit/output/server/chunks/index.js
+function error(status, body) {
+  if (isNaN(status) || status < 400 || status > 599) {
+    throw new Error(`HTTP error status codes must be between 400 and 599 \u2014 ${status} is invalid`);
+  }
+  return new HttpError(status, body);
+}
+function json(data, init2) {
+  const body = JSON.stringify(data);
+  const headers = new Headers(init2?.headers);
+  if (!headers.has("content-length")) {
+    headers.set("content-length", encoder.encode(body).byteLength.toString());
+  }
+  if (!headers.has("content-type")) {
+    headers.set("content-type", "application/json");
+  }
+  return new Response(body, {
+    ...init2,
+    headers
+  });
+}
+function text(body, init2) {
+  const headers = new Headers(init2?.headers);
+  if (!headers.has("content-length")) {
+    headers.set("content-length", encoder.encode(body).byteLength.toString());
+  }
+  return new Response(body, {
+    ...init2,
+    headers
+  });
+}
+var HttpError, Redirect, ActionFailure, encoder;
+var init_chunks = __esm({
+  ".svelte-kit/output/server/chunks/index.js"() {
+    HttpError = class {
+      /**
+       * @param {number} status
+       * @param {{message: string} extends App.Error ? (App.Error | string | undefined) : App.Error} body
+       */
+      constructor(status, body) {
+        this.status = status;
+        if (typeof body === "string") {
+          this.body = { message: body };
+        } else if (body) {
+          this.body = body;
+        } else {
+          this.body = { message: `Error: ${status}` };
+        }
+      }
+      toString() {
+        return JSON.stringify(this.body);
+      }
+    };
+    Redirect = class {
+      /**
+       * @param {300 | 301 | 302 | 303 | 304 | 305 | 306 | 307 | 308} status
+       * @param {string} location
+       */
+      constructor(status, location) {
+        this.status = status;
+        this.location = location;
+      }
+    };
+    ActionFailure = class {
+      /**
+       * @param {number} status
+       * @param {T} [data]
+       */
+      constructor(status, data) {
+        this.status = status;
+        this.data = data;
+      }
+    };
+    encoder = new TextEncoder();
+  }
+});
+
 // node_modules/cookie/index.js
 var require_cookie = __commonJS({
   "node_modules/cookie/index.js"(exports) {
@@ -330,20 +410,20 @@ var require_cookie = __commonJS({
       var obj = {};
       var opt = options2 || {};
       var dec = opt.decode || decode;
-      var index4 = 0;
-      while (index4 < str.length) {
-        var eqIdx = str.indexOf("=", index4);
+      var index6 = 0;
+      while (index6 < str.length) {
+        var eqIdx = str.indexOf("=", index6);
         if (eqIdx === -1) {
           break;
         }
-        var endIdx = str.indexOf(";", index4);
+        var endIdx = str.indexOf(";", index6);
         if (endIdx === -1) {
           endIdx = str.length;
         } else if (endIdx < eqIdx) {
-          index4 = str.lastIndexOf(";", eqIdx - 1) + 1;
+          index6 = str.lastIndexOf(";", eqIdx - 1) + 1;
           continue;
         }
-        var key2 = str.slice(index4, eqIdx).trim();
+        var key2 = str.slice(index6, eqIdx).trim();
         if (void 0 === obj[key2]) {
           var val = str.slice(eqIdx + 1, endIdx).trim();
           if (val.charCodeAt(0) === 34) {
@@ -351,7 +431,7 @@ var require_cookie = __commonJS({
           }
           obj[key2] = tryDecode(val, dec);
         }
-        index4 = endIdx + 1;
+        index6 = endIdx + 1;
       }
       return obj;
     }
@@ -731,7 +811,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.301db71a.js", "_app/immutable/chunks/scheduler.13eb3ead.js", "_app/immutable/chunks/index.4a496391.js", "_app/immutable/chunks/singletons.93137932.js"];
+    imports2 = ["_app/immutable/nodes/1.f6355f0d.js", "_app/immutable/chunks/scheduler.13eb3ead.js", "_app/immutable/chunks/index.4a496391.js", "_app/immutable/chunks/singletons.4c6e849d.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -873,7 +953,7 @@ function normaliseData(data) {
   }
   return iconData;
 }
-var globals, css$2, Name, Raw, css$1, Svg, Object_1, outerScale, Icon, moonO, css, Icon_1;
+var globals, css$2, Name, Raw, css$1, Svg, Object_1, outerScale, Icon, home, shoppingCart, phone, phoneSquare, moonO, productHunt, css, Icon_1;
 var init_Icon = __esm({
   ".svelte-kit/output/server/chunks/Icon.js"() {
     init_ssr();
@@ -1105,7 +1185,12 @@ var init_Icon = __esm({
       } while (!$$settled);
       return $$rendered;
     });
+    home = { "home": { "width": 1664, "height": 1792, "paths": [{ "d": "M1408 992v480q0 26-19 45t-45 19h-384v-384h-256v384h-384q-26 0-45-19t-19-45v-480q0-1 0.5-3t0.5-3l575-474 575 474q1 2 1 6zM1631 923l-62 74q-8 9-21 11h-3q-13 0-21-7l-692-577-692 577q-12 8-24 7-13-2-21-11l-62-74q-8-10-7-23.5t11-21.5l719-599q32-26 76-26t76 26l244 204v-195q0-14 9-23t23-9h192q14 0 23 9t9 23v408l219 182q10 8 11 21.5t-7 23.5z" }] } };
+    shoppingCart = { "shopping-cart": { "width": 1664, "height": 1792, "paths": [{ "d": "M640 1536q0 52-38 90t-90 38-90-38-38-90 38-90 90-38 90 38 38 90zM1536 1536q0 52-38 90t-90 38-90-38-38-90 38-90 90-38 90 38 38 90zM1664 448v512q0 24-16.5 42.5t-40.5 21.5l-1044 122q13 60 13 70 0 16-24 64h920q26 0 45 19t19 45-19 45-45 19h-1024q-26 0-45-19t-19-45q0-11 8-31.5t16-36 21.5-40 15.5-29.5l-177-823h-204q-26 0-45-19t-19-45 19-45 45-19h256q16 0 28.5 6.5t19.5 15.5 13 24.5 8 26 5.5 29.5 4.5 26h1201q26 0 45 19t19 45z" }] } };
+    phone = { "phone": { "width": 1408, "height": 1792, "paths": [{ "d": "M1408 1240q0 27-10 70.5t-21 68.5q-21 50-122 106-94 51-186 51-27 0-53-3.5t-57.5-12.5-47-14.5-55.5-20.5-49-18q-98-35-175-83-127-79-264-216t-216-264q-48-77-83-175-3-9-18-49t-20.5-55.5-14.5-47-12.5-57.5-3.5-53q0-92 51-186 56-101 106-122 25-11 68.5-21t70.5-10q14 0 21 3 18 6 53 76 11 19 30 54t35 63.5 31 53.5q3 4 17.5 25t21.5 35.5 7 28.5q0 20-28.5 50t-62 55-62 53-28.5 46q0 9 5 22.5t8.5 20.5 14 24 11.5 19q76 137 174 235t235 174q2 1 19 11.5t24 14 20.5 8.5 22.5 5q18 0 46-28.5t53-62 55-62 50-28.5q14 0 28.5 7t35.5 21.5 25 17.5q25 15 53.5 31t63.5 35 54 30q70 35 76 53 3 7 3 21z" }] } };
+    phoneSquare = { "phone-square": { "width": 1536, "height": 1792, "paths": [{ "d": "M1280 1193q0-11-2-16t-18-16.5-40.5-25-47.5-26.5-45.5-25-28.5-15q-5-3-19-13t-25-15-21-5q-15 0-36.5 20.5t-39.5 45-38.5 45-33.5 20.5q-7 0-16.5-3.5t-15.5-6.5-17-9.5-14-8.5q-99-55-170-126.5t-127-170.5q-2-3-8.5-14t-9.5-17-6.5-15.5-3.5-16.5q0-13 20.5-33.5t45-38.5 45-39.5 20.5-36.5q0-10-5-21t-15-25-13-19q-3-6-15-28.5t-25-45.5-26.5-47.5-25-40.5-16.5-18-16-2q-48 0-101 22-46 21-80 94.5t-34 130.5q0 16 2.5 34t5 30.5 9 33 10 29.5 12.5 33 11 30q60 164 216.5 320.5t320.5 216.5q6 2 30 11t33 12.5 29.5 10 33 9 30.5 5 34 2.5q57 0 130.5-34t94.5-80q22-53 22-101zM1536 416v960q0 119-84.5 203.5t-203.5 84.5h-960q-119 0-203.5-84.5t-84.5-203.5v-960q0-119 84.5-203.5t203.5-84.5h960q119 0 203.5 84.5t84.5 203.5z" }] } };
     moonO = { "moon-o": { "width": 1536, "height": 1792, "paths": [{ "d": "M1262 1303q-54 9-110 9-182 0-337-90t-245-245-90-337q0-192 104-357-201 60-328.5 229t-127.5 384q0 130 51 248.5t136.5 204 204 136.5 248.5 51q144 0 273.5-61.5t220.5-171.5zM1465 1218q-94 203-283.5 324.5t-413.5 121.5q-156 0-298-61t-245-164-164-245-61-298q0-153 57.5-292.5t156-241.5 235.5-164.5 290-68.5q44-2 61 39 18 41-15 72-86 78-131.5 181.5t-45.5 218.5q0 148 73 273t198 198 273 73q118 0 228-51 41-18 72 13 14 14 17.5 34t-4.5 38z" }] } };
+    productHunt = { "product-hunt": { "width": 1792, "height": 1792, "paths": [{ "d": "M1150 762q0 56-39.5 95t-95.5 39h-253v-269h253q56 0 95.5 39.5t39.5 95.5zM1329 762q0-130-91.5-222t-222.5-92h-433v896h180v-269h253q130 0 222-91.5t92-221.5zM1792 896q0 182-71 348t-191 286-286 191-348 71-348-71-286-191-191-286-71-348 71-348 191-286 286-191 348-71 348 71 286 191 191 286 71 348z" }] } };
     css = {
       code: ".theme-icon.svelte-15g15a6.svelte-15g15a6{text-align:right}.theme-icon.svelte-15g15a6 button.svelte-15g15a6{border:none;background-color:transparent;color:inherit}",
       map: null
@@ -1265,7 +1350,7 @@ var init_page_svelte = __esm({
       if ($$props.products === void 0 && $$bindings.products && products2 !== void 0)
         $$bindings.products(products2);
       $$result.css.add(css$12);
-      return `<div class="products-grid m10 svelte-elbl2l">${each(products2, (product, index4) => {
+      return `<div class="products-grid m10 svelte-elbl2l">${each(products2, (product, index6) => {
         return `${validate_component(ProductCard, "ProductCard").$$render($$result, {}, {}, {
           default: () => {
             return `${validate_component(Image, "Image").$$render($$result, { src: product.imgSrc, name: product.name }, {}, {})} ${validate_component(Title, "Title").$$render($$result, { name: product.name }, {}, {})} ${validate_component(Info, "Info").$$render(
@@ -1337,6 +1422,403 @@ var init__3 = __esm({
     imports3 = ["_app/immutable/nodes/2.6ad632ed.js", "_app/immutable/chunks/products.647cff99.js", "_app/immutable/chunks/scheduler.13eb3ead.js", "_app/immutable/chunks/index.4a496391.js", "_app/immutable/chunks/Icon.fff8f723.js"];
     stylesheets3 = ["_app/immutable/assets/2.3d9f36b8.css", "_app/immutable/assets/Icon.2ae1c72e.css"];
     fonts3 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/_product_/_page.js
+var page_exports2 = {};
+__export(page_exports2, {
+  config: () => config3,
+  load: () => load2
+});
+async function load2({ params }) {
+  const product = products.find((product2) => product2.name == params.product);
+  if (product) {
+    return { product };
+  }
+  throw error(404, "not found");
+}
+var config3;
+var init_page2 = __esm({
+  ".svelte-kit/output/server/entries/pages/_product_/_page.js"() {
+    init_chunks();
+    init_products();
+    config3 = {
+      runtime: "edge"
+    };
+  }
+});
+
+// .svelte-kit/output/server/chunks/layout.js
+var css$32, SideBar, css$23, Link2, css$13, Layout$12, css3, Layout3;
+var init_layout2 = __esm({
+  ".svelte-kit/output/server/chunks/layout.js"() {
+    init_ssr();
+    init_Icon();
+    css$32 = {
+      code: ".sidebar.svelte-1hv2jd0{position:absolute;top:0;left:0;width:65%;max-width:300px;z-index:2;height:100vh;display:flex;flex-direction:column;display:none}.sidebar.light.svelte-1hv2jd0{background-color:var(--light);color:var(--dark)}.sidebar.dark.svelte-1hv2jd0{background-color:var(--dark);color:var(--light)}",
+      map: null
+    };
+    SideBar = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let { currentTheme } = $$props;
+      if ($$props.currentTheme === void 0 && $$bindings.currentTheme && currentTheme !== void 0)
+        $$bindings.currentTheme(currentTheme);
+      $$result.css.add(css$32);
+      return `<div class="${escape(null_to_empty(`sidebar ${currentTheme == "light" ? "light" : "dark"}`), true) + " svelte-1hv2jd0"}">${slots.default ? slots.default({}) : ``} </div>`;
+    });
+    css$23 = {
+      code: '.link.svelte-yjt6w0.svelte-yjt6w0{width:100%;height:40px;list-style-type:none}.link#active.svelte-yjt6w0.svelte-yjt6w0{background-color:var(--page-color);display:flex;flex-direction:column;justify-content:center;border-radius:15px;color:black}.link#inactive.svelte-yjt6w0.svelte-yjt6w0{transition:color 1s linear}.link#inactive.svelte-yjt6w0.svelte-yjt6w0:hover{color:var(--page-color)}.link.svelte-yjt6w0 a.svelte-yjt6w0{font-family:"Source Code Pro";display:grid;font-weight:bolder;grid-template-columns:30% 70%;align-items:center}.link-icon{text-align:center;width:100%}h5#link-name.svelte-yjt6w0.svelte-yjt6w0{text-align:center;font-size:1em;font-weight:bold}',
+      map: null
+    };
+    Link2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let { name } = $$props;
+      let { href } = $$props;
+      let { icon } = $$props;
+      let { pageName } = $$props;
+      if ($$props.name === void 0 && $$bindings.name && name !== void 0)
+        $$bindings.name(name);
+      if ($$props.href === void 0 && $$bindings.href && href !== void 0)
+        $$bindings.href(href);
+      if ($$props.icon === void 0 && $$bindings.icon && icon !== void 0)
+        $$bindings.icon(icon);
+      if ($$props.pageName === void 0 && $$bindings.pageName && pageName !== void 0)
+        $$bindings.pageName(pageName);
+      $$result.css.add(css$23);
+      return `<li class="link svelte-yjt6w0"${add_attribute("id", `${href == pageName ? "active" : "inactive"}`, 0)}><a${add_attribute("href", href, 0)} data-sveltekit-preload-data class="svelte-yjt6w0">${validate_component(Icon, "Icon").$$render(
+        $$result,
+        {
+          data: icon,
+          class: "link-icon",
+          scale: 1.5
+        },
+        {},
+        {}
+      )} <h5 id="link-name" class="svelte-yjt6w0">${escape(name)}</h5></a> </li>`;
+    });
+    css$13 = {
+      code: ".links.svelte-15xye2f{display:flex;flex-direction:column;height:100%;justify-content:space-evenly}",
+      map: null
+    };
+    Layout$12 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      const links = [
+        { name: "Home", href: "/", icon: home },
+        {
+          name: "Products",
+          href: "/products",
+          icon: productHunt
+        },
+        {
+          name: "Order",
+          href: "/order",
+          icon: shoppingCart
+        },
+        {
+          name: "Contact",
+          href: "/contact",
+          icon: phoneSquare
+        }
+      ];
+      let pageName;
+      $$result.css.add(css$13);
+      return `<ul class="links svelte-15xye2f">${each(links, ({ name, href, icon }, index6) => {
+        return `${validate_component(Link2, "Link").$$render($$result, { name, href, icon, pageName }, {}, {})}`;
+      })} </ul>`;
+    });
+    css3 = {
+      code: ".theme-icon.svelte-c7itij{transform:translateY(-3em)}",
+      map: null
+    };
+    Layout3 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let currentTheme;
+      $$result.css.add(css3);
+      return `${validate_component(SideBar, "SideBar").$$render($$result, { currentTheme }, {}, {
+        default: () => {
+          return `${validate_component(Layout$12, "Links").$$render($$result, {}, {}, {})} <div class="theme-icon svelte-c7itij">${validate_component(Icon_1, "ThemeIcon").$$render($$result, {}, {}, {})}</div>`;
+        }
+      })}`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/_product_/_page.svelte.js
+var page_svelte_exports2 = {};
+__export(page_svelte_exports2, {
+  default: () => Page2
+});
+var css$24, Product, css$14, About, css4, Layout4, Page2;
+var init_page_svelte2 = __esm({
+  ".svelte-kit/output/server/entries/pages/_product_/_page.svelte.js"() {
+    init_ssr();
+    init_Icon();
+    init_layout2();
+    css$24 = {
+      code: ".grid-768.svelte-1vd5xsa{display:grid;grid-template-columns:300px 1fr}",
+      map: null
+    };
+    Product = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let pageWidth;
+      let screenWidth;
+      $$result.css.add(css$24);
+      pageWidth = screenWidth;
+      return `${pageWidth >= 768 ? `<div class="grid-768 svelte-1vd5xsa"><div class="invisible-box"></div> <div class="product">${slots.default ? slots.default({}) : ``}</div></div>` : `<div class="product">${slots.default ? slots.default({}) : ``}</div>`}`;
+    });
+    css$14 = {
+      code: 'p#info.svelte-1wq2nzy{line-height:2em;font-family:"Zilla Slab";font-weight:bold}',
+      map: null
+    };
+    About = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let { info } = $$props;
+      if ($$props.info === void 0 && $$bindings.info && info !== void 0)
+        $$bindings.info(info);
+      $$result.css.add(css$14);
+      return `<p id="info" class="m10 svelte-1wq2nzy">${escape(info)} </p>`;
+    });
+    css4 = {
+      code: '.product-name.svelte-110u9da{font-family:"Lobster";letter-spacing:0.2em;width:100%;text-align:center;color:var(--page-color)}',
+      map: null
+    };
+    Layout4 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let { name } = $$props;
+      let { info } = $$props;
+      if ($$props.name === void 0 && $$bindings.name && name !== void 0)
+        $$bindings.name(name);
+      if ($$props.info === void 0 && $$bindings.info && info !== void 0)
+        $$bindings.info(info);
+      $$result.css.add(css4);
+      return `${validate_component(Product, "Product").$$render($$result, {}, {}, {
+        default: () => {
+          return `${validate_component(Layout3, "SideNavBar").$$render($$result, {}, {}, {})} ${validate_component(Name, "Name").$$render($$result, {}, {}, {
+            default: () => {
+              return `<h1 class="product-name m10 svelte-110u9da">${escape(name)}</h1>`;
+            }
+          })} ${validate_component(About, "About").$$render($$result, { info }, {}, {})}`;
+        }
+      })}`;
+    });
+    Page2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let { data } = $$props;
+      const { name, info } = data.product;
+      if ($$props.data === void 0 && $$bindings.data && data !== void 0)
+        $$bindings.data(data);
+      return `${$$result.head += `<!-- HEAD_svelte-pmictq_START -->${$$result.title = `<title>${escape(name)}</title>`, ""}<!-- HEAD_svelte-pmictq_END -->`, ""} ${validate_component(Layout4, "Product").$$render($$result, { name, info }, {}, {})}`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/3.js
+var __exports4 = {};
+__export(__exports4, {
+  component: () => component4,
+  fonts: () => fonts4,
+  imports: () => imports4,
+  index: () => index4,
+  stylesheets: () => stylesheets4,
+  universal: () => page_exports2,
+  universal_id: () => universal_id3
+});
+var index4, component4, universal_id3, imports4, stylesheets4, fonts4;
+var init__4 = __esm({
+  ".svelte-kit/output/server/nodes/3.js"() {
+    init_page2();
+    index4 = 3;
+    component4 = async () => (await Promise.resolve().then(() => (init_page_svelte2(), page_svelte_exports2))).default;
+    universal_id3 = "src/routes/[product]/+page.js";
+    imports4 = ["_app/immutable/nodes/3.d03c3399.js", "_app/immutable/chunks/control.f5b05b5f.js", "_app/immutable/chunks/products.647cff99.js", "_app/immutable/chunks/scheduler.13eb3ead.js", "_app/immutable/chunks/index.4a496391.js", "_app/immutable/chunks/Icon.fff8f723.js", "_app/immutable/chunks/layout.d3523ab5.js"];
+    stylesheets4 = ["_app/immutable/assets/3.a18c0015.css", "_app/immutable/assets/Icon.2ae1c72e.css", "_app/immutable/assets/layout.6f52a926.css"];
+    fonts4 = [];
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/contact/_page.js
+var page_exports3 = {};
+__export(page_exports3, {
+  config: () => config4
+});
+var config4;
+var init_page3 = __esm({
+  ".svelte-kit/output/server/entries/pages/contact/_page.js"() {
+    config4 = {
+      runtime: "edge"
+    };
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/contact/_page.svelte.js
+var page_svelte_exports3 = {};
+__export(page_svelte_exports3, {
+  default: () => Page3
+});
+var css$52, Icon2, Layout$4, css$42, Contact, css$33, Input, Layout$32, css$25, Layout$22, css$15, CallUs, Layout$13, css5, Layout5, Page3;
+var init_page_svelte3 = __esm({
+  ".svelte-kit/output/server/entries/pages/contact/_page.svelte.js"() {
+    init_ssr();
+    init_Icon();
+    init_layout2();
+    css$52 = {
+      code: ".app.svelte-rjcs55.svelte-rjcs55{display:inline;margin:0 1em}.app.svelte-rjcs55 a img.svelte-rjcs55{width:25px}",
+      map: null
+    };
+    Icon2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let { name } = $$props;
+      let { href } = $$props;
+      let { src } = $$props;
+      if ($$props.name === void 0 && $$bindings.name && name !== void 0)
+        $$bindings.name(name);
+      if ($$props.href === void 0 && $$bindings.href && href !== void 0)
+        $$bindings.href(href);
+      if ($$props.src === void 0 && $$bindings.src && src !== void 0)
+        $$bindings.src(src);
+      $$result.css.add(css$52);
+      return `<main class="app svelte-rjcs55"><a${add_attribute("href", href, 0)}><img${add_attribute("src", src, 0)}${add_attribute("alt", name, 0)} class="svelte-rjcs55"></a> </main>`;
+    });
+    Layout$4 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let icons = [
+        {
+          name: "Instagram",
+          imgSrc: "../../../../../app-icons/instagram.svg",
+          src: "https://instagram.com/yooaesthetics?igshid=MzNINGNkZWQ4Mg=="
+        },
+        {
+          name: "Snapchat",
+          imgSrc: "../../../../../app-icons/snapchat.svg",
+          src: "/"
+        },
+        {
+          name: "TikTok",
+          imgSrc: "../../../../../app-icons/tiktok.svg",
+          src: "https://www.tiktok.com/@yoo_gallery?_t=8dD4UoGxDQT&_r=1"
+        },
+        {
+          name: "Whatsapp",
+          imgSrc: "../../../../../app-icons/whatsapp.svg",
+          src: "/"
+        }
+      ];
+      return `<div class="apps">${each(icons, (icon, index6) => {
+        return `${validate_component(Icon2, "Icon").$$render(
+          $$result,
+          {
+            name: icon.name,
+            href: icon.src,
+            src: icon.imgSrc
+          },
+          {},
+          {}
+        )}`;
+      })}</div>`;
+    });
+    css$42 = {
+      code: ".contact-box.svelte-bslocy{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center}",
+      map: null
+    };
+    Contact = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      $$result.css.add(css$42);
+      return `<main class="contact-box svelte-bslocy">${slots.default ? slots.default({}) : ``} </main>`;
+    });
+    css$33 = {
+      code: 'input.svelte-1v2jt2q{font-weight:bold;display:block;margin:1em 0;height:40px;padding:0 10px;border-radius:5px;outline:none;box-sizing:border-box;width:100%;max-width:400px;border:1px solid black;font-family:"Zilla Slab";font-weight:bold;font-size:1em}input.svelte-1v2jt2q:focus{border:1px solid var(--page-color)}',
+      map: null
+    };
+    Input = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let { name } = $$props;
+      let { placeholder } = $$props;
+      let { type } = $$props;
+      if ($$props.name === void 0 && $$bindings.name && name !== void 0)
+        $$bindings.name(name);
+      if ($$props.placeholder === void 0 && $$bindings.placeholder && placeholder !== void 0)
+        $$bindings.placeholder(placeholder);
+      if ($$props.type === void 0 && $$bindings.type && type !== void 0)
+        $$bindings.type(type);
+      $$result.css.add(css$33);
+      return `<input${add_attribute("name", name, 0)}${add_attribute("placeholder", placeholder, 0)}${add_attribute("type", type, 0)} class="svelte-1v2jt2q">`;
+    });
+    Layout$32 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let inputs = [{ name: "name", type: "text" }, { name: "email", type: "email" }];
+      return `${each(inputs, ({ name, type }, index6) => {
+        return `${validate_component(Input, "Input").$$render($$result, { name, placeholder: name, type }, {}, {})}`;
+      })}`;
+    });
+    css$25 = {
+      code: ".form.svelte-1ol8bkh{display:flex;flex-direction:column;align-items:center}@media(768px <= width <= 1000px){.form.svelte-1ol8bkh{transform:translateX(3em)}}",
+      map: null
+    };
+    Layout$22 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      $$result.css.add(css$25);
+      return `<div class="form svelte-1ol8bkh">${slots.default ? slots.default({}) : ``} </div>`;
+    });
+    css$15 = {
+      code: ".call-us.svelte-1tz2w7h a.svelte-1tz2w7h{position:absolute;bottom:1em;right:1em;width:35px;height:35px;background-color:var(--page-color);color:black;font-weight:bold;display:flex;justify-content:center;align-items:center;border-radius:50%}",
+      map: null
+    };
+    CallUs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      $$result.css.add(css$15);
+      return `<div class="call-us svelte-1tz2w7h"><a href="tel:+2348171983663" class="svelte-1tz2w7h">${slots.default ? slots.default({}) : ``}</a> </div>`;
+    });
+    Layout$13 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `${validate_component(CallUs, "CallUs").$$render($$result, {}, {}, {
+        default: () => {
+          return `${validate_component(Icon, "Icon").$$render(
+            $$result,
+            {
+              data: phone,
+              scale: 1.35,
+              flip: "horizontal"
+            },
+            {},
+            {}
+          )}`;
+        }
+      })}`;
+    });
+    css5 = {
+      code: '#brand-name.svelte-1s74ozc{font-family:"Lobster";font-size:1.7em;letter-spacing:0.1em;text-align:center;color:transparent;background:radial-gradient(var(--page-color), green);background-clip:text;-webkit-background-clip:text}textarea.svelte-1s74ozc{width:100%;height:80px;padding:5px;box-sizing:border-box;outline:none;border:1px solid inherit;border-radius:1em;font-family:"Philosopher";font-size:1em}textarea.svelte-1s74ozc::placeholder{color:black;opacity:90%}textarea.svelte-1s74ozc:focus{border:1px solid var(--page-color)}button.svelte-1s74ozc{width:50px;height:30px;margin:1em 0;border-radius:5px;border:none;background-color:var(--page-color);font-weight:bold;font-family:"Philosopher";font-size:1em}',
+      map: null
+    };
+    Layout5 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      $$result.css.add(css5);
+      return `${validate_component(Contact, "Contact").$$render($$result, {}, {}, {
+        default: () => {
+          return `${validate_component(Layout3, "SideNavBar").$$render($$result, {}, {}, {})} ${validate_component(Layout$22, "Form").$$render($$result, {}, {}, {
+            default: () => {
+              return `${validate_component(Name, "Name").$$render($$result, {}, {}, {
+                default: () => {
+                  return `<h3 id="brand-name" class="svelte-1s74ozc" data-svelte-h="svelte-193hdgu">Yoo
+        <br>
+        Brand</h3>`;
+                }
+              })} ${validate_component(Layout$32, "Inputs").$$render($$result, {}, {}, {})} <textarea placeholder="message" draggable="false" class="svelte-1s74ozc"></textarea> <button class="svelte-1s74ozc" data-svelte-h="svelte-11upy20">send</button> ${validate_component(Layout$4, "AppIcons").$$render($$result, {}, {}, {})}`;
+            }
+          })} ${validate_component(Layout$13, "CallUs").$$render($$result, {}, {}, {})}`;
+        }
+      })}`;
+    });
+    Page3 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `${$$result.head += `<!-- HEAD_svelte-bonrbl_START -->${$$result.title = `<title>Contact Us</title>`, ""}<!-- HEAD_svelte-bonrbl_END -->`, ""} ${validate_component(Layout5, "Contact").$$render($$result, {}, {}, {})}`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/4.js
+var __exports5 = {};
+__export(__exports5, {
+  component: () => component5,
+  fonts: () => fonts5,
+  imports: () => imports5,
+  index: () => index5,
+  stylesheets: () => stylesheets5,
+  universal: () => page_exports3,
+  universal_id: () => universal_id4
+});
+var index5, component5, universal_id4, imports5, stylesheets5, fonts5;
+var init__5 = __esm({
+  ".svelte-kit/output/server/nodes/4.js"() {
+    init_page3();
+    index5 = 4;
+    component5 = async () => (await Promise.resolve().then(() => (init_page_svelte3(), page_svelte_exports3))).default;
+    universal_id4 = "src/routes/contact/+page.js";
+    imports5 = ["_app/immutable/nodes/4.4487b330.js", "_app/immutable/chunks/scheduler.13eb3ead.js", "_app/immutable/chunks/index.4a496391.js", "_app/immutable/chunks/Icon.fff8f723.js", "_app/immutable/chunks/layout.d3523ab5.js"];
+    stylesheets5 = ["_app/immutable/assets/4.30cc13a6.css", "_app/immutable/assets/Icon.2ae1c72e.css", "_app/immutable/assets/layout.6f52a926.css"];
+    fonts5 = [];
   }
 });
 
@@ -1501,83 +1983,14 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "dzlxw0"
+  version_hash: "e0zln7"
 };
 function get_hooks() {
   return {};
 }
 
-// .svelte-kit/output/server/chunks/index.js
-var HttpError = class {
-  /**
-   * @param {number} status
-   * @param {{message: string} extends App.Error ? (App.Error | string | undefined) : App.Error} body
-   */
-  constructor(status, body) {
-    this.status = status;
-    if (typeof body === "string") {
-      this.body = { message: body };
-    } else if (body) {
-      this.body = body;
-    } else {
-      this.body = { message: `Error: ${status}` };
-    }
-  }
-  toString() {
-    return JSON.stringify(this.body);
-  }
-};
-var Redirect = class {
-  /**
-   * @param {300 | 301 | 302 | 303 | 304 | 305 | 306 | 307 | 308} status
-   * @param {string} location
-   */
-  constructor(status, location) {
-    this.status = status;
-    this.location = location;
-  }
-};
-var ActionFailure = class {
-  /**
-   * @param {number} status
-   * @param {T} [data]
-   */
-  constructor(status, data) {
-    this.status = status;
-    this.data = data;
-  }
-};
-function error(status, body) {
-  if (isNaN(status) || status < 400 || status > 599) {
-    throw new Error(`HTTP error status codes must be between 400 and 599 \u2014 ${status} is invalid`);
-  }
-  return new HttpError(status, body);
-}
-function json(data, init2) {
-  const body = JSON.stringify(data);
-  const headers = new Headers(init2?.headers);
-  if (!headers.has("content-length")) {
-    headers.set("content-length", encoder.encode(body).byteLength.toString());
-  }
-  if (!headers.has("content-type")) {
-    headers.set("content-type", "application/json");
-  }
-  return new Response(body, {
-    ...init2,
-    headers
-  });
-}
-var encoder = new TextEncoder();
-function text(body, init2) {
-  const headers = new Headers(init2?.headers);
-  if (!headers.has("content-length")) {
-    headers.set("content-length", encoder.encode(body).byteLength.toString());
-  }
-  return new Response(body, {
-    ...init2,
-    headers
-  });
-}
+// .svelte-kit/output/server/index.js
+init_chunks();
 
 // node_modules/devalue/src/utils.js
 var escaped = {
@@ -1913,13 +2326,13 @@ function stringify(value, reducers) {
       return NEGATIVE_INFINITY;
     if (thing === 0 && 1 / thing < 0)
       return NEGATIVE_ZERO;
-    const index5 = p++;
-    indexes.set(thing, index5);
+    const index7 = p++;
+    indexes.set(thing, index7);
     for (const { key: key2, fn } of custom) {
       const value2 = fn(thing);
       if (value2) {
-        stringified[index5] = `["${key2}",${flatten(value2)}]`;
-        return index5;
+        stringified[index7] = `["${key2}",${flatten(value2)}]`;
+        return index7;
       }
     }
     let str = "";
@@ -2011,12 +2424,12 @@ function stringify(value, reducers) {
           }
       }
     }
-    stringified[index5] = str;
-    return index5;
+    stringified[index7] = str;
+    return index7;
   }
-  const index4 = flatten(value);
-  if (index4 < 0)
-    return `${index4}`;
+  const index6 = flatten(value);
+  if (index6 < 0)
+    return `${index6}`;
   return `[${stringified.join(",")}]`;
 }
 function stringify_primitive2(thing) {
@@ -3278,8 +3691,8 @@ async function render_response({
   }
   const { client } = manifest2._;
   const modulepreloads = new Set(client.imports);
-  const stylesheets4 = new Set(client.stylesheets);
-  const fonts4 = new Set(client.fonts);
+  const stylesheets6 = new Set(client.stylesheets);
+  const fonts6 = new Set(client.fonts);
   const link_header_preloads = /* @__PURE__ */ new Set();
   const inline_styles = /* @__PURE__ */ new Map();
   let rendered;
@@ -3333,9 +3746,9 @@ async function render_response({
       for (const url of node.imports)
         modulepreloads.add(url);
       for (const url of node.stylesheets)
-        stylesheets4.add(url);
+        stylesheets6.add(url);
       for (const url of node.fonts)
-        fonts4.add(url);
+        fonts6.add(url);
       if (node.inline_styles) {
         Object.entries(await node.inline_styles()).forEach(([k, v]) => inline_styles.set(k, v));
       }
@@ -3363,7 +3776,7 @@ async function render_response({
     head += `
 	<style${attributes.join("")}>${content}</style>`;
   }
-  for (const dep of stylesheets4) {
+  for (const dep of stylesheets6) {
     const path = prefixed(dep);
     const attributes = ['rel="stylesheet"'];
     if (inline_styles.has(dep)) {
@@ -3377,7 +3790,7 @@ async function render_response({
     head += `
 		<link href="${path}" ${attributes.join(" ")}>`;
   }
-  for (const dep of fonts4) {
+  for (const dep of fonts6) {
     const path = prefixed(dep);
     if (resolve_opts.preload({ type: "font", path })) {
       const ext = dep.slice(dep.lastIndexOf(".") + 1);
@@ -4086,11 +4499,11 @@ async function render_page(event, page2, options2, manifest2, state, resolve_opt
           const error2 = await handle_error_and_jsonify(event, options2, err);
           while (i--) {
             if (page2.errors[i]) {
-              const index4 = (
+              const index6 = (
                 /** @type {number} */
                 page2.errors[i]
               );
-              const node2 = await manifest2._.nodes[index4]();
+              const node2 = await manifest2._.nodes[index6]();
               let j = i;
               while (!branch[j])
                 j -= 1;
@@ -4799,18 +5212,20 @@ var Server = class {
 _options = new WeakMap();
 _manifest = new WeakMap();
 
-// .svelte-kit/vercel-tmp/fn-0/manifest.js
+// .svelte-kit/vercel-tmp/fn/manifest.js
 var manifest = {
   appDir: "_app",
   appPath: "_app",
   assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.jpg", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg"]),
   mimeTypes: { ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" },
   _: {
-    client: { "start": "_app/immutable/entry/start.aaddac98.js", "app": "_app/immutable/entry/app.ec4565b9.js", "imports": ["_app/immutable/entry/start.aaddac98.js", "_app/immutable/chunks/scheduler.13eb3ead.js", "_app/immutable/chunks/singletons.93137932.js", "_app/immutable/chunks/control.f5b05b5f.js", "_app/immutable/entry/app.ec4565b9.js", "_app/immutable/chunks/scheduler.13eb3ead.js", "_app/immutable/chunks/index.4a496391.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.8e7cc546.js", "app": "_app/immutable/entry/app.ea17b7a3.js", "imports": ["_app/immutable/entry/start.8e7cc546.js", "_app/immutable/chunks/scheduler.13eb3ead.js", "_app/immutable/chunks/singletons.4c6e849d.js", "_app/immutable/chunks/control.f5b05b5f.js", "_app/immutable/entry/app.ea17b7a3.js", "_app/immutable/chunks/scheduler.13eb3ead.js", "_app/immutable/chunks/index.4a496391.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
-      () => Promise.resolve().then(() => (init__3(), __exports3))
+      () => Promise.resolve().then(() => (init__3(), __exports3)),
+      () => Promise.resolve().then(() => (init__4(), __exports4)),
+      () => Promise.resolve().then(() => (init__5(), __exports5))
     ],
     routes: [
       {
@@ -4818,6 +5233,20 @@ var manifest = {
         pattern: /^\/$/,
         params: [],
         page: { layouts: [0], errors: [1], leaf: 2 },
+        endpoint: null
+      },
+      {
+        id: "/contact",
+        pattern: /^\/contact\/?$/,
+        params: [],
+        page: { layouts: [0], errors: [1], leaf: 4 },
+        endpoint: null
+      },
+      {
+        id: "/[product]",
+        pattern: /^\/([^/]+?)\/?$/,
+        params: [{ "name": "product", "optional": false, "rest": false, "chained": false }],
+        page: { layouts: [0], errors: [1], leaf: 3 },
         endpoint: null
       }
     ],
@@ -4827,7 +5256,7 @@ var manifest = {
   }
 };
 
-// .svelte-kit/vercel-tmp/fn-0/edge.js
+// .svelte-kit/vercel-tmp/fn/edge.js
 var server = new Server(manifest);
 var initialized = server.init({
   env: (
