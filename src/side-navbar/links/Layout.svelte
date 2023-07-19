@@ -5,8 +5,9 @@
     shoppingCart,
     phoneSquare,
   } from "svelte-awesome/icons";
+  import ThemeIcon from "../../theme/Icon.svelte";
   import Link from "./Link.svelte";
-  import { onMount } from "svelte";
+  import { createEventDispatcher, onMount } from "svelte";
   const links = [
     {
       name: "Home",
@@ -31,6 +32,13 @@
   ];
 
   let pageName;
+  const dispatch = createEventDispatcher();
+
+  let currentTheme;
+  function theme(e) {
+    currentTheme = e.detail;
+    dispatch("toggle-theme", e.detail);
+  }
 
   onMount(() => {
     pageName = window.location.pathname;
@@ -41,6 +49,7 @@
   {#each links as { name, href, icon }, index (index)}
     <Link {name} {href} {icon} {pageName} />
   {/each}
+  <ThemeIcon on:toggle-theme={theme} />
 </ul>
 
 <style>

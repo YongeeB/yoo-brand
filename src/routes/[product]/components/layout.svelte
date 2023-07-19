@@ -17,8 +17,8 @@
 
 <style>
   .product-name {
-    font-family: "Lobster";
-    letter-spacing: 0.2em;
+    font-family: "Philosopher";
+
     width: 100%;
     text-align: center;
     color: var(--page-color);

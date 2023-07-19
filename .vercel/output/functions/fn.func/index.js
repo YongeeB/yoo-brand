@@ -752,7 +752,7 @@ var init__ = __esm({
     index = 0;
     component = async () => (await Promise.resolve().then(() => (init_layout_svelte(), layout_svelte_exports))).default;
     universal_id = "src/routes/+layout.js";
-    imports = ["_app/immutable/nodes/0.6a4fe43e.js", "_app/immutable/chunks/scheduler.13eb3ead.js", "_app/immutable/chunks/index.4a496391.js"];
+    imports = ["_app/immutable/nodes/0.e3367a5f.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js"];
     stylesheets = [];
     fonts = [];
   }
@@ -811,7 +811,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.f6355f0d.js", "_app/immutable/chunks/scheduler.13eb3ead.js", "_app/immutable/chunks/index.4a496391.js", "_app/immutable/chunks/singletons.4c6e849d.js"];
+    imports2 = ["_app/immutable/nodes/1.605e4d25.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js", "_app/immutable/chunks/singletons.50623235.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1295,7 +1295,7 @@ var init_page_svelte = __esm({
       })}</ul> </nav>`;
     });
     css$5 = {
-      code: ".image-box.svelte-dljnyd.svelte-dljnyd{display:flex;justify-content:center}.image-box.svelte-dljnyd img.svelte-dljnyd{width:90%;max-width:350px;height:250px;border-radius:1em;margin:5px 0;background-color:white}",
+      code: ".image-box.svelte-av7lsp.svelte-av7lsp{display:flex;justify-content:center}.image-box.svelte-av7lsp img.svelte-av7lsp{width:350px;max-width:90%;height:250px;border-radius:1em;margin:5px 0;background-color:white}",
       map: null
     };
     Image = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1306,7 +1306,7 @@ var init_page_svelte = __esm({
       if ($$props.name === void 0 && $$bindings.name && name !== void 0)
         $$bindings.name(name);
       $$result.css.add(css$5);
-      return `<div class="image-box svelte-dljnyd"><img${add_attribute("src", src, 0)}${add_attribute("alt", name, 0)} class="svelte-dljnyd"> </div>`;
+      return `<div class="image-box svelte-av7lsp"><img${add_attribute("src", src, 0)}${add_attribute("alt", name, 0)} class="svelte-av7lsp"> </div>`;
     });
     css$4 = {
       code: '.info.svelte-h7pwps p.svelte-h7pwps{text-align:center;padding:0 10px;line-height:2em;font-family:"Source Code Pro"}.info.svelte-h7pwps #content a span.svelte-h7pwps{color:green;cursor:pointer}',
@@ -1419,8 +1419,8 @@ var init__3 = __esm({
     index3 = 2;
     component3 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id2 = "src/routes/+page.js";
-    imports3 = ["_app/immutable/nodes/2.6ad632ed.js", "_app/immutable/chunks/products.647cff99.js", "_app/immutable/chunks/scheduler.13eb3ead.js", "_app/immutable/chunks/index.4a496391.js", "_app/immutable/chunks/Icon.fff8f723.js"];
-    stylesheets3 = ["_app/immutable/assets/2.3d9f36b8.css", "_app/immutable/assets/Icon.2ae1c72e.css"];
+    imports3 = ["_app/immutable/nodes/2.7f33c84a.js", "_app/immutable/chunks/products.647cff99.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js", "_app/immutable/chunks/Icon.fcf6a319.js"];
+    stylesheets3 = ["_app/immutable/assets/2.fb8b24aa.css", "_app/immutable/assets/Icon.2ae1c72e.css"];
     fonts3 = [];
   }
 });
@@ -1450,12 +1450,12 @@ var init_page2 = __esm({
 });
 
 // .svelte-kit/output/server/chunks/layout.js
-var css$32, SideBar, css$23, Link2, css$13, Layout$12, css3, Layout3;
+var css$23, SideBar, css$13, Link2, css3, Layout$12, Layout3;
 var init_layout2 = __esm({
   ".svelte-kit/output/server/chunks/layout.js"() {
     init_ssr();
     init_Icon();
-    css$32 = {
+    css$23 = {
       code: ".sidebar.svelte-1hv2jd0{position:absolute;top:0;left:0;width:65%;max-width:300px;z-index:2;height:100vh;display:flex;flex-direction:column;display:none}.sidebar.light.svelte-1hv2jd0{background-color:var(--light);color:var(--dark)}.sidebar.dark.svelte-1hv2jd0{background-color:var(--dark);color:var(--light)}",
       map: null
     };
@@ -1463,10 +1463,10 @@ var init_layout2 = __esm({
       let { currentTheme } = $$props;
       if ($$props.currentTheme === void 0 && $$bindings.currentTheme && currentTheme !== void 0)
         $$bindings.currentTheme(currentTheme);
-      $$result.css.add(css$32);
+      $$result.css.add(css$23);
       return `<div class="${escape(null_to_empty(`sidebar ${currentTheme == "light" ? "light" : "dark"}`), true) + " svelte-1hv2jd0"}">${slots.default ? slots.default({}) : ``} </div>`;
     });
-    css$23 = {
+    css$13 = {
       code: '.link.svelte-yjt6w0.svelte-yjt6w0{width:100%;height:40px;list-style-type:none}.link#active.svelte-yjt6w0.svelte-yjt6w0{background-color:var(--page-color);display:flex;flex-direction:column;justify-content:center;border-radius:15px;color:black}.link#inactive.svelte-yjt6w0.svelte-yjt6w0{transition:color 1s linear}.link#inactive.svelte-yjt6w0.svelte-yjt6w0:hover{color:var(--page-color)}.link.svelte-yjt6w0 a.svelte-yjt6w0{font-family:"Source Code Pro";display:grid;font-weight:bolder;grid-template-columns:30% 70%;align-items:center}.link-icon{text-align:center;width:100%}h5#link-name.svelte-yjt6w0.svelte-yjt6w0{text-align:center;font-size:1em;font-weight:bold}',
       map: null
     };
@@ -1483,7 +1483,7 @@ var init_layout2 = __esm({
         $$bindings.icon(icon);
       if ($$props.pageName === void 0 && $$bindings.pageName && pageName !== void 0)
         $$bindings.pageName(pageName);
-      $$result.css.add(css$23);
+      $$result.css.add(css$13);
       return `<li class="link svelte-yjt6w0"${add_attribute("id", `${href == pageName ? "active" : "inactive"}`, 0)}><a${add_attribute("href", href, 0)} data-sveltekit-preload-data class="svelte-yjt6w0">${validate_component(Icon, "Icon").$$render(
         $$result,
         {
@@ -1495,7 +1495,7 @@ var init_layout2 = __esm({
         {}
       )} <h5 id="link-name" class="svelte-yjt6w0">${escape(name)}</h5></a> </li>`;
     });
-    css$13 = {
+    css3 = {
       code: ".links.svelte-15xye2f{display:flex;flex-direction:column;height:100%;justify-content:space-evenly}",
       map: null
     };
@@ -1519,21 +1519,17 @@ var init_layout2 = __esm({
         }
       ];
       let pageName;
-      $$result.css.add(css$13);
+      createEventDispatcher();
+      $$result.css.add(css3);
       return `<ul class="links svelte-15xye2f">${each(links, ({ name, href, icon }, index6) => {
         return `${validate_component(Link2, "Link").$$render($$result, { name, href, icon, pageName }, {}, {})}`;
-      })} </ul>`;
+      })} ${validate_component(Icon_1, "ThemeIcon").$$render($$result, {}, {}, {})} </ul>`;
     });
-    css3 = {
-      code: ".theme-icon.svelte-c7itij{transform:translateY(-3em)}",
-      map: null
-    };
     Layout3 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let currentTheme;
-      $$result.css.add(css3);
       return `${validate_component(SideBar, "SideBar").$$render($$result, { currentTheme }, {}, {
         default: () => {
-          return `${validate_component(Layout$12, "Links").$$render($$result, {}, {}, {})} <div class="theme-icon svelte-c7itij">${validate_component(Icon_1, "ThemeIcon").$$render($$result, {}, {}, {})}</div>`;
+          return `${validate_component(Layout$12, "Links").$$render($$result, {}, {}, {})}`;
         }
       })}`;
     });
@@ -1574,7 +1570,7 @@ var init_page_svelte2 = __esm({
       return `<p id="info" class="m10 svelte-1wq2nzy">${escape(info)} </p>`;
     });
     css4 = {
-      code: '.product-name.svelte-110u9da{font-family:"Lobster";letter-spacing:0.2em;width:100%;text-align:center;color:var(--page-color)}',
+      code: '.product-name.svelte-7klorz{font-family:"Philosopher";width:100%;text-align:center;color:var(--page-color)}',
       map: null
     };
     Layout4 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1589,7 +1585,7 @@ var init_page_svelte2 = __esm({
         default: () => {
           return `${validate_component(Layout3, "SideNavBar").$$render($$result, {}, {}, {})} ${validate_component(Name, "Name").$$render($$result, {}, {}, {
             default: () => {
-              return `<h1 class="product-name m10 svelte-110u9da">${escape(name)}</h1>`;
+              return `<h1 class="product-name m10 svelte-7klorz">${escape(name)}</h1>`;
             }
           })} ${validate_component(About, "About").$$render($$result, { info }, {}, {})}`;
         }
@@ -1623,8 +1619,8 @@ var init__4 = __esm({
     index4 = 3;
     component4 = async () => (await Promise.resolve().then(() => (init_page_svelte2(), page_svelte_exports2))).default;
     universal_id3 = "src/routes/[product]/+page.js";
-    imports4 = ["_app/immutable/nodes/3.d03c3399.js", "_app/immutable/chunks/control.f5b05b5f.js", "_app/immutable/chunks/products.647cff99.js", "_app/immutable/chunks/scheduler.13eb3ead.js", "_app/immutable/chunks/index.4a496391.js", "_app/immutable/chunks/Icon.fff8f723.js", "_app/immutable/chunks/layout.d3523ab5.js"];
-    stylesheets4 = ["_app/immutable/assets/3.a18c0015.css", "_app/immutable/assets/Icon.2ae1c72e.css", "_app/immutable/assets/layout.6f52a926.css"];
+    imports4 = ["_app/immutable/nodes/3.f1124aa7.js", "_app/immutable/chunks/control.f5b05b5f.js", "_app/immutable/chunks/products.647cff99.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js", "_app/immutable/chunks/Icon.fcf6a319.js", "_app/immutable/chunks/layout.055e37fa.js"];
+    stylesheets4 = ["_app/immutable/assets/3.f4e79c89.css", "_app/immutable/assets/Icon.2ae1c72e.css", "_app/immutable/assets/layout.e8a92850.css"];
     fonts4 = [];
   }
 });
@@ -1648,7 +1644,7 @@ var page_svelte_exports3 = {};
 __export(page_svelte_exports3, {
   default: () => Page3
 });
-var css$52, Icon2, Layout$4, css$42, Contact, css$33, Input, Layout$32, css$25, Layout$22, css$15, CallUs, Layout$13, css5, Layout5, Page3;
+var css$52, Icon2, Layout$4, css$42, Contact, css$32, Input, Layout$32, css$25, Layout$22, css$15, CallUs, Layout$13, css5, Layout5, Page3;
 var init_page_svelte3 = __esm({
   ".svelte-kit/output/server/entries/pages/contact/_page.svelte.js"() {
     init_ssr();
@@ -1715,7 +1711,7 @@ var init_page_svelte3 = __esm({
       $$result.css.add(css$42);
       return `<main class="contact-box svelte-bslocy">${slots.default ? slots.default({}) : ``} </main>`;
     });
-    css$33 = {
+    css$32 = {
       code: 'input.svelte-1v2jt2q{font-weight:bold;display:block;margin:1em 0;height:40px;padding:0 10px;border-radius:5px;outline:none;box-sizing:border-box;width:100%;max-width:400px;border:1px solid black;font-family:"Zilla Slab";font-weight:bold;font-size:1em}input.svelte-1v2jt2q:focus{border:1px solid var(--page-color)}',
       map: null
     };
@@ -1729,7 +1725,7 @@ var init_page_svelte3 = __esm({
         $$bindings.placeholder(placeholder);
       if ($$props.type === void 0 && $$bindings.type && type !== void 0)
         $$bindings.type(type);
-      $$result.css.add(css$33);
+      $$result.css.add(css$32);
       return `<input${add_attribute("name", name, 0)}${add_attribute("placeholder", placeholder, 0)}${add_attribute("type", type, 0)} class="svelte-1v2jt2q">`;
     });
     Layout$32 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1771,7 +1767,7 @@ var init_page_svelte3 = __esm({
       })}`;
     });
     css5 = {
-      code: '#brand-name.svelte-1s74ozc{font-family:"Lobster";font-size:1.7em;letter-spacing:0.1em;text-align:center;color:transparent;background:radial-gradient(var(--page-color), green);background-clip:text;-webkit-background-clip:text}textarea.svelte-1s74ozc{width:100%;height:80px;padding:5px;box-sizing:border-box;outline:none;border:1px solid inherit;border-radius:1em;font-family:"Philosopher";font-size:1em}textarea.svelte-1s74ozc::placeholder{color:black;opacity:90%}textarea.svelte-1s74ozc:focus{border:1px solid var(--page-color)}button.svelte-1s74ozc{width:50px;height:30px;margin:1em 0;border-radius:5px;border:none;background-color:var(--page-color);font-weight:bold;font-family:"Philosopher";font-size:1em}',
+      code: 'a.svelte-13hfizf #brand-name.svelte-13hfizf{font-family:"Lobster";font-size:1.7em;letter-spacing:0.1em;text-align:center;color:transparent;background:radial-gradient(var(--page-color), green);background-clip:text;-webkit-background-clip:text}textarea.svelte-13hfizf.svelte-13hfizf{width:100%;height:80px;padding:5px;box-sizing:border-box;outline:none;border:1px solid inherit;border-radius:1em;font-family:"Philosopher";font-size:1em}textarea.svelte-13hfizf.svelte-13hfizf::placeholder{color:black;opacity:90%}textarea.svelte-13hfizf.svelte-13hfizf:focus{border:1px solid var(--page-color)}button.svelte-13hfizf.svelte-13hfizf{width:50px;height:30px;margin:1em 0;border-radius:5px;border:none;background-color:var(--page-color);font-weight:bold;font-family:"Philosopher";font-size:1em}',
       map: null
     };
     Layout5 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1782,11 +1778,11 @@ var init_page_svelte3 = __esm({
             default: () => {
               return `${validate_component(Name, "Name").$$render($$result, {}, {}, {
                 default: () => {
-                  return `<h3 id="brand-name" class="svelte-1s74ozc" data-svelte-h="svelte-193hdgu">Yoo
-        <br>
-        Brand</h3>`;
+                  return `<a href="/" data-sveltekit-preload-data class="svelte-13hfizf" data-svelte-h="svelte-o4u45r"><h3 id="brand-name" class="svelte-13hfizf">Yoo
+          <br>
+          Brand</h3></a>`;
                 }
-              })} ${validate_component(Layout$32, "Inputs").$$render($$result, {}, {}, {})} <textarea placeholder="message" draggable="false" class="svelte-1s74ozc"></textarea> <button class="svelte-1s74ozc" data-svelte-h="svelte-11upy20">send</button> ${validate_component(Layout$4, "AppIcons").$$render($$result, {}, {}, {})}`;
+              })} ${validate_component(Layout$32, "Inputs").$$render($$result, {}, {}, {})} <textarea placeholder="message" draggable="false" class="svelte-13hfizf"></textarea> <button class="svelte-13hfizf" data-svelte-h="svelte-11upy20">send</button> ${validate_component(Layout$4, "AppIcons").$$render($$result, {}, {}, {})}`;
             }
           })} ${validate_component(Layout$13, "CallUs").$$render($$result, {}, {}, {})}`;
         }
@@ -1816,8 +1812,8 @@ var init__5 = __esm({
     index5 = 4;
     component5 = async () => (await Promise.resolve().then(() => (init_page_svelte3(), page_svelte_exports3))).default;
     universal_id4 = "src/routes/contact/+page.js";
-    imports5 = ["_app/immutable/nodes/4.4487b330.js", "_app/immutable/chunks/scheduler.13eb3ead.js", "_app/immutable/chunks/index.4a496391.js", "_app/immutable/chunks/Icon.fff8f723.js", "_app/immutable/chunks/layout.d3523ab5.js"];
-    stylesheets5 = ["_app/immutable/assets/4.30cc13a6.css", "_app/immutable/assets/Icon.2ae1c72e.css", "_app/immutable/assets/layout.6f52a926.css"];
+    imports5 = ["_app/immutable/nodes/4.73e802bc.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js", "_app/immutable/chunks/Icon.fcf6a319.js", "_app/immutable/chunks/layout.055e37fa.js"];
+    stylesheets5 = ["_app/immutable/assets/4.a72760d4.css", "_app/immutable/assets/Icon.2ae1c72e.css", "_app/immutable/assets/layout.e8a92850.css"];
     fonts5 = [];
   }
 });
@@ -1983,7 +1979,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "e0zln7"
+  version_hash: "m2196"
 };
 function get_hooks() {
   return {};
@@ -5219,7 +5215,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.jpg", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg"]),
   mimeTypes: { ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" },
   _: {
-    client: { "start": "_app/immutable/entry/start.8e7cc546.js", "app": "_app/immutable/entry/app.ea17b7a3.js", "imports": ["_app/immutable/entry/start.8e7cc546.js", "_app/immutable/chunks/scheduler.13eb3ead.js", "_app/immutable/chunks/singletons.4c6e849d.js", "_app/immutable/chunks/control.f5b05b5f.js", "_app/immutable/entry/app.ea17b7a3.js", "_app/immutable/chunks/scheduler.13eb3ead.js", "_app/immutable/chunks/index.4a496391.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.c58807b6.js", "app": "_app/immutable/entry/app.69814bd7.js", "imports": ["_app/immutable/entry/start.c58807b6.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/singletons.50623235.js", "_app/immutable/chunks/control.f5b05b5f.js", "_app/immutable/entry/app.69814bd7.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

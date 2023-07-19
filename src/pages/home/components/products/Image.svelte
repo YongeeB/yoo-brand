@@ -14,8 +14,8 @@
   }
 
   .image-box img {
-    width: 90%;
-    max-width: 350px;
+    width: 350px;
+    max-width: 90%;
     height: 250px;
     border-radius: 1em;
     margin: 5px 0;

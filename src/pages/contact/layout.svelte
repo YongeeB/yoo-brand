@@ -12,11 +12,13 @@
   <SideNavBar />
   <Form>
     <Name>
-      <h3 id="brand-name">
-        Yoo
-        <br />
-        Brand
-      </h3>
+      <a href="/" data-sveltekit-preload-data>
+        <h3 id="brand-name">
+          Yoo
+          <br />
+          Brand
+        </h3>
+      </a>
     </Name>
     <Inputs />
     <textarea placeholder="message" draggable="false" />
@@ -27,7 +29,7 @@
 </Contact>
 
 <style>
-  #brand-name {
+  a #brand-name {
     font-family: "Lobster";
     font-size: 1.7em;
     letter-spacing: 0.1em;

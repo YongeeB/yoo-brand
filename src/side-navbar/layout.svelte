@@ -1,6 +1,5 @@
 <script>
   import { onMount } from "svelte";
-  import ThemeIcon from "../theme/Icon.svelte";
   import SideBar from "./components/SideBar.svelte";
   import Links from "./links/Layout.svelte";
 
@@ -21,7 +20,7 @@
 
   function onSwipe(Direction) {
     direction = Direction;
-    if (direction == "right" || screenWidth <= 768) {
+    if (direction == "right" && screenWidth <= 768) {
       const form = document.querySelector(".form");
       if (form) {
         form.style.transition = "opacity .5s linear";
@@ -89,14 +88,5 @@
 </script>
 
 <SideBar {currentTheme}>
-  <Links />
-  <div class="theme-icon">
-    <ThemeIcon on:toggle-theme={theme} />
-  </div>
+  <Links on:toggle-theme={theme} />
 </SideBar>
-
-<style>
-  .theme-icon {
-    transform: translateY(-3em);
-  }
-</style>
