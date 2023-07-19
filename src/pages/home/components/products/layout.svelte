@@ -20,7 +20,8 @@
 <style>
   .products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 10px;
+    overflow-x: hidden;
   }
 </style>

@@ -8,8 +8,9 @@
 
 <style>
   p#info {
-    line-height: 2em;
-    font-family: "Zilla Slab";
+    line-height: 3em;
+    font-family: "Philospher";
     font-weight: bold;
+    transform: translateY(-1em);
   }
 </style>

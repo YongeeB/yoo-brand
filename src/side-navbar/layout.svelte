@@ -13,6 +13,8 @@
   let direction;
   let screenWidth;
 
+  let pagePath;
+
   function side_bar(display) {
     const sidebar = document.querySelector(".sidebar");
     sidebar.style.display = display;
@@ -21,12 +23,17 @@
   function onSwipe(Direction) {
     direction = Direction;
     if (direction == "right" && screenWidth <= 768) {
-      const form = document.querySelector(".form");
-      if (form) {
-        form.style.transition = "opacity .5s linear";
-        form.style.opacity = 0.5;
+      switch (pagePath) {
+        case "/contact":
+          const form = document.querySelector(".form");
+          form.style.transition = "opacity .5s linear";
+          form.style.opacity = 0.5;
+          break;
+        default:
+          const product = document.querySelector(".product");
+          product.style.transition = "opacity .5s linear";
+          product.style.opacity = 0.5;
       }
-
       side_bar("block");
     }
   }
@@ -53,9 +60,16 @@
     const outsideClick = !e.composedPath().includes(sidebar);
 
     if (outsideClick && screenWidth <= 768) {
-      const form = document.querySelector(".form");
       side_bar("none");
-      if (form) form.style.opacity = 1;
+      switch (pagePath) {
+        case "/contact":
+          const form = document.querySelector(".form");
+          form.style.opacity = 1;
+          break;
+        default:
+          const product = document.querySelector(".product");
+          product.style.opacity = 1;
+      }
     }
   }
 
@@ -70,6 +84,8 @@
     if (screenWidth >= 768) {
       side_bar("block");
     }
+
+    pagePath = window.location.pathname;
 
     document.addEventListener("touchstart", handleTouchStart);
     document.addEventListener("touchend", handleTouchEnd);

@@ -23,7 +23,7 @@
   }
 
   .link#active {
-    background-color: var(--page-color);
+    background-color: var(--main-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +36,7 @@
   }
 
   .link#inactive:hover {
-    color: var(--page-color);
+    color: var(--main-color);
   }
   .link a {
     font-family: "Source Code Pro";

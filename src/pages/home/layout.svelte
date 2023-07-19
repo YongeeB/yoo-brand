@@ -33,7 +33,7 @@
     font-family: "Lobster";
     font-weight: bold;
     color: transparent;
-    background: radial-gradient(var(--page-color), green);
+    background: radial-gradient(var(--main-color), green);
     background-clip: text;
     -webkit-background-clip: text;
   }

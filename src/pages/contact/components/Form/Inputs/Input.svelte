@@ -16,6 +16,7 @@
 
 <style>
   input {
+    caret-color: var(--main-color);
     font-weight: bold;
     display: block;
     margin: 1em 0;
@@ -33,6 +34,6 @@
   }
 
   input:focus {
-    border: 1px solid var(--page-color);
+    border: 1px solid var(--main-color);
   }
 </style>

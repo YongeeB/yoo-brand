@@ -13,11 +13,7 @@
   <Form>
     <Name>
       <a href="/" data-sveltekit-preload-data>
-        <h3 id="brand-name">
-          Yoo
-          <br />
-          Brand
-        </h3>
+        <h3 id="brand-name">Yoo Brand</h3>
       </a>
     </Name>
     <Inputs />
@@ -35,7 +31,7 @@
     letter-spacing: 0.1em;
     text-align: center;
     color: transparent;
-    background: radial-gradient(var(--page-color), green);
+    background: radial-gradient(rgb(97, 255, 102), var(--main-color));
     background-clip: text;
     -webkit-background-clip: text;
   }
@@ -57,7 +53,7 @@
   }
 
   textarea:focus {
-    border: 1px solid var(--page-color);
+    border: 1px solid var(--main-color);
   }
 
   button {
@@ -66,7 +62,7 @@
     margin: 1em 0;
     border-radius: 5px;
     border: none;
-    background-color: var(--page-color);
+    background-color: var(--main-color);
     font-weight: bold;
     font-family: "Philosopher";
     font-size: 1em;

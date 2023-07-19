@@ -811,7 +811,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.f24d5bfe.js", "_app/immutable/chunks/scheduler.33a57a0d.js", "_app/immutable/chunks/index.d9189012.js", "_app/immutable/chunks/singletons.5053ceab.js"];
+    imports2 = ["_app/immutable/nodes/1.5e239d53.js", "_app/immutable/chunks/scheduler.33a57a0d.js", "_app/immutable/chunks/index.d9189012.js", "_app/immutable/chunks/singletons.04bb2c32.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1250,7 +1250,7 @@ var init_page_svelte = __esm({
       return `<main>${slots.default ? slots.default({}) : ``}</main>`;
     });
     css$7 = {
-      code: '.link.svelte-1p7eqwi.svelte-1p7eqwi{font-family:"Zilla Slab";font-weight:bold}.link#active.svelte-1p7eqwi.svelte-1p7eqwi{background-color:var(--page-color);padding:5px;border-radius:5px;color:var(--dark)}.link#inactive.svelte-1p7eqwi.svelte-1p7eqwi{transition:color 0.5s linear}.link#inactive.svelte-1p7eqwi.svelte-1p7eqwi:hover{color:var(--page-color)}.link.svelte-1p7eqwi .link-box h5.svelte-1p7eqwi{text-transform:capitalize}',
+      code: '.link.svelte-1c2wafy.svelte-1c2wafy{font-family:"Zilla Slab";font-weight:bold}.link#active.svelte-1c2wafy.svelte-1c2wafy{background-color:var(--main-color);padding:5px;border-radius:5px;color:var(--dark)}.link#inactive.svelte-1c2wafy.svelte-1c2wafy{transition:color 0.5s linear}.link#inactive.svelte-1c2wafy.svelte-1c2wafy:hover{color:var(--main-color)}.link.svelte-1c2wafy .link-box h5.svelte-1c2wafy{text-transform:capitalize}',
       map: null
     };
     Link = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1264,7 +1264,7 @@ var init_page_svelte = __esm({
       if ($$props.windowSrc === void 0 && $$bindings.windowSrc && windowSrc2 !== void 0)
         $$bindings.windowSrc(windowSrc2);
       $$result.css.add(css$7);
-      return `<li class="link svelte-1p7eqwi"${add_attribute("id", `${windowSrc2 == src ? "active" : "inactive"}`, 0)}><a class="link-box"${add_attribute("href", src, 0)} data-sveltekit-preload-data><h5 class="svelte-1p7eqwi">${escape(name)}</h5></a> </li>`;
+      return `<li class="link svelte-1c2wafy"${add_attribute("id", `${windowSrc2 == src ? "active" : "inactive"}`, 0)}><a class="link-box"${add_attribute("href", src, 0)} data-sveltekit-preload-data><h5 class="svelte-1c2wafy">${escape(name)}</h5></a> </li>`;
     });
     css$6 = {
       code: ".links-container.svelte-187h8sr ul.svelte-187h8sr{display:flex;justify-content:space-between;align-items:center;list-style-type:none}",
@@ -1337,7 +1337,7 @@ var init_page_svelte = __esm({
       return `<div${add_attribute("class", rootClass, 0)} style="${"height: " + escape(rootInitialHeight, true)}">${`${placeholder ? `${validate_component(Placeholder, "Placeholder").$$render($$result, { placeholder, placeholderProps }, {}, {})}` : ``}`} </div>`;
     });
     css$5 = {
-      code: ".image-box{display:flex;justify-content:center;margin:0 1.2em}.image-box img{margin:0 auto;width:350px;max-width:100%;height:250px;border-radius:1em;margin:5px 0;background-color:white}",
+      code: ".image-box{display:flex;justify-content:center;margin:0 1.2em}.image-box img{margin:0 auto;width:300px;max-width:100%;height:250px;border-radius:1em;margin:5px 0;background-color:white}",
       map: null
     };
     Image = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1388,7 +1388,7 @@ var init_page_svelte = __esm({
       return `<h3 id="title" class="svelte-zcfpfg">${escape(name)}</h3>`;
     });
     css$12 = {
-      code: ".products-grid.svelte-elbl2l{display:grid;grid-template-columns:repeat(auto-fit, minmax(355px, 1fr));gap:10px}",
+      code: ".products-grid.svelte-obil6p{display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:10px;overflow-x:hidden}",
       map: null
     };
     Layout$1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1396,7 +1396,7 @@ var init_page_svelte = __esm({
       if ($$props.products === void 0 && $$bindings.products && products2 !== void 0)
         $$bindings.products(products2);
       $$result.css.add(css$12);
-      return `<div class="products-grid svelte-elbl2l">${each(products2, (product, index6) => {
+      return `<div class="products-grid svelte-obil6p">${each(products2, (product, index6) => {
         return `${validate_component(ProductCard, "ProductCard").$$render($$result, {}, {}, {
           default: () => {
             return `${validate_component(Image, "Image").$$render($$result, { src: product.imgSrc, name: product.name }, {}, {})} ${validate_component(Title, "Title").$$render($$result, { name: product.name }, {}, {})} ${validate_component(Info, "Info").$$render(
@@ -1413,7 +1413,7 @@ var init_page_svelte = __esm({
       })} </div>`;
     });
     css2 = {
-      code: 'h5.svelte-2xlksx{font-family:"Lobster";font-weight:bold;color:transparent;background:radial-gradient(var(--page-color), green);background-clip:text;-webkit-background-clip:text}@media(min-width: 500px){h5.svelte-2xlksx{font-size:1.2em}}',
+      code: 'h5.svelte-oaaqvf{font-family:"Lobster";font-weight:bold;color:transparent;background:radial-gradient(var(--main-color), green);background-clip:text;-webkit-background-clip:text}@media(min-width: 500px){h5.svelte-oaaqvf{font-size:1.2em}}',
       map: null
     };
     windowSrc = "/";
@@ -1428,7 +1428,7 @@ var init_page_svelte = __esm({
             default: () => {
               return `${validate_component(Name, "Name").$$render($$result, {}, {}, {
                 default: () => {
-                  return `<h5 style="text-align: center" class="svelte-2xlksx" data-svelte-h="svelte-gys9q1">Yoo
+                  return `<h5 style="text-align: center" class="svelte-oaaqvf" data-svelte-h="svelte-gys9q1">Yoo
         <br>
         Brand</h5>`;
                 }
@@ -1465,8 +1465,8 @@ var init__3 = __esm({
     index3 = 2;
     component3 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id2 = "src/routes/+page.js";
-    imports3 = ["_app/immutable/nodes/2.48da2371.js", "_app/immutable/chunks/products.647cff99.js", "_app/immutable/chunks/scheduler.33a57a0d.js", "_app/immutable/chunks/index.d9189012.js", "_app/immutable/chunks/Icon.ad011c3d.js"];
-    stylesheets3 = ["_app/immutable/assets/2.97c0b0c4.css", "_app/immutable/assets/Icon.2ae1c72e.css"];
+    imports3 = ["_app/immutable/nodes/2.b5eebfb3.js", "_app/immutable/chunks/products.647cff99.js", "_app/immutable/chunks/scheduler.33a57a0d.js", "_app/immutable/chunks/index.d9189012.js", "_app/immutable/chunks/Icon.9e590657.js"];
+    stylesheets3 = ["_app/immutable/assets/2.165a603e.css", "_app/immutable/assets/Icon.86e72639.css"];
     fonts3 = [];
   }
 });
@@ -1513,7 +1513,7 @@ var init_layout2 = __esm({
       return `<div class="${escape(null_to_empty(`sidebar ${currentTheme == "light" ? "light" : "dark"}`), true) + " svelte-1hv2jd0"}">${slots.default ? slots.default({}) : ``} </div>`;
     });
     css$13 = {
-      code: '.link.svelte-yjt6w0.svelte-yjt6w0{width:100%;height:40px;list-style-type:none}.link#active.svelte-yjt6w0.svelte-yjt6w0{background-color:var(--page-color);display:flex;flex-direction:column;justify-content:center;border-radius:15px;color:black}.link#inactive.svelte-yjt6w0.svelte-yjt6w0{transition:color 1s linear}.link#inactive.svelte-yjt6w0.svelte-yjt6w0:hover{color:var(--page-color)}.link.svelte-yjt6w0 a.svelte-yjt6w0{font-family:"Source Code Pro";display:grid;font-weight:bolder;grid-template-columns:30% 70%;align-items:center}.link-icon{text-align:center;width:100%}h5#link-name.svelte-yjt6w0.svelte-yjt6w0{text-align:center;font-size:1em;font-weight:bold}',
+      code: '.link.svelte-39vxhk.svelte-39vxhk{width:100%;height:40px;list-style-type:none}.link#active.svelte-39vxhk.svelte-39vxhk{background-color:var(--main-color);display:flex;flex-direction:column;justify-content:center;border-radius:15px;color:black}.link#inactive.svelte-39vxhk.svelte-39vxhk{transition:color 1s linear}.link#inactive.svelte-39vxhk.svelte-39vxhk:hover{color:var(--main-color)}.link.svelte-39vxhk a.svelte-39vxhk{font-family:"Source Code Pro";display:grid;font-weight:bolder;grid-template-columns:30% 70%;align-items:center}.link-icon{text-align:center;width:100%}h5#link-name.svelte-39vxhk.svelte-39vxhk{text-align:center;font-size:1em;font-weight:bold}',
       map: null
     };
     Link2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1530,7 +1530,7 @@ var init_layout2 = __esm({
       if ($$props.pageName === void 0 && $$bindings.pageName && pageName !== void 0)
         $$bindings.pageName(pageName);
       $$result.css.add(css$13);
-      return `<li class="link svelte-yjt6w0"${add_attribute("id", `${href == pageName ? "active" : "inactive"}`, 0)}><a${add_attribute("href", href, 0)} data-sveltekit-preload-data class="svelte-yjt6w0">${validate_component(Icon, "Icon").$$render(
+      return `<li class="link svelte-39vxhk"${add_attribute("id", `${href == pageName ? "active" : "inactive"}`, 0)}><a${add_attribute("href", href, 0)} data-sveltekit-preload-data class="svelte-39vxhk">${validate_component(Icon, "Icon").$$render(
         $$result,
         {
           data: icon,
@@ -1539,7 +1539,7 @@ var init_layout2 = __esm({
         },
         {},
         {}
-      )} <h5 id="link-name" class="svelte-yjt6w0">${escape(name)}</h5></a> </li>`;
+      )} <h5 id="link-name" class="svelte-39vxhk">${escape(name)}</h5></a> </li>`;
     });
     css3 = {
       code: ".links.svelte-15xye2f{display:flex;flex-direction:column;height:100%;justify-content:space-evenly}",
@@ -1605,7 +1605,7 @@ var init_page_svelte2 = __esm({
       return `${pageWidth >= 768 ? `<div class="grid-768 svelte-1vd5xsa"><div class="invisible-box"></div> <div class="product">${slots.default ? slots.default({}) : ``}</div></div>` : `<div class="product">${slots.default ? slots.default({}) : ``}</div>`}`;
     });
     css$14 = {
-      code: 'p#info.svelte-1wq2nzy{line-height:2em;font-family:"Zilla Slab";font-weight:bold}',
+      code: 'p#info.svelte-1b7kh2m{line-height:3em;font-family:"Philospher";font-weight:bold;transform:translateY(-1em)}',
       map: null
     };
     About = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1613,10 +1613,10 @@ var init_page_svelte2 = __esm({
       if ($$props.info === void 0 && $$bindings.info && info !== void 0)
         $$bindings.info(info);
       $$result.css.add(css$14);
-      return `<p id="info" class="m10 svelte-1wq2nzy">${escape(info)} </p>`;
+      return `<p id="info" class="m10 svelte-1b7kh2m">${escape(info)} </p>`;
     });
     css4 = {
-      code: '.product-name.svelte-7klorz{font-family:"Philosopher";width:100%;text-align:center;color:var(--page-color)}',
+      code: '.product-name.svelte-12m2u4b{font-family:"Philosopher";width:100%;text-align:center;color:green;font-weight:bold}',
       map: null
     };
     Layout4 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1631,7 +1631,7 @@ var init_page_svelte2 = __esm({
         default: () => {
           return `${validate_component(Layout3, "SideNavBar").$$render($$result, {}, {}, {})} ${validate_component(Name, "Name").$$render($$result, {}, {}, {
             default: () => {
-              return `<h1 class="product-name m10 svelte-7klorz">${escape(name)}</h1>`;
+              return `<h2 class="product-name m10 svelte-12m2u4b">${escape(name)}</h2>`;
             }
           })} ${validate_component(About, "About").$$render($$result, { info }, {}, {})}`;
         }
@@ -1665,8 +1665,8 @@ var init__4 = __esm({
     index4 = 3;
     component4 = async () => (await Promise.resolve().then(() => (init_page_svelte2(), page_svelte_exports2))).default;
     universal_id3 = "src/routes/[product]/+page.js";
-    imports4 = ["_app/immutable/nodes/3.6c767de9.js", "_app/immutable/chunks/control.f5b05b5f.js", "_app/immutable/chunks/products.647cff99.js", "_app/immutable/chunks/scheduler.33a57a0d.js", "_app/immutable/chunks/index.d9189012.js", "_app/immutable/chunks/Icon.ad011c3d.js", "_app/immutable/chunks/layout.aa538463.js"];
-    stylesheets4 = ["_app/immutable/assets/3.f4e79c89.css", "_app/immutable/assets/Icon.2ae1c72e.css", "_app/immutable/assets/layout.e8a92850.css"];
+    imports4 = ["_app/immutable/nodes/3.3b16c341.js", "_app/immutable/chunks/control.f5b05b5f.js", "_app/immutable/chunks/products.647cff99.js", "_app/immutable/chunks/scheduler.33a57a0d.js", "_app/immutable/chunks/index.d9189012.js", "_app/immutable/chunks/Icon.9e590657.js", "_app/immutable/chunks/layout.6bfed1c8.js"];
+    stylesheets4 = ["_app/immutable/assets/3.33e4d4ee.css", "_app/immutable/assets/Icon.86e72639.css", "_app/immutable/assets/layout.0dc4c4ca.css"];
     fonts4 = [];
   }
 });
@@ -1758,7 +1758,7 @@ var init_page_svelte3 = __esm({
       return `<main class="contact-box svelte-bslocy">${slots.default ? slots.default({}) : ``} </main>`;
     });
     css$32 = {
-      code: 'input.svelte-1v2jt2q{font-weight:bold;display:block;margin:1em 0;height:40px;padding:0 10px;border-radius:5px;outline:none;box-sizing:border-box;width:100%;max-width:400px;border:1px solid black;font-family:"Zilla Slab";font-weight:bold;font-size:1em}input.svelte-1v2jt2q:focus{border:1px solid var(--page-color)}',
+      code: 'input.svelte-mzbdw7{caret-color:var(--main-color);font-weight:bold;display:block;margin:1em 0;height:40px;padding:0 10px;border-radius:5px;outline:none;box-sizing:border-box;width:100%;max-width:400px;border:1px solid black;font-family:"Zilla Slab";font-weight:bold;font-size:1em}input.svelte-mzbdw7:focus{border:1px solid var(--main-color)}',
       map: null
     };
     Input = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1772,7 +1772,7 @@ var init_page_svelte3 = __esm({
       if ($$props.type === void 0 && $$bindings.type && type !== void 0)
         $$bindings.type(type);
       $$result.css.add(css$32);
-      return `<input${add_attribute("name", name, 0)}${add_attribute("placeholder", placeholder, 0)}${add_attribute("type", type, 0)} class="svelte-1v2jt2q">`;
+      return `<input${add_attribute("name", name, 0)}${add_attribute("placeholder", placeholder, 0)}${add_attribute("type", type, 0)} class="svelte-mzbdw7">`;
     });
     Layout$32 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let inputs = [{ name: "name", type: "text" }, { name: "email", type: "email" }];
@@ -1789,12 +1789,12 @@ var init_page_svelte3 = __esm({
       return `<div class="form svelte-1ol8bkh">${slots.default ? slots.default({}) : ``} </div>`;
     });
     css$15 = {
-      code: ".call-us.svelte-1tz2w7h a.svelte-1tz2w7h{position:absolute;bottom:1em;right:1em;width:35px;height:35px;background-color:var(--page-color);color:black;font-weight:bold;display:flex;justify-content:center;align-items:center;border-radius:50%}",
+      code: ".call-us.svelte-pmjpqf a.svelte-pmjpqf{position:absolute;bottom:1em;right:1em;width:35px;height:35px;background-color:var(--main-color);color:black;font-weight:bold;display:flex;justify-content:center;align-items:center;border-radius:50%}",
       map: null
     };
     CallUs = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css$15);
-      return `<div class="call-us svelte-1tz2w7h"><a href="tel:+2348171983663" class="svelte-1tz2w7h">${slots.default ? slots.default({}) : ``}</a> </div>`;
+      return `<div class="call-us svelte-pmjpqf"><a href="tel:+2348171983663" class="svelte-pmjpqf">${slots.default ? slots.default({}) : ``}</a> </div>`;
     });
     Layout$13 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       return `${validate_component(CallUs, "CallUs").$$render($$result, {}, {}, {
@@ -1813,7 +1813,7 @@ var init_page_svelte3 = __esm({
       })}`;
     });
     css5 = {
-      code: 'a.svelte-1yvoyoe #brand-name.svelte-1yvoyoe{font-family:"Lobster";font-size:1.7em;letter-spacing:0.1em;text-align:center;color:transparent;background:radial-gradient(var(--page-color), green);background-clip:text;-webkit-background-clip:text}textarea.svelte-1yvoyoe.svelte-1yvoyoe{width:100%;height:120px;padding:5px;box-sizing:border-box;outline:none;border:1px solid inherit;border-radius:1em;font-family:"Philosopher";font-size:1em}textarea.svelte-1yvoyoe.svelte-1yvoyoe::placeholder{color:black;opacity:90%}textarea.svelte-1yvoyoe.svelte-1yvoyoe:focus{border:1px solid var(--page-color)}button.svelte-1yvoyoe.svelte-1yvoyoe{width:50px;height:30px;margin:1em 0;border-radius:5px;border:none;background-color:var(--page-color);font-weight:bold;font-family:"Philosopher";font-size:1em}',
+      code: 'a.svelte-5flf9c #brand-name.svelte-5flf9c{font-family:"Lobster";font-size:1.7em;letter-spacing:0.1em;text-align:center;color:transparent;background:radial-gradient(rgb(97, 255, 102), var(--main-color));background-clip:text;-webkit-background-clip:text}textarea.svelte-5flf9c.svelte-5flf9c{width:100%;height:120px;padding:5px;box-sizing:border-box;outline:none;border:1px solid inherit;border-radius:1em;font-family:"Philosopher";font-size:1em}textarea.svelte-5flf9c.svelte-5flf9c::placeholder{color:black;opacity:90%}textarea.svelte-5flf9c.svelte-5flf9c:focus{border:1px solid var(--main-color)}button.svelte-5flf9c.svelte-5flf9c{width:50px;height:30px;margin:1em 0;border-radius:5px;border:none;background-color:var(--main-color);font-weight:bold;font-family:"Philosopher";font-size:1em}',
       map: null
     };
     Layout5 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1824,11 +1824,9 @@ var init_page_svelte3 = __esm({
             default: () => {
               return `${validate_component(Name, "Name").$$render($$result, {}, {}, {
                 default: () => {
-                  return `<a href="/" data-sveltekit-preload-data class="svelte-1yvoyoe" data-svelte-h="svelte-o4u45r"><h3 id="brand-name" class="svelte-1yvoyoe">Yoo
-          <br>
-          Brand</h3></a>`;
+                  return `<a href="/" data-sveltekit-preload-data class="svelte-5flf9c" data-svelte-h="svelte-vyb1lu"><h3 id="brand-name" class="svelte-5flf9c">Yoo Brand</h3></a>`;
                 }
-              })} ${validate_component(Layout$32, "Inputs").$$render($$result, {}, {}, {})} <textarea placeholder="message" draggable="false" class="svelte-1yvoyoe"></textarea> <button class="svelte-1yvoyoe" data-svelte-h="svelte-11upy20">send</button> ${validate_component(Layout$4, "AppIcons").$$render($$result, {}, {}, {})}`;
+              })} ${validate_component(Layout$32, "Inputs").$$render($$result, {}, {}, {})} <textarea placeholder="message" draggable="false" class="svelte-5flf9c"></textarea> <button class="svelte-5flf9c" data-svelte-h="svelte-11upy20">send</button> ${validate_component(Layout$4, "AppIcons").$$render($$result, {}, {}, {})}`;
             }
           })} ${validate_component(Layout$13, "CallUs").$$render($$result, {}, {}, {})}`;
         }
@@ -1858,8 +1856,8 @@ var init__5 = __esm({
     index5 = 4;
     component5 = async () => (await Promise.resolve().then(() => (init_page_svelte3(), page_svelte_exports3))).default;
     universal_id4 = "src/routes/contact/+page.js";
-    imports5 = ["_app/immutable/nodes/4.eac44024.js", "_app/immutable/chunks/scheduler.33a57a0d.js", "_app/immutable/chunks/index.d9189012.js", "_app/immutable/chunks/Icon.ad011c3d.js", "_app/immutable/chunks/layout.aa538463.js"];
-    stylesheets5 = ["_app/immutable/assets/4.28415cef.css", "_app/immutable/assets/Icon.2ae1c72e.css", "_app/immutable/assets/layout.e8a92850.css"];
+    imports5 = ["_app/immutable/nodes/4.431c41f2.js", "_app/immutable/chunks/scheduler.33a57a0d.js", "_app/immutable/chunks/index.d9189012.js", "_app/immutable/chunks/Icon.9e590657.js", "_app/immutable/chunks/layout.6bfed1c8.js"];
+    stylesheets5 = ["_app/immutable/assets/4.7276f4dc.css", "_app/immutable/assets/Icon.86e72639.css", "_app/immutable/assets/layout.0dc4c4ca.css"];
     fonts5 = [];
   }
 });
@@ -1961,9 +1959,9 @@ var options = {
   // added lazily, via `get_hooks`
   preload_strategy: "modulepreload",
   root: Root,
-  service_worker: false,
+  service_worker: true,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n  <head>\n    <meta charset="UTF-8" />\n    <meta name="viewport" content="width=device-width, initial-scale=1.0" />\n    <link rel="icon" href="/favicon.png" />\n    ' + head + '\n  </head>\n  <body>\n    <div style="display: contents">' + body + "</div>\n  </body>\n</html>\n",
+    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\n<html lang="en">\n  <head>\n    <meta charset="UTF-8" />\n    <meta name="viewport" content="width=device-width, initial-scale=1.0" />\n    <link rel="icon" href="/favicon.png" />\n\n    ' + head + '\n  </head>\n  <body>\n    <div style="display: contents">' + body + "</div>\n  </body>\n</html>\n",
     error: ({ status, message }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -2025,7 +2023,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1t68koj"
+  version_hash: "62n45x"
 };
 function get_hooks() {
   return {};
@@ -5258,10 +5256,10 @@ _manifest = new WeakMap();
 var manifest = {
   appDir: "_app",
   appPath: "_app",
-  assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.jpg", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg"]),
+  assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.jpg", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg", "service-worker.js"]),
   mimeTypes: { ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" },
   _: {
-    client: { "start": "_app/immutable/entry/start.ab20e11d.js", "app": "_app/immutable/entry/app.bb0f1188.js", "imports": ["_app/immutable/entry/start.ab20e11d.js", "_app/immutable/chunks/scheduler.33a57a0d.js", "_app/immutable/chunks/singletons.5053ceab.js", "_app/immutable/chunks/control.f5b05b5f.js", "_app/immutable/entry/app.bb0f1188.js", "_app/immutable/chunks/scheduler.33a57a0d.js", "_app/immutable/chunks/index.d9189012.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.483187a7.js", "app": "_app/immutable/entry/app.ed0dbc65.js", "imports": ["_app/immutable/entry/start.483187a7.js", "_app/immutable/chunks/scheduler.33a57a0d.js", "_app/immutable/chunks/singletons.04bb2c32.js", "_app/immutable/chunks/control.f5b05b5f.js", "_app/immutable/entry/app.ed0dbc65.js", "_app/immutable/chunks/scheduler.33a57a0d.js", "_app/immutable/chunks/index.d9189012.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),

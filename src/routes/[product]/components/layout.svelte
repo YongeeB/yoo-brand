@@ -10,7 +10,7 @@
 <Product>
   <SideNavBar />
   <Name>
-    <h1 class="product-name m10">{name}</h1>
+    <h2 class="product-name m10">{name}</h2>
   </Name>
   <About {info} />
 </Product>
@@ -18,9 +18,9 @@
 <style>
   .product-name {
     font-family: "Philosopher";
-
     width: 100%;
     text-align: center;
-    color: var(--page-color);
+    color: green;
+    font-weight: bold;
   }
 </style>

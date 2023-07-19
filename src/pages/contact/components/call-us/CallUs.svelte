@@ -11,7 +11,7 @@
     right: 1em;
     width: 35px;
     height: 35px;
-    background-color: var(--page-color);
+    background-color: var(--main-color);
     color: black;
     font-weight: bold;
     display: flex;

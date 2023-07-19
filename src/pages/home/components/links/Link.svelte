@@ -16,7 +16,7 @@
     font-weight: bold;
   }
   .link#active {
-    background-color: var(--page-color);
+    background-color: var(--main-color);
     padding: 5px;
     border-radius: 5px;
     color: var(--dark);
@@ -27,7 +27,7 @@
   }
 
   .link#inactive:hover {
-    color: var(--page-color);
+    color: var(--main-color);
   }
 
   .link .link-box h5 {

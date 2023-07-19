@@ -17,7 +17,7 @@
 
   :global(.image-box img) {
     margin: 0 auto;
-    width: 350px;
+    width: 300px;
     max-width: 100%;
     height: 250px;
     border-radius: 1em;
