@@ -15,6 +15,7 @@
 <style>
   .info p {
     text-align: center;
+    padding: 0 7px;
     line-height: 2em;
     font-family: "Source Code Pro";
   }

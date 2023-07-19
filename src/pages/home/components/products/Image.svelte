@@ -4,19 +4,17 @@
   export let name;
 </script>
 
-<div class="image-box">
-  <Lazy>
-    <img {src} alt={name} />
-  </Lazy>
-</div>
+<Lazy class="image-box">
+  <img {src} alt={name} />
+</Lazy>
 
 <style>
-  .image-box {
+  :global(.image-box) {
     display: flex;
     justify-content: center;
   }
 
-  .image-box img {
+  :global(.image-box img) {
     width: 350px;
     max-width: 95%;
     height: 250px;
