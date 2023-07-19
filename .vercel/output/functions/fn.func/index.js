@@ -811,7 +811,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.80e01622.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js", "_app/immutable/chunks/singletons.14fd3079.js"];
+    imports2 = ["_app/immutable/nodes/1.a66fe7ac.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js", "_app/immutable/chunks/singletons.9485804c.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1323,12 +1323,12 @@ var init_page_svelte = __esm({
       return `<main class="info svelte-1iifwsx"><p id="content" class="svelte-1iifwsx">${escape(content.substr(0, 300) + "...")} <a${add_attribute("href", src, 0)}><span class="svelte-1iifwsx" data-svelte-h="svelte-rbnyiq">see more</span></a></p> </main>`;
     });
     css$3 = {
-      code: ".product-card.svelte-1mu8d9y{box-sizing:border-box;margin:0 1em;transition:transform 0.5s ease-in}.product-card.svelte-1mu8d9y:hover{transform:scale(1.01)}",
+      code: ".product-card.svelte-1mlso2a{box-sizing:border-box;transition:transform 0.5s ease-in}.product-card.svelte-1mlso2a:hover{transform:scale(1.01)}",
       map: null
     };
     ProductCard = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css$3);
-      return `<main class="product-card svelte-1mu8d9y">${slots.default ? slots.default({}) : ``} </main>`;
+      return `<main class="product-card svelte-1mlso2a">${slots.default ? slots.default({}) : ``} </main>`;
     });
     css$22 = {
       code: '#title.svelte-zcfpfg{font-family:"Lobster";letter-spacing:0.3em;text-align:center;color:green;transition:all 0.5s linear}#title.svelte-zcfpfg:hover{color:red}',
@@ -1419,8 +1419,8 @@ var init__3 = __esm({
     index3 = 2;
     component3 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id2 = "src/routes/+page.js";
-    imports3 = ["_app/immutable/nodes/2.7aa11608.js", "_app/immutable/chunks/products.647cff99.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js", "_app/immutable/chunks/Icon.fcf6a319.js"];
-    stylesheets3 = ["_app/immutable/assets/2.f844d570.css", "_app/immutable/assets/Icon.2ae1c72e.css"];
+    imports3 = ["_app/immutable/nodes/2.40361037.js", "_app/immutable/chunks/products.647cff99.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js", "_app/immutable/chunks/Icon.fcf6a319.js"];
+    stylesheets3 = ["_app/immutable/assets/2.66151cf5.css", "_app/immutable/assets/Icon.2ae1c72e.css"];
     fonts3 = [];
   }
 });
@@ -1979,7 +1979,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "9xearh"
+  version_hash: "1ah7z0z"
 };
 function get_hooks() {
   return {};
@@ -5215,7 +5215,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.jpg", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg"]),
   mimeTypes: { ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" },
   _: {
-    client: { "start": "_app/immutable/entry/start.2d069bf8.js", "app": "_app/immutable/entry/app.814ea567.js", "imports": ["_app/immutable/entry/start.2d069bf8.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/singletons.14fd3079.js", "_app/immutable/chunks/control.f5b05b5f.js", "_app/immutable/entry/app.814ea567.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.47614b1f.js", "app": "_app/immutable/entry/app.888e1bd1.js", "imports": ["_app/immutable/entry/start.47614b1f.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/singletons.9485804c.js", "_app/immutable/chunks/control.f5b05b5f.js", "_app/immutable/entry/app.888e1bd1.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
