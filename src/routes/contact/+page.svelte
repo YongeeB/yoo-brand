@@ -1,7 +1,10 @@
 <script>
-    import "../../global.css";
-    import Layout from "../../contact/__Layout__.svelte";
-
+  import "../../global.css";
+  import Contact from "../../pages/contact/layout.svelte";
 </script>
 
-<Layout />
+<svelte:head>
+  <title>Contact Us</title>
+</svelte:head>
+
+<Contact />

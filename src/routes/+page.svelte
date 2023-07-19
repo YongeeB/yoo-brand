@@ -1,8 +1,12 @@
 <script>
-  import "../global.css"
-  import Layout from "../home/__Layout__.svelte";
+  import "../global.css";
+  import YooBrand from "../pages/home/layout.svelte";
 
+  export let data;
 </script>
-<main class="container">
-    <Layout />
-</main>
+
+<svelte:head>
+  <title>Yoo Brand</title>
+</svelte:head>
+
+<YooBrand products={data.products} />

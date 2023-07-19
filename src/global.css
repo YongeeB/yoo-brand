@@ -1,24 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Allura&family=Arimo:wght@400;500;600&family=Caprasimo&family=Fira+Code:wght@300;400;500;600;700&family=Mukta:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@1,500&family=Zilla+Slab:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
 
 :root {
-  --primary-color: #000;
-  --secondary-color: whitesmoke;
-  --primary-background: #fff;
-  --secondary-background: #000;
-  --tertiary-color: crimson;
-  --tertiary-background: crimson;
+  --page-color: orange;
+  --dark: #000;
+  --light: #fff;
+}
+:root[data-theme="dark"] {
+  background-color: var(--dark);
+  color: var(--light);
 }
 
-:global(:root[data-theme="dark"]) {
-  background-color: var(--secondary-background);
-  color: var(--secondary-color);
+:root[data-theme="light"] {
+  background-color: var(--light);
+  color: var(--dark);
 }
 
-:global(:root[data-theme="light"]) {
-  background-color: var(--primary-background);
-  color: var(--primary-color);
+.m10 {
+  margin: 10px;
 }
 
-body .container {
-  margin: 1em;
+a {
+  text-decoration: none;
+  color: inherit;
 }
