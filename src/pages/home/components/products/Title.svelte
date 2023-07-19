@@ -9,11 +9,11 @@
     font-family: "Lobster";
     letter-spacing: 0.3em;
     text-align: center;
-    color: var(--page-color);
+    color: green;
     transition: all 0.5s linear;
   }
 
   #title:hover {
-    color: green;
+    color: red;
   }
 </style>

@@ -41,7 +41,7 @@
   }
   textarea {
     width: 100%;
-    height: 80px;
+    height: 120px;
     padding: 5px;
     box-sizing: border-box;
     outline: none;

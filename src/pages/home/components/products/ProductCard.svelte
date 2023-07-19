@@ -4,6 +4,8 @@
 
 <style>
   .product-card {
+    box-sizing: border-box;
+    margin: 0 1em;
     transition: transform 0.5s ease-in;
   }
 
