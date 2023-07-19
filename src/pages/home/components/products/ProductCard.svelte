@@ -4,7 +4,9 @@
 
 <style>
   .product-card {
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     transition: transform 0.5s ease-in;
   }
 

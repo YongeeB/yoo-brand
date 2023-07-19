@@ -7,7 +7,7 @@
   export let products;
 </script>
 
-<div class="products-grid m10">
+<div class="products-grid">
   {#each products as product, index (index)}
     <ProductCard>
       <Image src={product.imgSrc} name={product.name} />

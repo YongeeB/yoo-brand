@@ -1,10 +1,13 @@
 <script>
+  import Lazy from "svelte-lazy";
   export let src;
   export let name;
 </script>
 
 <div class="image-box">
-  <img {src} alt={name} />
+  <Lazy>
+    <img {src} alt={name} />
+  </Lazy>
 </div>
 
 <style>
@@ -15,7 +18,7 @@
 
   .image-box img {
     width: 350px;
-    max-width: 90%;
+    max-width: 95%;
     height: 250px;
     border-radius: 1em;
     margin: 5px 0;

@@ -752,7 +752,7 @@ var init__ = __esm({
     index = 0;
     component = async () => (await Promise.resolve().then(() => (init_layout_svelte(), layout_svelte_exports))).default;
     universal_id = "src/routes/+layout.js";
-    imports = ["_app/immutable/nodes/0.e3367a5f.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js"];
+    imports = ["_app/immutable/nodes/0.c903e916.js", "_app/immutable/chunks/scheduler.33a57a0d.js", "_app/immutable/chunks/index.d9189012.js"];
     stylesheets = [];
     fonts = [];
   }
@@ -811,7 +811,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.a66fe7ac.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js", "_app/immutable/chunks/singletons.9485804c.js"];
+    imports2 = ["_app/immutable/nodes/1.c02205cb.js", "_app/immutable/chunks/scheduler.33a57a0d.js", "_app/immutable/chunks/index.d9189012.js", "_app/immutable/chunks/singletons.cfe4b6c3.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1217,7 +1217,7 @@ var page_svelte_exports = {};
 __export(page_svelte_exports, {
   default: () => Page
 });
-var css$9, Layout$3, css$8, AboutBrand, Yoo, css$7, Link, css$6, Layout$2, css$5, Image, css$4, Info, css$3, ProductCard, css$22, Title, css$12, Layout$1, css2, windowSrc, Layout2, Page;
+var css$9, Layout$3, css$8, AboutBrand, Yoo, css$7, Link, css$6, Layout$2, placeholderClass, Placeholder, Src, css$5, Image, css$4, Info, css$3, ProductCard, css$22, Title, css$12, Layout$1, css2, windowSrc, Layout2, Page;
 var init_page_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/_page.svelte.js"() {
     init_ssr();
@@ -1294,8 +1294,50 @@ var init_page_svelte = __esm({
         )}`;
       })}</ul> </nav>`;
     });
+    placeholderClass = "svelte-lazy-placeholder";
+    Placeholder = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let { placeholder = null } = $$props;
+      let { placeholderProps = null } = $$props;
+      if ($$props.placeholder === void 0 && $$bindings.placeholder && placeholder !== void 0)
+        $$bindings.placeholder(placeholder);
+      if ($$props.placeholderProps === void 0 && $$bindings.placeholderProps && placeholderProps !== void 0)
+        $$bindings.placeholderProps(placeholderProps);
+      return `${placeholder ? `<div${add_attribute("class", placeholderClass, 0)}>${typeof placeholder === "string" ? `<div>${escape(placeholder)}</div>` : `${["function", "object"].includes(typeof placeholder) ? `${validate_component(placeholder || missing_component, "svelte:component").$$render($$result, Object.assign({}, placeholderProps), {}, {})}` : ``}`}</div>` : ``}`;
+    });
+    Src = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let { height = 0 } = $$props;
+      let { offset = 150 } = $$props;
+      let { fadeOption = { delay: 0, duration: 400 } } = $$props;
+      let { resetHeightDelay = 0 } = $$props;
+      let { onload = null } = $$props;
+      let { placeholder = null } = $$props;
+      let { placeholderProps = null } = $$props;
+      let { class: className = "" } = $$props;
+      const rootClass = "svelte-lazy" + (className ? " " + className : "");
+      const rootInitialHeight = getStyleHeight();
+      function getStyleHeight() {
+        return typeof height === "number" ? height + "px" : height;
+      }
+      if ($$props.height === void 0 && $$bindings.height && height !== void 0)
+        $$bindings.height(height);
+      if ($$props.offset === void 0 && $$bindings.offset && offset !== void 0)
+        $$bindings.offset(offset);
+      if ($$props.fadeOption === void 0 && $$bindings.fadeOption && fadeOption !== void 0)
+        $$bindings.fadeOption(fadeOption);
+      if ($$props.resetHeightDelay === void 0 && $$bindings.resetHeightDelay && resetHeightDelay !== void 0)
+        $$bindings.resetHeightDelay(resetHeightDelay);
+      if ($$props.onload === void 0 && $$bindings.onload && onload !== void 0)
+        $$bindings.onload(onload);
+      if ($$props.placeholder === void 0 && $$bindings.placeholder && placeholder !== void 0)
+        $$bindings.placeholder(placeholder);
+      if ($$props.placeholderProps === void 0 && $$bindings.placeholderProps && placeholderProps !== void 0)
+        $$bindings.placeholderProps(placeholderProps);
+      if ($$props.class === void 0 && $$bindings.class && className !== void 0)
+        $$bindings.class(className);
+      return `<div${add_attribute("class", rootClass, 0)} style="${"height: " + escape(rootInitialHeight, true)}">${`${placeholder ? `${validate_component(Placeholder, "Placeholder").$$render($$result, { placeholder, placeholderProps }, {}, {})}` : ``}`} </div>`;
+    });
     css$5 = {
-      code: ".image-box.svelte-av7lsp.svelte-av7lsp{display:flex;justify-content:center}.image-box.svelte-av7lsp img.svelte-av7lsp{width:350px;max-width:90%;height:250px;border-radius:1em;margin:5px 0;background-color:white}",
+      code: ".image-box.svelte-wyu8ow.svelte-wyu8ow{display:flex;justify-content:center}.image-box.svelte-wyu8ow img.svelte-wyu8ow{width:350px;max-width:95%;height:250px;border-radius:1em;margin:5px 0;background-color:white}",
       map: null
     };
     Image = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1306,7 +1348,11 @@ var init_page_svelte = __esm({
       if ($$props.name === void 0 && $$bindings.name && name !== void 0)
         $$bindings.name(name);
       $$result.css.add(css$5);
-      return `<div class="image-box svelte-av7lsp"><img${add_attribute("src", src, 0)}${add_attribute("alt", name, 0)} class="svelte-av7lsp"> </div>`;
+      return `<div class="image-box svelte-wyu8ow">${validate_component(Src, "Lazy").$$render($$result, {}, {}, {
+        default: () => {
+          return `<img${add_attribute("src", src, 0)}${add_attribute("alt", name, 0)} class="svelte-wyu8ow">`;
+        }
+      })} </div>`;
     });
     css$4 = {
       code: '.info.svelte-1iifwsx p.svelte-1iifwsx{text-align:center;line-height:2em;font-family:"Source Code Pro"}.info.svelte-1iifwsx #content a span.svelte-1iifwsx{color:green;cursor:pointer}',
@@ -1323,12 +1369,12 @@ var init_page_svelte = __esm({
       return `<main class="info svelte-1iifwsx"><p id="content" class="svelte-1iifwsx">${escape(content.substr(0, 300) + "...")} <a${add_attribute("href", src, 0)}><span class="svelte-1iifwsx" data-svelte-h="svelte-rbnyiq">see more</span></a></p> </main>`;
     });
     css$3 = {
-      code: ".product-card.svelte-1mlso2a{box-sizing:border-box;transition:transform 0.5s ease-in}.product-card.svelte-1mlso2a:hover{transform:scale(1.01)}",
+      code: ".product-card.svelte-1ka21d1{display:flex;flex-direction:column;align-items:center;transition:transform 0.5s ease-in}.product-card.svelte-1ka21d1:hover{transform:scale(1.01)}",
       map: null
     };
     ProductCard = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       $$result.css.add(css$3);
-      return `<main class="product-card svelte-1mlso2a">${slots.default ? slots.default({}) : ``} </main>`;
+      return `<main class="product-card svelte-1ka21d1">${slots.default ? slots.default({}) : ``} </main>`;
     });
     css$22 = {
       code: '#title.svelte-zcfpfg{font-family:"Lobster";letter-spacing:0.3em;text-align:center;color:green;transition:all 0.5s linear}#title.svelte-zcfpfg:hover{color:red}',
@@ -1350,7 +1396,7 @@ var init_page_svelte = __esm({
       if ($$props.products === void 0 && $$bindings.products && products2 !== void 0)
         $$bindings.products(products2);
       $$result.css.add(css$12);
-      return `<div class="products-grid m10 svelte-elbl2l">${each(products2, (product, index6) => {
+      return `<div class="products-grid svelte-elbl2l">${each(products2, (product, index6) => {
         return `${validate_component(ProductCard, "ProductCard").$$render($$result, {}, {}, {
           default: () => {
             return `${validate_component(Image, "Image").$$render($$result, { src: product.imgSrc, name: product.name }, {}, {})} ${validate_component(Title, "Title").$$render($$result, { name: product.name }, {}, {})} ${validate_component(Info, "Info").$$render(
@@ -1419,8 +1465,8 @@ var init__3 = __esm({
     index3 = 2;
     component3 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id2 = "src/routes/+page.js";
-    imports3 = ["_app/immutable/nodes/2.40361037.js", "_app/immutable/chunks/products.647cff99.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js", "_app/immutable/chunks/Icon.fcf6a319.js"];
-    stylesheets3 = ["_app/immutable/assets/2.66151cf5.css", "_app/immutable/assets/Icon.2ae1c72e.css"];
+    imports3 = ["_app/immutable/nodes/2.5fdfcc68.js", "_app/immutable/chunks/products.647cff99.js", "_app/immutable/chunks/scheduler.33a57a0d.js", "_app/immutable/chunks/index.d9189012.js", "_app/immutable/chunks/Icon.ad011c3d.js"];
+    stylesheets3 = ["_app/immutable/assets/2.b34b114d.css", "_app/immutable/assets/Icon.2ae1c72e.css"];
     fonts3 = [];
   }
 });
@@ -1619,7 +1665,7 @@ var init__4 = __esm({
     index4 = 3;
     component4 = async () => (await Promise.resolve().then(() => (init_page_svelte2(), page_svelte_exports2))).default;
     universal_id3 = "src/routes/[product]/+page.js";
-    imports4 = ["_app/immutable/nodes/3.f1124aa7.js", "_app/immutable/chunks/control.f5b05b5f.js", "_app/immutable/chunks/products.647cff99.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js", "_app/immutable/chunks/Icon.fcf6a319.js", "_app/immutable/chunks/layout.055e37fa.js"];
+    imports4 = ["_app/immutable/nodes/3.6c767de9.js", "_app/immutable/chunks/control.f5b05b5f.js", "_app/immutable/chunks/products.647cff99.js", "_app/immutable/chunks/scheduler.33a57a0d.js", "_app/immutable/chunks/index.d9189012.js", "_app/immutable/chunks/Icon.ad011c3d.js", "_app/immutable/chunks/layout.aa538463.js"];
     stylesheets4 = ["_app/immutable/assets/3.f4e79c89.css", "_app/immutable/assets/Icon.2ae1c72e.css", "_app/immutable/assets/layout.e8a92850.css"];
     fonts4 = [];
   }
@@ -1812,7 +1858,7 @@ var init__5 = __esm({
     index5 = 4;
     component5 = async () => (await Promise.resolve().then(() => (init_page_svelte3(), page_svelte_exports3))).default;
     universal_id4 = "src/routes/contact/+page.js";
-    imports5 = ["_app/immutable/nodes/4.6760332d.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js", "_app/immutable/chunks/Icon.fcf6a319.js", "_app/immutable/chunks/layout.055e37fa.js"];
+    imports5 = ["_app/immutable/nodes/4.eac44024.js", "_app/immutable/chunks/scheduler.33a57a0d.js", "_app/immutable/chunks/index.d9189012.js", "_app/immutable/chunks/Icon.ad011c3d.js", "_app/immutable/chunks/layout.aa538463.js"];
     stylesheets5 = ["_app/immutable/assets/4.28415cef.css", "_app/immutable/assets/Icon.2ae1c72e.css", "_app/immutable/assets/layout.e8a92850.css"];
     fonts5 = [];
   }
@@ -1979,7 +2025,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "1ah7z0z"
+  version_hash: "xy0gwn"
 };
 function get_hooks() {
   return {};
@@ -5215,7 +5261,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.jpg", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg"]),
   mimeTypes: { ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" },
   _: {
-    client: { "start": "_app/immutable/entry/start.47614b1f.js", "app": "_app/immutable/entry/app.888e1bd1.js", "imports": ["_app/immutable/entry/start.47614b1f.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/singletons.9485804c.js", "_app/immutable/chunks/control.f5b05b5f.js", "_app/immutable/entry/app.888e1bd1.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.25c73d31.js", "app": "_app/immutable/entry/app.a24419b8.js", "imports": ["_app/immutable/entry/start.25c73d31.js", "_app/immutable/chunks/scheduler.33a57a0d.js", "_app/immutable/chunks/singletons.cfe4b6c3.js", "_app/immutable/chunks/control.f5b05b5f.js", "_app/immutable/entry/app.a24419b8.js", "_app/immutable/chunks/scheduler.33a57a0d.js", "_app/immutable/chunks/index.d9189012.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
