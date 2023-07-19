@@ -811,7 +811,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.605e4d25.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js", "_app/immutable/chunks/singletons.50623235.js"];
+    imports2 = ["_app/immutable/nodes/1.08cdccfa.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js", "_app/immutable/chunks/singletons.1d6c0150.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -1309,7 +1309,7 @@ var init_page_svelte = __esm({
       return `<div class="image-box svelte-av7lsp"><img${add_attribute("src", src, 0)}${add_attribute("alt", name, 0)} class="svelte-av7lsp"> </div>`;
     });
     css$4 = {
-      code: '.info.svelte-h7pwps p.svelte-h7pwps{text-align:center;padding:0 10px;line-height:2em;font-family:"Source Code Pro"}.info.svelte-h7pwps #content a span.svelte-h7pwps{color:green;cursor:pointer}',
+      code: '.info.svelte-1iifwsx p.svelte-1iifwsx{text-align:center;line-height:2em;font-family:"Source Code Pro"}.info.svelte-1iifwsx #content a span.svelte-1iifwsx{color:green;cursor:pointer}',
       map: null
     };
     Info = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1320,7 +1320,7 @@ var init_page_svelte = __esm({
       if ($$props.src === void 0 && $$bindings.src && src !== void 0)
         $$bindings.src(src);
       $$result.css.add(css$4);
-      return `<main class="info svelte-h7pwps"><p id="content" class="svelte-h7pwps">${escape(content.substr(0, 300) + "...")} <a${add_attribute("href", src, 0)}><span class="svelte-h7pwps" data-svelte-h="svelte-rbnyiq">see more</span></a></p> </main>`;
+      return `<main class="info svelte-1iifwsx"><p id="content" class="svelte-1iifwsx">${escape(content.substr(0, 300) + "...")} <a${add_attribute("href", src, 0)}><span class="svelte-1iifwsx" data-svelte-h="svelte-rbnyiq">see more</span></a></p> </main>`;
     });
     css$3 = {
       code: ".product-card.svelte-r8iajz{transition:transform 0.5s ease-in}.product-card.svelte-r8iajz:hover{transform:scale(1.01)}",
@@ -1419,8 +1419,8 @@ var init__3 = __esm({
     index3 = 2;
     component3 = async () => (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     universal_id2 = "src/routes/+page.js";
-    imports3 = ["_app/immutable/nodes/2.7f33c84a.js", "_app/immutable/chunks/products.647cff99.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js", "_app/immutable/chunks/Icon.fcf6a319.js"];
-    stylesheets3 = ["_app/immutable/assets/2.fb8b24aa.css", "_app/immutable/assets/Icon.2ae1c72e.css"];
+    imports3 = ["_app/immutable/nodes/2.e61906ac.js", "_app/immutable/chunks/products.647cff99.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js", "_app/immutable/chunks/Icon.fcf6a319.js"];
+    stylesheets3 = ["_app/immutable/assets/2.941e9e68.css", "_app/immutable/assets/Icon.2ae1c72e.css"];
     fonts3 = [];
   }
 });
@@ -1979,7 +1979,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "m2196"
+  version_hash: "t62bjr"
 };
 function get_hooks() {
   return {};
@@ -5215,7 +5215,7 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["app-icons/instagram.svg", "app-icons/snapchat.svg", "app-icons/tiktok.svg", "app-icons/whatsapp.svg", "favicon.png", "yoo-products/Aesthetics.jpg", "yoo-products/batiks.jpg", "yoo-products/beads.jpg", "yoo-products/camera.jpg", "yoo-products/drawings.jpg", "yoo-products/embroidery.jpg", "yoo-products/graphic.jpg", "yoo-products/painting.jpg", "yoo-products/paws.jpg", "yoo-products/pottery.png", "yoo-products/resin.jpg", "yoo-products/scribblings.png", "yoo-products/sculpture.jpg", "yoo-products/stitches.jpg", "yoo-products/tie-dye.jpg"]),
   mimeTypes: { ".svg": "image/svg+xml", ".png": "image/png", ".jpg": "image/jpeg" },
   _: {
-    client: { "start": "_app/immutable/entry/start.c58807b6.js", "app": "_app/immutable/entry/app.69814bd7.js", "imports": ["_app/immutable/entry/start.c58807b6.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/singletons.50623235.js", "_app/immutable/chunks/control.f5b05b5f.js", "_app/immutable/entry/app.69814bd7.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js"], "stylesheets": [], "fonts": [] },
+    client: { "start": "_app/immutable/entry/start.85913b98.js", "app": "_app/immutable/entry/app.75264865.js", "imports": ["_app/immutable/entry/start.85913b98.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/singletons.1d6c0150.js", "_app/immutable/chunks/control.f5b05b5f.js", "_app/immutable/entry/app.75264865.js", "_app/immutable/chunks/scheduler.7dff430d.js", "_app/immutable/chunks/index.eb39c497.js"], "stylesheets": [], "fonts": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
