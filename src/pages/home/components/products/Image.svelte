@@ -12,11 +12,13 @@
   :global(.image-box) {
     display: flex;
     justify-content: center;
+    margin: 0 1.2em;
   }
 
   :global(.image-box img) {
+    margin: 0 auto;
     width: 350px;
-    max-width: 95%;
+    max-width: 100%;
     height: 250px;
     border-radius: 1em;
     margin: 5px 0;
